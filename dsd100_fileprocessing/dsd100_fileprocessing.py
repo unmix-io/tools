@@ -3,7 +3,7 @@ Filreader enriching files with synonyms out of wordnet
 """
 
 import sys
-from os import listdir, rename, makedirs
+from os import listdir, rename, makedirs, remove
 from os.path import join, isfile, dirname, exists
 import shutil
 
@@ -29,6 +29,7 @@ def copy_files(sourcedir, outputdir, type):
             filename_after = type + '_' + folder + '.wav'
             new_filename = join(new_folder, filename_after)
             old_filename = join(new_folder, filename_before)
+            if exists(new_filename): remove(new_filename)
             rename(old_filename, new_filename)
 
 if __name__ == '__main__':
