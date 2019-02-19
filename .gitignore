@@ -195,3 +195,10 @@ fabric.properties
 
 # .idea folder
 .idea/
+
+.DS_Store
+
+# MedleyDB temp files
+MedleyDB_fileprocessing/mixes
+MedleyDB_fileprocessing/sources
+MedleyDB_fileprocessing/temp
