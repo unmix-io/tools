@@ -8,21 +8,22 @@ from os.path import join, isfile, dirname, exists
 import shutil
 
 __author__ = "kaufmann-a@hotmail.ch"
-davidsIP = '//192.168.1.16'
-sources_dev = davidsIP + "/Data/unmix.io/DSD100/Sources/Dev"
-sources_test = davidsIP + "/Data/unmix.io/DSD100/Sources/Test"
-mixtures_dev = davidsIP + "/Data/unmix.io/DSD100/Mixtures/Dev"
-mixtures_test = davidsIP + "/Data/unmix.io/DSD100/Mixtures/Test"
-sources_out = davidsIP + "/Data/unmix.io/Trainingsdata/dsd100"
-mixtures_out = davidsIP + "/Data/unmix.io/Trainingsdata/dsd100"
+unmix_server = '//192.168.1.16'
+sources_dev = unmix_server + "/RawAudio/DSD100/Sources/Dev"
+sources_test = unmix_server + "/RawAudio/DSD100/Sources/Test"
+mixtures_dev = unmix_server + "/RawAudio/DSD100/Mixtures/Dev"
+mixtures_test = unmix_server + "/RawAudio/DSD100/Mixtures/Test"
+sources_out = unmix_server + "/Trainingsdata/dsd100"
+mixtures_out = unmix_server + "/Trainingsdata/dsd100"
 
-def copy_files(sourcedir, outputdir, type):
+def copy_files(sourcedir, outputdir, type, maxCopy):
     src_files= listdir(sourcedir)
     for folder in src_files:
+        if maxCopy <= 0: break
         songfolder = join(sourcedir, folder)
         filename_before = type + '.wav'
         filename = join(songfolder, filename_before)
-        if(isfile(filename)):
+        if isfile(filename):
             new_folder = join(outputdir, folder)
             if not exists(new_folder): makedirs(new_folder)
             shutil.copy(filename, new_folder)
@@ -31,15 +32,18 @@ def copy_files(sourcedir, outputdir, type):
             old_filename = join(new_folder, filename_before)
             if exists(new_filename): remove(new_filename)
             rename(old_filename, new_filename)
+            maxCopy -= 1
 
 if __name__ == '__main__':
     print('Argument List:', str(sys.argv))
     print('Loading data', file=sys.stderr)
 
-    copy_files(sources_dev, sources_out, 'vocals')
-    copy_files(mixtures_dev, mixtures_out, 'mixture')
-    copy_files(sources_test, sources_out, 'vocals')
-    copy_files(mixtures_test, mixtures_out, 'mixture')
+    maxCopy = 10
+
+    copy_files(sources_dev, sources_out, 'vocals', maxCopy)
+    copy_files(mixtures_dev, mixtures_out, 'mixture', maxCopy)
+    copy_files(sources_test, sources_out, 'vocals', maxCopy)
+    copy_files(mixtures_test, mixtures_out, 'mixture', maxCopy)
 
     print('Finished google files')
 
