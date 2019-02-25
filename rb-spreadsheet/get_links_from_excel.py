@@ -1,3 +1,6 @@
+# Collect hyperlinks from https://docs.google.com/spreadsheets/d/11wHTmpAki6UPQEciw0YCvTIO1_FUH6XEe52KJkX6Ixs/edit#gid=0
+# Export the file and name it "export.xslx", then run this code
+
 import openpyxl
 import itertools
 import re
