@@ -12,10 +12,8 @@ __author__ = "kaufmann-a@hotmail.ch"
 unmix_server = '//192.168.1.29/unmix-server'
 sources_dev = unmix_server + "/1_sources/DSD100/Sources/Dev"
 sources_test = unmix_server + "/1_sources/DSD100/Sources/Test"
-#mixtures_dev = unmix_server + "/RawAudio/DSD100/Mixtures/Dev"#
-#mixtures_test = unmix_server + "/RawAudio/DSD100/Mixtures/Test"
-sources_out = unmix_server + "/prepared/dsd100"
-#mixtures_out = unmix_server + "/Trainingsdata/dsd100"
+sources_out = unmix_server + "/2_prepared/dsd100"
+
 
 def copy_files(sourcedir, outputdir, maxCopy, override):
     src_files = listdir(sourcedir)
@@ -37,8 +35,8 @@ def copy_files(sourcedir, outputdir, maxCopy, override):
         new_songfile_vocals = join(new_folder, new_songname_vocals)
 
         cmd = "ffmpeg" + ' -i "' + bass_track + '" -i "' + drums_track + '" -i "' + restinst_track + '" -i "' + vocals_track + \
-              "\" -filter_complex \"[0:0][1:0][2:0]amerge=inputs=3[instr]\" -map [instr] \"" + new_songfile_instr + \
-              "\" -map 3:0 \"" + new_songfile_vocals + "\""
+              "\" -filter_complex \"[0:0][1:0][2:0]amerge=inputs=3[instr]\" -map [instr] -ac 2 \"" + new_songfile_instr + \
+              "\" -map 3:0 -ac 2 \"" + new_songfile_vocals + "\""
 
         if exists(bass_track) and exists(drums_track) and exists(restinst_track) and exists(vocals_track):
             if not exists(new_folder): makedirs(new_folder)
@@ -83,8 +81,9 @@ if __name__ == '__main__':
         else:
             exit("Second argument not valid, enter true or false")
 
-    copy_files(sources_dev, sources_out, maxCopy, override)
     copy_files(sources_test, sources_out, maxCopy, override)
+    copy_files(sources_dev, sources_out, maxCopy, override)
+
 
     print('Finished converting files')
 

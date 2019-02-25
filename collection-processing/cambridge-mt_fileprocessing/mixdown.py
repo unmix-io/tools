@@ -4,11 +4,13 @@ import re
 import audiohelpers
 import os
 import uuid
+import sys
 
-sourcePath = "./sources"
-mixPath = "./mixes"
+unmix_server = "//192.168.1.29/unmix-server"
+sourcedir = unmix_server + "/1_sources/cambridge-mt"
+mixPath = unmix_server + "/2_prepared/cambridge-mt"
 tempPath = "./temp"
-directories = [f for f in listdir(sourcePath) if isdir(join(sourcePath, f))]
+
 
 def isVocal(file):
     return re.search('vox', file, re.IGNORECASE)
@@ -41,48 +43,88 @@ def normalizeAndMix(fArrWithVolume, destPath):
         os.remove(f[0])
 
 
-for d in directories:
-    directoryPath = join(sourcePath, d)
-    wavFiles = [join(directoryPath, f) for f in listdir(directoryPath) if isfile(join(directoryPath, f)) and f.endswith(".wav")]
+def file_processing(sourcedir, destdir, maxCopy, override):
 
-    voiceFilesNonLead = [f for f in wavFiles if isVocal(f) and not isLead(f)]
-    voiceFilesLead = [f for f in wavFiles if isVocal(f) and isLead(f)]
-    instrumentalFiles = [f for f in wavFiles if not isVocal(f)]
+    if not os.path.exists(tempPath): os.makedirs(tempPath)
 
-    destPath = join(mixPath, d)
+    directories = [f for f in listdir(sourcedir) if isdir(join(sourcedir, f))]
 
-    # for now, skip tracks which do not have vocals
-    if(len(voiceFilesLead) == 0 and len(voiceFilesNonLead) == 0):
-        continue
+    for d in directories:
+        directoryPath = join(sourcedir, d)
+        wavFiles = [join(directoryPath, f) for f in listdir(directoryPath) if isfile(join(directoryPath, f)) and f.endswith(".wav")]
 
-    # only create new (continue)
-    if os.path.exists(destPath):
-        continue
+        voiceFilesNonLead = [f for f in wavFiles if isVocal(f) and not isLead(f)]
+        voiceFilesLead = [f for f in wavFiles if isVocal(f) and isLead(f)]
+        instrumentalFiles = [f for f in wavFiles if not isVocal(f)]
 
-    if not os.path.exists(destPath):
-        os.makedirs(destPath)
+        destPath = join(destdir, d)
 
-    # Create voice-only mixdown
-    if(len(voiceFilesNonLead) == 0):
+        # for now, skip tracks which do not have vocals
+        if(len(voiceFilesLead) == 0 and len(voiceFilesNonLead) == 0):
+            continue
+
+        # only create new (continue) if option override disabled
+        if os.path.exists(destPath) and not override:
+            continue
+
+        if not os.path.exists(destPath):
+            os.makedirs(destPath)
+
+        # Create voice-only mixdown
+        if(len(voiceFilesNonLead) == 0):
+            normalizeAndMix(
+                [(voiceFilesLead, 1)],
+                join(destPath, "vocals_" + d + ".wav")
+            )
+        elif(len(voiceFilesLead) == 0):
+            normalizeAndMix(
+                [(voiceFilesNonLead, 1)],
+                join(destPath, "vocals_" + d + ".wav")
+            )
+        else:
+            normalizeAndMix(
+                [(voiceFilesLead, 0.7),
+                 (voiceFilesNonLead, 0.3)],
+                join(destPath, "vocals_" + d + ".wav")
+            )
+
+        # Create mixdown
         normalizeAndMix(
-            [(voiceFilesLead, 1)],
-            join(destPath, "voice.wav")
-        )
-    elif(len(voiceFilesLead) == 0):
-        normalizeAndMix(
-            [(voiceFilesNonLead, 1)],
-            join(destPath, "voice.wav")
-        )
-    else:
-        normalizeAndMix(
-            [(voiceFilesLead, 0.7),
-             (voiceFilesNonLead, 0.3)],
-            join(destPath, "voice.wav")
+            [(instrumentalFiles, 1)],
+            join(destPath, "instrumental_" + d + ".wav")
         )
 
-    # Create mixdown
-    normalizeAndMix(
-        [([join(destPath, "voice.wav")], 0.5),
-         (instrumentalFiles, 0.5)],
-        join(destPath, "mix.wav")
-    )
+if __name__ == '__main__':
+    # Call script with scriptname maxfiles override
+    # Example call: dsd100_fileprocessing.py 20 True
+    # This will convert the first twenty files in the source dir and override already existing files in the outputdir
+
+    maxCopy = -1
+    override = True
+
+    print('Argument List:', str(sys.argv))
+
+    if sys.argv.__len__() == 1:
+        maxCopy = -1
+        override = True
+    if sys.argv.__len__() >= 2:
+        try:
+            int(sys.argv[1])
+        except ValueError:
+            exit("Add a number as the first argument")
+        if int(sys.argv[1]) >= -1:
+            maxCopy = int(sys.argv[1])
+        else:
+            exit("Enter a number equal or bigger than zero, if you enter -1, the function is disabled")
+    if sys.argv.__len__() >= 3:
+        if sys.argv[2].lower() == "true":
+            override = True
+        elif sys.argv[2].lower() == "false":
+            override = False
+        else:
+            exit("Second argument not valid, enter true or false")
+
+    file_processing(sourcedir, mixPath, maxCopy, override)
+
+
+    print('Finished converting files')

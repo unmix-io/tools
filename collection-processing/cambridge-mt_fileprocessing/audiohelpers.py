@@ -31,7 +31,7 @@ def mixdown(sourcesWithVolume, destination):
 
     print(cmd)
 
-    subprocess.check_call([cmd], shell=True) #cwd = cwd
+    subprocess.check_call(cmd, shell=True) #cwd = cwd
 
 def charCodeForNumber(i):
     """ Returns a for 0, b for 1, etc. """

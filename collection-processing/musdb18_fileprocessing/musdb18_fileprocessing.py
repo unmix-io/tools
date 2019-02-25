@@ -10,8 +10,8 @@ import subprocess
 
 __author__ = "kaufmann-a@hotmail.ch"
 unmix_server = '//192.168.1.29/unmix-server'
-sources = unmix_server + "/sources/musdb18/songs"
-destination = unmix_server + "/prepared/musdb18"
+sources = unmix_server + "/1_sources/musdb18/songs"
+destination = unmix_server + "/2_prepared/musdb18"
 
 #Beispiel ffmpeg mp4 streams auftrennen und zusammenmergen: ffmpeg -i test.mp4 -filter_complex "[0:1][0:2]amerge=inputs=2[ab]" -map [ab] 1.wav
 #Hier wurden streams 2 und 3 gemerged
@@ -32,7 +32,7 @@ def copy_files(sourcedir, outputdir, suffix, maxCopy, override):
         if exists(new_songfile_instr) and override: remove(new_songfile_instr)
         if exists(new_songfile_vocals) and override: remove(new_songfile_vocals)
         if (not exists(new_songfile_vocals) and not exists(new_songfile_instr)) or override:
-            cmd = "ffmpeg -i \"" + old_file + "\" -filter_complex \"[0:1][0:2][0:3]amerge=inputs=3[instr]\" -map [instr] \"" + new_songfile_instr + "\" -map 0:4 \"" + new_songfile_vocals + "\""
+            cmd = "ffmpeg -i \"" + old_file + "\" -filter_complex \"[0:1][0:2][0:3]amerge=inputs=3[instr]\" -map [instr] -ac 2 \"" + new_songfile_instr + "\" -map 0:4 -ac 2 \"" + new_songfile_vocals + "\""
             subprocess.check_call(cmd, shell=True)  # cwd = cwd
             print("\n" + new_songname_vocals + " and " + new_songname_instr + " converted" + "\n")
         maxCopy -= 1
