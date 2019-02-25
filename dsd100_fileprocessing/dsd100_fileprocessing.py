@@ -10,8 +10,8 @@ import subprocess
 
 __author__ = "kaufmann-a@hotmail.ch"
 unmix_server = '//192.168.1.29/unmix-server'
-sources_dev = unmix_server + "/sources/DSD100/Sources/Dev"
-sources_test = unmix_server + "/sources/DSD100/Sources/Test"
+sources_dev = unmix_server + "/1_sources/DSD100/Sources/Dev"
+sources_test = unmix_server + "/1_sources/DSD100/Sources/Test"
 #mixtures_dev = unmix_server + "/RawAudio/DSD100/Mixtures/Dev"#
 #mixtures_test = unmix_server + "/RawAudio/DSD100/Mixtures/Test"
 sources_out = unmix_server + "/prepared/dsd100"
