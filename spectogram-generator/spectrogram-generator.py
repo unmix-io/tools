@@ -29,15 +29,15 @@ def generate_spectrogram(file):
         audio, sample_rate = librosa.load(file)
         file_name = '%s_spectrogram_fft-window[%d]_sample-rate[%d]' % (file, fft_window, sample_rate)
         stft = librosa.stft(audio, fft_window)   
-        save_spectrogram_image(stft_to_real_spectogram(stft), file_name)
-        save_spectrogram_data(stft_to_complex_spectrogram(stft), file_name)
-        print('Generated spectrogram %s' & file_name)
+        save_spectrogram_image(stft_to_real_spectrogram(stft), file_name)
+        save_spectrogram_data(stft_to_complex_spectrogram(stft), file_name, fft_window, sample_rate)
+        print('Generated spectrogram %s' % file_name)
     except (RuntimeError, TypeError, NameError, audioread.NoBackendError):
         print('Error while generating spectrogram for %s' % file)
         pass
 
     
-def stft_to_real_spectogram(stft):
+def stft_to_real_spectrogram(stft):
     spectrogram = np.log1p(np.abs(stft))
     return np.array(spectrogram)[:, :, np.newaxis]
 
@@ -63,11 +63,12 @@ def save_spectrogram_image(spectrogram, file):
         io.imsave(file + '.png', image)
 
 
-def save_spectrogram_data(spectrogram, file):
+def save_spectrogram_data(spectrogram, file, fft_window, sample_rate):
     h5f = h5py.File(file + '.h5', 'w')
-    h5f.create_dataset('imag_part', data=spectrogram[:, :, 0])
-    h5f.create_dataset('real_part', data=spectrogram[:, :, 1])
+    h5f.create_dataset('file', data=file)
     h5f.create_dataset('spectrogram', data=spectrogram)
+    h5f.create_dataset('fft_window', data=fft_window)
+    h5f.create_dataset('sample_rate', data=sample_rate)
     h5f.close()
 
 if __name__ == '__main__':
@@ -88,9 +89,9 @@ if __name__ == '__main__':
         if extension in audio_extensions:
             files.append(file)
     
-    multiprocessing_cores = multiprocessing.cpu_count() / 2
+    multiprocessing_cores = int(multiprocessing.cpu_count() / 2)
     print('Generate spectrograms with %d cores...' % multiprocessing_cores)
     
     Parallel(n_jobs=multiprocessing_cores)(delayed(generate_spectrogram)(file) for file in files)
-
+    
     print('Finished processing')
