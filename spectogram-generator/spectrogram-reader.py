@@ -21,13 +21,12 @@ def generate_audiofile(spectrogram_left, spectrogram_right, name, path, fft_wind
     print('Output audio file: %s' % file)
     librosa.output.write_wav(file, audio, sample_rate, norm=False)
 
+
 def generate_stft(spectrogram):
     real_part = spectrogram[:, :, 0]
     imag_part = spectrogram[:, :, 1]
     stft = real_part + imag_part * 1j
     return stft
-
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Read h5 files containing a complexe frequency spectrogram.')

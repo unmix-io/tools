@@ -1,5 +1,5 @@
 """
-Create complexe frequency spectrograms for wav files in a given folder.
+Creates complexe frequency spectrograms for wav files in a given folder.
 """
 
 __author__ = 'david@flury.email'
@@ -20,14 +20,13 @@ from matplotlib.cm import get_cmap
 import audioread
 
 audio_extensions = ['.wav', '.mp3']
-fft_window = 1536
 
 
-def generate_spectrogram(file):
+def generate_spectrogram(file, fft_window):
     try:
         audio, sample_rate = librosa.load(file, mono=False)
-        left = generate_spectrogram_part(file, audio[0], '0-left', sample_rate)
-        right = generate_spectrogram_part(file, audio[1], '1-right', sample_rate)
+        left = generate_spectrogram_part(file, audio[0], '0-left', fft_window, sample_rate)
+        right = generate_spectrogram_part(file, audio[1], '1-right', fft_window, sample_rate)
         file_name = '%s_spectrogram_fft-window[%d]_sample-rate[%d]' % (file, fft_window, sample_rate)
         save_spectrogram_data(stft_to_complex_spectrogram(left), stft_to_complex_spectrogram(right), file_name, fft_window, sample_rate)
         print('Generated spectrogram %s' % file_name)
@@ -35,7 +34,7 @@ def generate_spectrogram(file):
         print('Error while generating spectrogram for %s' % file)
         pass
 
-def generate_spectrogram_part(file, audio, part, sample_rate):
+def generate_spectrogram_part(file, audio, part, fft_window, sample_rate):
     file_name = '%s_spectrogram_%s_fft-window[%d]_sample-rate[%d]' % (file, part, fft_window, sample_rate)
     stft = librosa.stft(audio, fft_window)
     save_spectrogram_image(stft_to_real_spectrogram(stft), file_name)
@@ -86,9 +85,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     print('Arguments:', str(args))
 
-    if args.fft_window:
-        fft_window = args.fft_window
-
     files = [] # Load all files into list
     print('Load all music files...')
     for file in glob.iglob(args.path + '**/*', recursive=True):
@@ -97,9 +93,9 @@ if __name__ == '__main__':
             files.append(file)
     print('Found %d music files' % len(files))
 
-    multiprocessing_cores = int(multiprocessing.cpu_count() / 2)
+    multiprocessing_cores = int(multiprocessing.cpu_count())
     print('Generate spectrograms with %d cores...' % multiprocessing_cores)
     
-    Parallel(n_jobs=multiprocessing_cores)(delayed(generate_spectrogram)(file) for file in files)
+    Parallel(n_jobs=multiprocessing_cores)(delayed(generate_spectrogram)(file, args.fft_window) for file in files)
     
     print('Finished processing')
