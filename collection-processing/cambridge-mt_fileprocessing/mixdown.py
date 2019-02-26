@@ -57,6 +57,13 @@ def file_processing(sourcedir, destdir, maxCopy, override):
 
     for d in directories:
         directoryPath = join(sourcedir, d)
+
+        subdirectories = [join(directoryPath, f) for f in listdir(directoryPath) if isdir(join(directoryPath, f))]
+        if subdirectories.__len__() >= 1:
+            file_processing(directoryPath, destdir, maxCopy, override)
+            continue
+
+
         wavFiles = [join(directoryPath, f) for f in listdir(directoryPath) if isfile(join(directoryPath, f)) and f.endswith(".wav")]
 
         voiceFilesNonLead = [f for f in wavFiles if isVocal(f) and not isLead(f)]
@@ -111,7 +118,7 @@ if __name__ == '__main__':
     print('Argument List:', str(sys.argv))
 
     if sys.argv.__len__() == 1:
-        maxCopy = -1
+        maxCopy = 666
         override = True
     if sys.argv.__len__() >= 2:
         try:
