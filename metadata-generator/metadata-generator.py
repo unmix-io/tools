@@ -87,7 +87,7 @@ def spotify_metadata(song_name, metadata, retry=False):
     metadata['features']['tempo'] = features['tempo']
     response_artist = requests.get('https://api.spotify.com/v1/artists/%s' % track['artists'][0]['id'], \
         headers={'Authorization': 'Bearer %s' % spotify_token})
-    artist = json.loads(response_features.text)
+    artist = json.loads(response_artist.text)
     if 'error' in artist:
         if retry:
             return metadata
