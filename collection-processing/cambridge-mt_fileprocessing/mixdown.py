@@ -58,6 +58,9 @@ def file_processing(sourcedir, destdir, maxCopy, override):
     for d in directories:
         directoryPath = join(sourcedir, d)
 
+        if not isdir(directoryPath):
+            continue
+
         subdirectories = [join(directoryPath, f) for f in listdir(directoryPath) if isdir(join(directoryPath, f))]
         if subdirectories.__len__() >= 1:
             file_processing(directoryPath, destdir, maxCopy, override)
@@ -113,29 +116,12 @@ if __name__ == '__main__':
     # This will convert the first twenty files in the source dir and override already existing files in the outputdir
 
     maxCopy = -1
-    override = True
+    override = False
 
     print('Argument List:', str(sys.argv))
 
-    if sys.argv.__len__() == 1:
-        maxCopy = 666
-        override = True
-    if sys.argv.__len__() >= 2:
-        try:
-            int(sys.argv[1])
-        except ValueError:
-            exit("Add a number as the first argument")
-        if int(sys.argv[1]) >= -1:
-            maxCopy = int(sys.argv[1])
-        else:
-            exit("Enter a number equal or bigger than zero, if you enter -1, the function is disabled")
-    if sys.argv.__len__() >= 3:
-        if sys.argv[2].lower() == "true":
-            override = True
-        elif sys.argv[2].lower() == "false":
-            override = False
-        else:
-            exit("Second argument not valid, enter true or false")
+    if sys.argv.__len__() == 2:
+        unmix_server = sys.argv[1]
 
     file_processing(sourcedir, mixPath, maxCopy, override)
 
