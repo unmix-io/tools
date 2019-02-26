@@ -32,7 +32,6 @@ def generate_metadata(file):
     metadata['path'] = os.path.dirname(file)
     metadata['extension'] = extension
     metadata['name'] = file_name
-
     
     try:
 
