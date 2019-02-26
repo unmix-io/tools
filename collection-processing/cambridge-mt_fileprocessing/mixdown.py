@@ -13,10 +13,16 @@ tempPath = "./temp"
 
 
 def isVocal(file):
-    return re.search('vox', file, re.IGNORECASE)
+    return re.search('vox', file, re.IGNORECASE) or re.search('voc', file, re.IGNORECASE)
 
 def isLead(file):
-    return re.search('lead', file, re.IGNORECASE)
+    return re.search('lead', file, re.IGNORECASE) and (re.search('voc', file, re.IGNORECASE) or re.search('vox', file, re.IGNORECASE))
+
+def isRoom(file):
+    return re.search('room', file, re.IGNORECASE)
+
+def isChamber(file):
+    return re.search('chamber', file, re.IGNORECASE)
 
 def mix(files, destPath):
     audiohelpers.mixdown([(w, 1) for w in files], destPath)
@@ -55,7 +61,7 @@ def file_processing(sourcedir, destdir, maxCopy, override):
 
         voiceFilesNonLead = [f for f in wavFiles if isVocal(f) and not isLead(f)]
         voiceFilesLead = [f for f in wavFiles if isVocal(f) and isLead(f)]
-        instrumentalFiles = [f for f in wavFiles if not isVocal(f)]
+        instrumentalFiles = [f for f in wavFiles if not isVocal(f) and not isRoom(f) and not isChamber(f)]
 
         destPath = join(destdir, d)
 

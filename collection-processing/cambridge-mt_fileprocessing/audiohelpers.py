@@ -24,10 +24,10 @@ def mixdown(sourcesWithVolume, destination):
 
         char =  charCodeForNumber(i)
 
-        filterComplex += "[" + str(i) + "]adelay=0|0,volume=" + str(volume) + "[" + char + "];"
+        filterComplex += "[" + str(i) + "]adelay=0|0,volume=" + str(volume) + ",agate=threshold=0.01:ratio=2:attack=0.1:release=200.0[" + char + "];"
         chain += "[" + char + "]"
 
-    cmd = "ffmpeg -vn " + inpArgs + " -filter_complex \"" + filterComplex + chain + "amix=inputs=" + str(len(sourcesWithVolume)) + ":dropout_transition=0\" -q:a 1 -y \"" + destination + "\""
+    cmd = "ffmpeg -vn " + inpArgs + " -filter_complex \"" + filterComplex + chain + "amix=inputs=" + str(len(sourcesWithVolume)) + ":dropout_transition=0\" -q:a 1 -y -ar 44100 \"" + destination + "\""
 
     print(cmd)
 
