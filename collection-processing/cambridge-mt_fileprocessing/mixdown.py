@@ -6,9 +6,7 @@ import os
 import uuid
 import sys
 
-unmix_server = "//192.168.1.29/unmix-server"
-sourcedir = unmix_server + "/1_sources/cambridge-mt"
-mixPath = unmix_server + "/2_prepared/cambridge-mt"
+
 tempPath = "./temp"
 
 
@@ -117,12 +115,16 @@ if __name__ == '__main__':
 
     maxCopy = -1
     override = False
+    unmix_server = "//192.168.1.29/unmix-server"
 
     print('Argument List:', str(sys.argv))
 
     if sys.argv.__len__() == 2:
         unmix_server = sys.argv[1]
 
+
+    sourcedir = unmix_server + "/1_sources/cambridge-mt"
+    mixPath = unmix_server + "/2_prepared/cambridge-mt"
     file_processing(sourcedir, mixPath, maxCopy, override)
 
 
