@@ -1,5 +1,5 @@
 from os import listdir
-from os.path import isfile, join, isdir
+from os.path import isfile, join, isdir, exists
 import re
 import globals
 from typing import Union
@@ -25,7 +25,8 @@ def isChamber(file):
     return re.search('chamber', file, re.IGNORECASE)
 
 def mix(files, destPath):
-    audiohelpers.mixdown([(w, 1) for w in files], destPath)
+    if all(exists(f) for f in files):
+        audiohelpers.mixdown([(w, 1) for w in files], destPath)
 
 def normalizeAndMix(fArrWithVolume, destPath):
 
@@ -43,7 +44,8 @@ def normalizeAndMix(fArrWithVolume, destPath):
 
         tempfiles.append((normalized_temp_file, vol))
 
-    audiohelpers.mixdown(tempfiles, destPath)
+    if all(exists(f[0]) for f in tempfiles):
+        audiohelpers.mixdown(tempfiles, destPath)
 
     for f in tempfiles:
         os.remove(f[0])
