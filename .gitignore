@@ -202,3 +202,7 @@ fabric.properties
 MedleyDB_fileprocessing/mixes
 MedleyDB_fileprocessing/sources
 MedleyDB_fileprocessing/temp
+
+#Logfiles
+logfiles/
+
