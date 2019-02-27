@@ -126,7 +126,6 @@ if __name__ == '__main__':
     
     set_spotify_token()
 
-    # Parallel(n_jobs=multiprocessing_cores)(delayed(generate_metadata)(file) for file in files)
-    generate_metadata(files[0])
+    Parallel(n_jobs=multiprocessing_cores)(delayed(generate_metadata)(file) for file in files)
 
     print('Finished processing')
