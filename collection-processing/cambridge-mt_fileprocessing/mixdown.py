@@ -1,14 +1,16 @@
 from os import listdir
 from os.path import isfile, join, isdir
 import re
+import globals
+from typing import Union
+
 import audiohelpers
 import os
 import uuid
 import sys
-
+import datetime
 
 tempPath = "./temp"
-
 
 def isVocal(file):
     return re.search('vox', file, re.IGNORECASE) or re.search('voc', file, re.IGNORECASE)
@@ -49,8 +51,10 @@ def normalizeAndMix(fArrWithVolume, destPath):
 
 def file_processing(sourcedir, destdir, maxCopy, override):
 
+    #Create temp folder if not already existing
     if not os.path.exists(tempPath): os.makedirs(tempPath)
 
+    #Create list of directories
     directories = [f for f in listdir(sourcedir) if isdir(join(sourcedir, f))]
 
     for d in directories:
@@ -108,12 +112,18 @@ def file_processing(sourcedir, destdir, maxCopy, override):
             join(destPath, "instrumental_" + d + ".wav")
         )
 
+def init():
+    # Open Logfile
+    log_file_name = join(join(sourcedir, "_log"),
+                         datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + "_Logfile.txt")
+    globals.log_file = open(log_file_name, "w+")
+
 if __name__ == '__main__':
     # Call script with scriptname maxfiles override
     # Example call: dsd100_fileprocessing.py 20 True
     # This will convert the first twenty files in the source dir and override already existing files in the outputdir
 
-    maxCopy = -1
+    maxCopy = 3
     override = False
     unmix_server = "//192.168.1.29/unmix-server"
 
@@ -125,7 +135,12 @@ if __name__ == '__main__':
 
     sourcedir = unmix_server + "/1_sources/cambridge-mt"
     mixPath = unmix_server + "/2_prepared/cambridge-mt"
+
+    globals.initialize()
+    init()
+
     file_processing(sourcedir, mixPath, maxCopy, override)
 
+    globals.log_file.close()
 
     print('Finished converting files')

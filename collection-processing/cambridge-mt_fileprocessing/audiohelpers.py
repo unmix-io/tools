@@ -1,5 +1,6 @@
 import subprocess
 from pydub import AudioSegment
+import globals
 
 #requirement: pip install pydub
 
@@ -31,7 +32,12 @@ def mixdown(sourcesWithVolume, destination):
 
     print(cmd)
 
-    subprocess.check_call(cmd, shell=True) #cwd = cwd
+    try:
+        subprocess.check_call(cmd, shell=True) #cwd = cwd
+        globals.log_file.write("Successful" + destination)
+    except:
+        globals.log_file.write("FAILED" + destination)
+
 
 def charCodeForNumber(i):
     """ Returns a for 0, b for 1, etc. """
