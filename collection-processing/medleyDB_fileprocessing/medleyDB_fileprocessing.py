@@ -9,8 +9,10 @@ import yaml
 import subprocess
 import datetime
 import re
+from pydub import AudioSegment
 
 __author__ = "kaufmann-a@hotmail.ch"
+temp_path = "./temp"
 
 #Beispiel ffmpeg mp4 streams auftrennen und zusammenmergen: ffmpeg -i test.mp4 -filter_complex "[0:1][0:2]amerge=inputs=2[ab]" -map [ab] 1.wav
 #Hier wurden streams 2 und 3 gemerged
@@ -63,7 +65,7 @@ def is_fx(file):
     return re.search('room', file, re.IGNORECASE) or re.search('chamber', file, re.IGNORECASE) or re.search('fx', file, re.IGNORECASE)
 
 
-def file_processing(sourcedir, destdir, override, l=[]):
+def file_processing(sourcedir, destdir, override):
     # Create list of directories
     directories = [f for f in listdir(sourcedir) if isdir(join(sourcedir, f))]
 
@@ -105,6 +107,15 @@ def file_processing(sourcedir, destdir, override, l=[]):
 
         mixdown(folders_with_stems, dest_path, vocal_stems, instr_stems, dir)
 
+def normalize(file, destination, db = -20.0):
+    def match_target_amplitude(sound, target_dBFS):
+        change_in_dBFS = target_dBFS - sound.dBFS
+        return sound.apply_gain(change_in_dBFS)
+
+    sound = AudioSegment.from_file(file, "wav")
+    normalized_sound = match_target_amplitude(sound, db)
+    normalized_sound.export(destination, format="wav")
+
 
 def mixdown(folders_with_stems, destination, vocal_stems, instr_stems, songname):
     inpArgs = ""
@@ -113,21 +124,25 @@ def mixdown(folders_with_stems, destination, vocal_stems, instr_stems, songname)
     count_voc_tracks = 0
     count_instr_tracks = 0
     track_count = 0
+    sum_volumes_voc = 0
+    sum_volumes_instr = 0
 
     for folder_with_stems in folders_with_stems:
         for file in listdir(folder_with_stems):
             if any(map(lambda x: x in file, vocal_stems)):
                 inpArgs += "-i \"" + join(folder_with_stems, file) + "\" "
                 filter_complex_voc += "[" + str(track_count) + ":0]"
+                sum_volumes_voc += AudioSegment.from_file(join(folder_with_stems, file), "wav").dBFS
                 count_voc_tracks += 1
                 track_count += 1
             elif any(map(lambda x: x in file, instr_stems)):
                 inpArgs += "-i \"" + join(folder_with_stems, file) + "\" "
                 filter_complex_instr += "[" + str(track_count) + ":0]"
+                sum_volumes_instr += AudioSegment.from_file(join(folder_with_stems, file), "wav").dBFS
                 count_instr_tracks += 1
                 track_count += 1
 
-    cmd = "ffmpeg " + inpArgs + " -filter_complex \"" + filter_complex_voc + "amix=inputs=" + str(count_voc_tracks) + ":dropout_transition=0[vocs];" + filter_complex_instr + "amix=inputs=" + str(count_instr_tracks) + ":dropout_transition=0[instr]\" -map [vocs] " + join(destination, "vocals_" + songname) + ".wav -map [instr] " + join(destination, "instrumental_" + songname) + ".wav"
+    cmd = "ffmpeg " + inpArgs + " -filter_complex \"" + filter_complex_voc + "amix=inputs=" + str(count_voc_tracks) + ":dropout_transition=0[vocs];" + filter_complex_instr + "amix=inputs=" + str(count_instr_tracks) + ":dropout_transition=0[instr]\" -map [vocs] " + join(temp_path, "vocals_" + songname) + ".wav -map [instr] " + join(temp_path, "instrumental_" + songname) + ".wav"
     print(cmd)
     try:
         subprocess.check_call(cmd, shell=True)
@@ -135,27 +150,19 @@ def mixdown(folders_with_stems, destination, vocal_stems, instr_stems, songname)
     except Exception as inst:
         log_file.write(str(type(inst)) + ": " + songname + " conversion failed")
 
+    # Calculate ratio of volume of original vocals and volume of original instruments. Instruments will be normalized to
+    # -20 DB, Vocals to -20 DB * Ratio
+    try:
+        targetDB_voc = -20 + (-20 * ((sum_volumes_voc/count_voc_tracks) / (sum_volumes_instr/count_instr_tracks) - 1))
 
-def copy_files(sourcedir, outputdir, suffix, maxCopy, override):
-    src_files= listdir(sourcedir)
-    for file in src_files:
-        if maxCopy == 0: break
+        normalize(join(temp_path, "vocals_" + songname) + ".wav", join(destination, "vocals_" + songname) + ".wav", targetDB_voc)
+        normalize(join(temp_path, "instrumental_" + songname) + ".wav", join(destination, "instrumental" + songname) + ".wav", -20)
+        log_file.write("Message: " + songname + " was normalized successfully")
+    except Exception as inst:
+        log_file.write(str(type(inst)) + ": " + songname + " normalization failed")
 
-        new_songname = file[:-suffix.__len__()]
-        old_file = join(sourcedir, file)
-        new_folder = join(outputdir, new_songname)
-        new_songname_instr = 'instrumental_' + new_songname + '.wav'
-        new_songname_vocals = 'vocals_' + new_songname + '.wav'
-        new_songfile_instr = join(new_folder, new_songname_instr)
-        new_songfile_vocals = join(new_folder, new_songname_vocals)
-        if not exists(new_folder): makedirs(new_folder)
-        if exists(new_songfile_instr) and override: remove(new_songfile_instr)
-        if exists(new_songfile_vocals) and override: remove(new_songfile_vocals)
-        if (not exists(new_songfile_vocals) and not exists(new_songfile_instr)) or override:
-            cmd = "ffmpeg -i \"" + old_file + "\" -filter_complex \"[0:1][0:2][0:3]amerge=inputs=3[instr]\" -map [instr] -ac 2 \"" + new_songfile_instr + "\" -map 0:4 -ac 2 \"" + new_songfile_vocals + "\""
-            subprocess.check_call(cmd, shell=True)  # cwd = cwd
-            print("\n" + new_songname_vocals + " and " + new_songname_instr + " converted" + "\n")
-        maxCopy -= 1
+    remove(join(temp_path, "vocals_" + songname) + ".wav")
+    remove(join(temp_path, "instrumental_" + songname) + ".wav")
 
 if __name__ == '__main__':
     # Call script with scriptname maxfiles override
@@ -172,7 +179,7 @@ if __name__ == '__main__':
         unmix_server = sys.argv[1]
 
     #Setup Logfile
-    log_file_dir = "./temp"
+    log_file_dir = "./logfiles"
 
     if not exists(log_file_dir):
         makedirs(log_file_dir)
@@ -185,6 +192,7 @@ if __name__ == '__main__':
     sourcedir_V1 = unmix_server + "/1_sources/MedleyDBs/V1"
     sourcedir_V2 = unmix_server + "/1_sources/MedleyDBs/V2"
     mixPath = unmix_server + "/2_prepared/MedleyDBs"
+    if not exists(temp_path): makedirs(temp_path)
 
     #Start process
     try:
