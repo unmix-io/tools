@@ -35,8 +35,10 @@ def mixdown(sourcesWithVolume, destination):
     try:
         subprocess.check_call(cmd, shell=True) #cwd = cwd
         globals.log_file.write("Successful" + destination)
+        return True
     except:
         globals.log_file.write("FAILED" + destination)
+        return False
 
 
 def charCodeForNumber(i):

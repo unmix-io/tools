@@ -26,7 +26,8 @@ def isChamber(file):
 
 def mix(files, destPath):
     if all(exists(f) for f in files):
-        audiohelpers.mixdown([(w, 1) for w in files], destPath)
+        return audiohelpers.mixdown([(w, 1) for w in files], destPath)
+    return False
 
 def normalizeAndMix(fArrWithVolume, destPath):
 
@@ -38,7 +39,11 @@ def normalizeAndMix(fArrWithVolume, destPath):
         mix_temp_file = join(tempPath, str(uuid.uuid4())) + ".wav"
         normalized_temp_file = join(tempPath, str(uuid.uuid4())) + ".wav"
 
-        mix(files, mix_temp_file)
+        mixSuccessfull = mix(files, mix_temp_file)
+
+        if not mixSuccessfull:
+            continue
+
         audiohelpers.normalize(mix_temp_file, normalized_temp_file)
         os.remove(mix_temp_file)
 
