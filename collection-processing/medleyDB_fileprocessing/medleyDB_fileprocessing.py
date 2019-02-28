@@ -28,7 +28,7 @@ def read_metadata_for_song(metadata_path, songname):
         try:
             return yaml.load(fhandle)
         except Exception as inst:
-            log_file.write(str(type(inst)) + ": Yaml-file for song " + songpath + "could not be loaded")
+            log_file.write(str(type(inst)) + ": Yaml-file for song " + songpath + "could not be loaded\n")
             return {}
 
 
@@ -37,7 +37,7 @@ def song_path_metadata(metadata_path, songname):
         if songname in str(file):
             return join(metadata_path, file)
 
-    log_file.write("Error - Metadata: Following song not found in Metadata: " + songname)
+    log_file.write("Error - Metadata: Following song not found in Metadata: " + songname + "\n")
     return {}
 
 
@@ -51,7 +51,7 @@ def is_song_valid(metadata_path, songname):
     song_metadata = read_metadata_for_song(metadata_path, songname)
 
     if not song_metadata:
-        log_file.write("Error: Metadata-file for song for " + songname + " doesn't contain proper yaml code")
+        log_file.write("Error: Metadata-file for song for " + songname + " doesn't contain proper yaml code\n")
         return False
 
     return not is_instrumental(song_metadata) and not has_bleed(song_metadata)
@@ -74,32 +74,33 @@ def file_processing(sourcedir, destdir, override):
 
         # Check if dir is a folder (all songs are in subfolders)
         if not isdir(directoyPath):
-            log_file.write("Error Songdirectory: TopLevel Songdirectory detected dir which is not a folder with name " + directoyPath)
+            log_file.write("Error Songdirectory: TopLevel Songdirectory detected dir which is not a folder with name " + directoyPath + "\n")
             continue
 
         # Check if song is valid
         if not is_song_valid(join(join(join(directoyPath, pardir), pardir), "Metadata"), dir):
-            log_file.write("Error Songvalidation: Song with name " + dir + " is not valid")
+            log_file.write("Error Songvalidation: Song with name " + dir + " is not valid\n")
             continue
 
         # Find tracks in metadata
         song_metadata = read_metadata_for_song(join(join(join(directoyPath, pardir), pardir), "Metadata"), dir)
 
         if not song_metadata:
-            log_file.write("Error: Metadata-file for song for " + dir + " doesn't contaion proper yaml code")
+            log_file.write("Error: Metadata-file for song for " + dir + " doesn't contaion proper yaml code\n")
             continue
 
         vocal_stems = [song_metadata['stems'][stem]['filename'] for stem in song_metadata['stems'] if is_vocal(song_metadata['stems'][stem]['instrument']) and not is_fx(song_metadata['stems'][stem]['instrument'])]
         instr_stems = [song_metadata['stems'][stem]['filename'] for stem in song_metadata['stems'] if not is_vocal(song_metadata['stems'][stem]['instrument']) and not is_fx(song_metadata['stems'][stem]['instrument'])]
 
         # Find stems-folder
-        folders_with_stems = [join(directoyPath, folder) for folder in listdir(directoyPath) if "stem" in folder.lower()]
+        folders_with_stems = [join(directoyPath, folder) for folder in listdir(directoyPath) if "stem" in folder.lower() and isdir(join(directoyPath, folder))]
         dest_path = join(destdir, dir)
 
         if(len(vocal_stems) == 0 or len(instr_stems) == 0):
             continue
 
         if exists(dest_path) and not override:
+            log_file.write("MEssage: Song with name " + dir + " already existing\n")
             continue
 
         if not exists(dest_path):
@@ -146,9 +147,10 @@ def mixdown(folders_with_stems, destination, vocal_stems, instr_stems, songname)
     print(cmd)
     try:
         subprocess.check_call(cmd, shell=True)
-        log_file.write("Message: " + songname + " was converted successfully")
+        log_file.write("Message: " + songname + " was converted successfully\n")
     except Exception as inst:
-        log_file.write(str(type(inst)) + ": " + songname + " conversion failed")
+        log_file.write(str(type(inst)) + ": " + songname + " conversion failed\n")
+        return
 
     # Calculate ratio of volume of original vocals and volume of original instruments. Instruments will be normalized to
     # -20 DB, Vocals to -20 DB * Ratio
@@ -157,12 +159,15 @@ def mixdown(folders_with_stems, destination, vocal_stems, instr_stems, songname)
 
         normalize(join(temp_path, "vocals_" + songname) + ".wav", join(destination, "vocals_" + songname) + ".wav", targetDB_voc)
         normalize(join(temp_path, "instrumental_" + songname) + ".wav", join(destination, "instrumental" + songname) + ".wav", -20)
-        log_file.write("Message: " + songname + " was normalized successfully")
+        log_file.write("Message: " + songname + " was normalized successfully\n")
     except Exception as inst:
-        log_file.write(str(type(inst)) + ": " + songname + " normalization failed")
+        log_file.write(str(type(inst)) + ": " + songname + " normalization failed\n")
 
-    remove(join(temp_path, "vocals_" + songname) + ".wav")
-    remove(join(temp_path, "instrumental_" + songname) + ".wav")
+    try:
+        remove(join(temp_path, "vocals_" + songname) + ".wav")
+        remove(join(temp_path, "instrumental_" + songname) + ".wav")
+    except:
+        log_file.write("Could not delete tempfile\n")
 
 if __name__ == '__main__':
     # Call script with scriptname maxfiles override
@@ -170,7 +175,7 @@ if __name__ == '__main__':
     # This will convert the first twenty files in the source dir and override already existing files in the outputdir
 
     maxCopy = -1
-    override = True
+    override = False
     unmix_server = "//192.168.1.29/unmix-server"
 
     print('Argument List:', str(sys.argv))
