@@ -2,7 +2,8 @@
 Creates hierarchical data format files with complexe frequency spectrograms for audio files in a given folder.
 """
 
-__author__ = 'david@flury.email'
+__author__ = 'David Flury'
+__email__ = "david@flury.email"
 
 import os
 import sys

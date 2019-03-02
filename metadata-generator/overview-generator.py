@@ -2,7 +2,8 @@
 Reads metadata files and generates an overview.
 """
 
-__author__ = 'david@flury.email'
+__author__ = 'David Flury'
+__email__ = "david@flury.email"
 
 import os
 import csv

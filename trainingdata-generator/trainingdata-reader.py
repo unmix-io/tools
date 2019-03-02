@@ -2,7 +2,8 @@
 Reads a hierarchical data format (h5) file containing a complexe frequency spectrogram and generates the audio file.
 """
 
-__author__ = 'david@flury.email'
+__author__ = 'David Flury'
+__email__ = "david@flury.email"
 
 import os
 import h5py

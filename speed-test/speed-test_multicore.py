@@ -4,9 +4,13 @@ import argparse
 import multiprocessing
 from joblib import Parallel, delayed
 
+__author__ = 'David Flury'
+__email__ = "david@flury.email"
+
 def calculate_hash():
   input = 'unmix.io is great!'
   hash_object = hashlib.sha1(input.encode())
+  return hash_object
 
 if __name__ == '__main__':
 
