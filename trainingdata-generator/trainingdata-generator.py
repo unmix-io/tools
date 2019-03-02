@@ -8,6 +8,7 @@ import os
 import sys
 import glob
 import h5py
+import time
 import librosa
 import warnings
 import argparse
@@ -81,9 +82,13 @@ if __name__ == '__main__':
     parser.add_argument('--path', default='U:\\2_prepared\\musdb18\\', type=str, help='Working path')
     parser.add_argument('--fft_window', default=1536, type=int, help='Size [Samples] of FFT windows')
     parser.add_argument('--sample_rate', default=-1, type=int, help='Optional target samplerate [Hz] for the audiofiles')
+    parser.add_argument('--job_count', default=int(multiprocessing.cpu_count()), type=int, help='Maximum number of concurrently running jobs')
 
     args = parser.parse_args()
     print('Arguments:', str(args))
+
+    if not args.path.endswith('\\'):
+        args.path += '\\'
 
     files = [] # Load all files into list
     print('Load all music files...')
@@ -93,9 +98,9 @@ if __name__ == '__main__':
             files.append(file)
     print('Found %d music files' % len(files))
 
-    multiprocessing_cores = int(multiprocessing.cpu_count())
-    print('Generate spectrograms with %d cores...' % multiprocessing_cores)
+    start = time.time()
+    print('Generate spectrograms with maximum %d jobs...' % args.job_count)
+    Parallel(n_jobs=args.job_count)(delayed(generate_container)(file, args.fft_window, args.sample_rate) for file in files)
+    end = time.time()
     
-    Parallel(n_jobs=multiprocessing_cores)(delayed(generate_container)(file, args.fft_window, args.sample_rate) for file in files)
-    
-    print('Finished processing')
+    print('Finished processing in %d [ms]', (end - start))

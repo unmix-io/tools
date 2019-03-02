@@ -1,5 +1,5 @@
 """
-Reads a hierarchical data format (h5) file containing a complexe frequency spectrogram.
+Reads a hierarchical data format (h5) file containing a complexe frequency spectrogram and generates the audio file.
 """
 
 __author__ = 'david@flury.email'
@@ -29,16 +29,15 @@ def generate_stft(spectrogram):
     return stft
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Read h5 files containing a complexe frequency spectrogram.')
+    parser = argparse.ArgumentParser(description='Reads h5 a file containing a complexe frequency spectrogram and generates the audio file.')
     parser.add_argument('--file', default='C:\\temp\\unmix.io\\test.h5', type=str, help='Hierarhical data format container file')
     parser.add_argument('--path', default='', type=str, help='Optional output folder')
 
     args = parser.parse_args()
     print('Arguments:', str(args))
 
-    path = args.path
-    if not path:
-        path = os.path.dirname(args.file)
+    if not args.path:
+        args.path = os.path.dirname(args.file)
 
 
     h5f = h5py.File(args.file,'r')
@@ -47,7 +46,7 @@ if __name__ == '__main__':
     sample_rate = h5f['sample_rate'].value
     spectrogram_left = h5f['spectrogram_left'][:, :, :]
     spectrogram_right = h5f['spectrogram_right'][:, :, :]
-    generate_audiofile(spectrogram_left, spectrogram_right, file, path, fft_window, sample_rate)
+    generate_audiofile(spectrogram_left, spectrogram_right, file, args.path, fft_window, sample_rate)
 
     h5f.close()
     print('Finished processing')

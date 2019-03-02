@@ -48,7 +48,10 @@ if __name__ == '__main__':
     parser.add_argument('--destination', default='', type=str, help='Optional destionation path')
 
     args = parser.parse_args()
-    print('Arguments:', str(args))
+    print('Arguments:', str(args))    
+
+    if not args.path.endswith('\\'):
+        args.path += '\\'
 
     if not args.destination:
         args.destination = args.path
