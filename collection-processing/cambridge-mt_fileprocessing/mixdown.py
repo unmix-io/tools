@@ -9,6 +9,7 @@ import os
 import uuid
 import sys
 import datetime
+import ereaser
 
 tempPath = "./temp"
 
@@ -146,8 +147,10 @@ if __name__ == '__main__':
     globals.initialize()
     init()
 
-    file_processing(sourcedir, mixPath, maxCopy, override)
+    # file_processing(sourcedir, mixPath, maxCopy, override)
 
     globals.log_file.close()
+
+    ereaser.clean_dir(mixPath, "toExclude.csv")
 
     print('Finished converting files')
