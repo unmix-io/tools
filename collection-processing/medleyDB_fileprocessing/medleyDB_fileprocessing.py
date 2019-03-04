@@ -93,7 +93,7 @@ def file_processing(sourcedir, destdir, override):
         instr_stems = [song_metadata['stems'][stem]['filename'] for stem in song_metadata['stems'] if not is_vocal(song_metadata['stems'][stem]['instrument']) and not is_fx(song_metadata['stems'][stem]['instrument'])]
 
         # Find stems-folder
-        folders_with_stems = [join(directoyPath, folder) for folder in listdir(directoyPath) if "stem" in folder.lower() and isdir(join(directoyPath, folder))]
+        folders_with_stems = [join(directoyPath, folder) for folder in listdir(directoyPath) if (("stem" in folder.lower()) and isdir(join(directoyPath, folder)))]
         dest_path = join(destdir, dir)
 
         if(len(vocal_stems) == 0 or len(instr_stems) == 0):
