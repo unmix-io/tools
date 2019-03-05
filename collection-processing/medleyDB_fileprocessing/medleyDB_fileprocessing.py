@@ -93,7 +93,7 @@ def file_processing(sourcedir, destdir, override):
         instr_stems = [song_metadata['stems'][stem]['filename'] for stem in song_metadata['stems'] if not is_vocal(song_metadata['stems'][stem]['instrument']) and not is_fx(song_metadata['stems'][stem]['instrument'])]
 
         # Find stems-folder
-        folders_with_stems = [join(directoyPath, folder) for folder in listdir(directoyPath) if "stem" in folder.lower() and isdir(join(directoyPath, folder))]
+        folders_with_stems = [join(directoyPath, folder) for folder in listdir(directoyPath) if (("stem" in folder.lower()) and isdir(join(directoyPath, folder)))]
         dest_path = join(destdir, dir)
 
         if(len(vocal_stems) == 0 or len(instr_stems) == 0):
@@ -128,22 +128,25 @@ def mixdown(folders_with_stems, destination, vocal_stems, instr_stems, songname)
     sum_volumes_voc = 0
     sum_volumes_instr = 0
 
-    for folder_with_stems in folders_with_stems:
-        for file in listdir(folder_with_stems):
-            if any(map(lambda x: x in file, vocal_stems)):
-                inpArgs += "-i \"" + join(folder_with_stems, file) + "\" "
-                filter_complex_voc += "[" + str(track_count) + ":0]"
-                sum_volumes_voc += AudioSegment.from_file(join(folder_with_stems, file), "wav").dBFS
-                count_voc_tracks += 1
-                track_count += 1
-            elif any(map(lambda x: x in file, instr_stems)):
-                inpArgs += "-i \"" + join(folder_with_stems, file) + "\" "
-                filter_complex_instr += "[" + str(track_count) + ":0]"
-                sum_volumes_instr += AudioSegment.from_file(join(folder_with_stems, file), "wav").dBFS
-                count_instr_tracks += 1
-                track_count += 1
+    try:
+        for folder_with_stems in folders_with_stems:
+            for file in listdir(folder_with_stems):
+                if any(map(lambda x: x in file, vocal_stems)):
+                    inpArgs += "-i \"" + join(folder_with_stems, file) + "\" "
+                    filter_complex_voc += "[" + str(track_count) + ":0]"
+                    sum_volumes_voc += AudioSegment.from_file(join(folder_with_stems, file), "wav").dBFS
+                    count_voc_tracks += 1
+                    track_count += 1
+                elif any(map(lambda x: x in file, instr_stems)):
+                    inpArgs += "-i \"" + join(folder_with_stems, file) + "\" "
+                    filter_complex_instr += "[" + str(track_count) + ":0]"
+                    sum_volumes_instr += AudioSegment.from_file(join(folder_with_stems, file), "wav").dBFS
+                    count_instr_tracks += 1
+                    track_count += 1
+    except Exception as inst:
+        log_file.write("Message: Pydub could not read " + folder_with_stems)
 
-    cmd = "ffmpeg " + inpArgs + " -filter_complex \"" + filter_complex_voc + "amix=inputs=" + str(count_voc_tracks) + ":dropout_transition=0[vocs];" + filter_complex_instr + "amix=inputs=" + str(count_instr_tracks) + ":dropout_transition=0[instr]\" -map [vocs] " + join(temp_path, "vocals_" + songname) + ".wav -map [instr] " + join(temp_path, "instrumental_" + songname) + ".wav"
+    cmd = "ffmpeg " + inpArgs + " -filter_complex \"" + filter_complex_voc + "amix=inputs=" + str(count_voc_tracks) + "[vocs];" + filter_complex_instr + "amerge=inputs=" + str(count_instr_tracks) + "[instr]\" -map [vocs] -ac 2 " + join(temp_path, "vocals_" + songname) + ".wav -map [instr] -ac 2 " + join(temp_path, "instrumental_" + songname) + ".wav"
     print(cmd)
     try:
         subprocess.check_call(cmd, shell=True)
@@ -175,7 +178,7 @@ if __name__ == '__main__':
     # This will convert the first twenty files in the source dir and override already existing files in the outputdir
 
     maxCopy = -1
-    override = False
+    override = True
     unmix_server = "//192.168.1.29/unmix-server"
 
     print('Argument List:', str(sys.argv))
