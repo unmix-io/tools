@@ -1,6 +1,7 @@
 
 from os import listdir, chdir, makedirs, remove
-from os.path import isfile, join, isdir, exists
+from os.path import isfile, join, isdir, exists, basename, abspath, split
+import ctypes
 import sys
 import datetime
 import re
@@ -17,10 +18,25 @@ c_0_ogg = 0
 
 temp_path = "./temp"
 eligible_simple_filetypes = ['.wav', '.ogg', '.mp3']
-
+eligible_container_filetypes = ['.mogg']
 
 def is_vocal(file):
     return re.search('voc', file, re.IGNORECASE) or re.search('vox', file, re.IGNORECASE)
+
+
+def is_hidden(filepath):
+    name = basename(abspath(filepath))
+    return name.startswith('.') or has_hidden_attribute(filepath)
+
+
+def has_hidden_attribute(filepath):
+    try:
+        attrs = ctypes.windll.kernel32.GetFileAttributesW(filepath)
+        assert attrs != -1
+        result = bool(attrs & 2)
+    except (AttributeError, AssertionError):
+        result = False
+    return result
 
 
 def normalize(file, destination, db = -20.0):
@@ -56,8 +72,8 @@ def mixdown(sourcefolder, destination, tracks_vocs, tracks_instr, songname):
             log_file.write(str(type(inst)) + ": Pydub could not read " + track)
 
     cmd = "ffmpeg " + inp_args + " -filter_complex \"" + filter_complex_vocs + "amix=inputs=" + str(tracks_vocs.__len__()) + "[vocs];" + filter_complex_instr \
-          + "amix=inputs=" + str(tracks_instr.__len__()) + "[instr]\" -map [vocs] -ar 44100 \"" + join(temp_path, "vocals_" + songname + ".wav") \
-          + "\" -map [instr] -ar 44100 \"" + join(temp_path, "instrumental_" + songname + ".wav") + "\""
+          + "amix=inputs=" + str(tracks_instr.__len__()) + "[instr]\" -map [vocs] -ac 2 -y -ar 44100 \"" + join(temp_path, "vocals_" + songname + ".wav") \
+          + "\" -map [instr] -ac 2 -y -ar 44100 \"" + join(temp_path, "instrumental_" + songname + ".wav") + "\""
     print(cmd)
     try:
         subprocess.check_call(cmd, shell=True)
@@ -88,12 +104,14 @@ def file_processing(sourcedir, destdir, maxCopy, override):
 
     # Create list of directories and songfiles (simple files stands for normal mono or stereo tracks, no containers)
     directories = [f for f in listdir(sourcedir) if isdir(join(sourcedir, f))]
-    eligible_simple_files = [f for f in listdir(sourcedir) if isfile(join(sourcedir, f)) and eligible_simple_filetypes.__contains__(f[-4:])]
+    eligible_simple_files = [f for f in listdir(sourcedir) if isfile(join(sourcedir, f)) and eligible_simple_filetypes.__contains__(pathlib.Path(f).suffix) and not is_hidden(f)]
+    eligible_container_files = [f for f in listdir(sourcedir) if isfile(join(sourcedir, f)) and eligible_container_filetypes.__contains__(pathlib.Path(f).suffix) and not is_hidden(f)]
 
     for d in directories:
         directory_path = join(sourcedir, d)
         file_processing(directory_path, destdir, maxCopy, override)
 
+    #Process Simple File Types
     vocals = [f for f in eligible_simple_files if is_vocal(f)]
     instrumentals = [f for f in eligible_simple_files if not is_vocal(f)]
 
@@ -101,13 +119,34 @@ def file_processing(sourcedir, destdir, maxCopy, override):
     if len(vocals) == 0 or len(instrumentals) == 0:
         return
 
-    # Add new folder in target directory if not yet existing
-    if not exists(join(destdir, ntpath.basename(sourcedir))):
-        makedirs(join(destdir, ntpath.basename(sourcedir)))
+    # Add new folder in target directory if not yet existing, if name to short parentfolder of source directory is added to name as well
+    new_foldername = ""
+    path = sourcedir
+    while new_foldername.__len__() < 10:
+        path, folder = split(path)
+
+        if folder != "":
+            temp = new_foldername
+            if temp:
+                temp = "_" + new_foldername
+            else:
+                temp = new_foldername
+            new_foldername = folder + temp
+        else:
+            if path != "":
+                temp = new_foldername
+                new_foldername = folder + temp
+            break
+
+
+    if not exists(join(destdir, new_foldername)):
+        makedirs(join(destdir, new_foldername))
     elif not override:
         return
 
     mixdown(sourcedir, join(destdir, ntpath.basename(sourcedir)), vocals, instrumentals, ntpath.basename(sourcedir))
+
+    # TODO: Implement Container file type processing
 
 
 def setup_logfile(log_file_dir):
@@ -137,7 +176,7 @@ if __name__ == '__main__':
     if sys.argv.__len__() == 2:
         unmix_server = sys.argv[1]
 
-    sourcedir = unmix_server + "/1_sources/RockBand-GuitarHero/rb-spreadsheet"
+    sourcedir = unmix_server + "/1_sources/RockBand-GuitarHero"
     destdir = unmix_server + "/2_prepared/RockBand-GuitarHero_rb-spreadsheet"
 
     init()
