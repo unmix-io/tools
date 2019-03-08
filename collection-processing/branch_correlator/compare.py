@@ -31,7 +31,7 @@ if __name__ == "__main__":
         unmix_server = sys.argv[1]
 
     song_dir = unmix_server + "/2_prepared/RockBand-GuitarHero"
-    csv_dir = unmix_server + "/2_prepared/RockBand-GuitarHero/_panninginfo"
+    csv_dir = unmix_server + "/1_sources/RockBand-GuitarHero/_panningInfo"
     if not exists(csv_dir): makedirs(csv_dir)
 
     directories = [f for f in listdir(song_dir) if isdir(join(song_dir, f))]
