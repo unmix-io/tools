@@ -1,6 +1,6 @@
 
 srcDir = "/srv/unmix-server/1_sources/RockBand-GuitarHero/"
-destDir = "/srv/unmix-server/2_prepared/RockBand-GuitarHero/"
+destDir = "/srv/unmix-server/1_sources/RockBand-GuitarHero-moggs/"
 
 # Handle multitrackdownloads-alphanumeric
 # This folder contains mogg files (sometimes directly in song folder, sometimes in subfolder).
