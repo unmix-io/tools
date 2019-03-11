@@ -63,29 +63,31 @@ def mixdown(sourcefolder, destination, tracks_vocs, tracks_instr, songname, pand
     track_count_instr_L = 0
     track_count_instr_R = 0
 
-
     track_count = 0
 
     #Read csv with panninginfo
     dict_panning = {}
-    with open(join(pandir, songname) + ".csv") as csv_file:
-        csv_reader = csv.reader(csv_file, delimiter=';')
-        line_count = 0
-        for row in csv_reader:
-            if not line_count == 0:
-                dict_panning[int(row[0])] = row[1]
-            line_count += 1
-
+    try:
+        with open(join(pandir, songname) + ".csv") as csv_file:
+            csv_reader = csv.reader(csv_file, delimiter=';')
+            line_count = 0
+            for row in csv_reader:
+                if not line_count == 0:
+                    dict_panning[int(row[0])] = row[1]
+                line_count += 1
+    except Exception as inst:
+        log_file.write(str(type(inst)) + ": Panningfile of song " + songname + "could not be found")
+        return
 
     try:
         for tracknr, track in enumerate(tracks_vocs):
-            if (dict_panning[int(track[:-4])] == "L"):
+            if dict_panning[int(track[:-4])] == "L":
                 filter_complex_vocs_L += "[" + str(track_count) + ":0]"
                 track_count_vocs_L += 1
-            if (dict_panning[int(track[:-4])] == "R"):
+            if dict_panning[int(track[:-4])] == "R":
                 filter_complex_vocs_R += "[" + str(track_count) + ":0]"
                 track_count_vocs_R += 1
-            if (dict_panning[int(track[:-4])] == "M"):
+            if dict_panning[int(track[:-4])] == "M":
                 filter_complex_vocs_L += "[" + str(track_count) + ":0]"
                 filter_complex_vocs_R += "[" + str(track_count) + ":0]"
                 track_count_vocs_L += 1
@@ -94,13 +96,13 @@ def mixdown(sourcefolder, destination, tracks_vocs, tracks_instr, songname, pand
             sum_volumes_vocs += AudioSegment.from_file(join(sourcefolder, track), pathlib.Path(track).suffix[1:]).dBFS
             track_count += 1
         for tracknr, track in enumerate(tracks_instr):
-            if (dict_panning[int(track[:-4])] == "L"):
+            if dict_panning[int(track[:-4])] == "L":
                 filter_complex_instr_L += "[" + str(track_count) + ":0]"
                 track_count_instr_L += 1
-            if (dict_panning[int(track[:-4])] == "R"):
+            if dict_panning[int(track[:-4])] == "R":
                 filter_complex_instr_R += "[" + str(track_count) + ":0]"
                 track_count_instr_R += 1
-            if (dict_panning[int(track[:-4])] == "M"):
+            if dict_panning[int(track[:-4])] == "M":
                 filter_complex_instr_L += "[" + str(track_count) + ":0]"
                 filter_complex_instr_R += "[" + str(track_count) + ":0]"
                 track_count_instr_L += 1
