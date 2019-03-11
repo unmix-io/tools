@@ -100,9 +100,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # Arguments cleanup
-    if not args.path.endswith('\\'):
-        args.path += '\\'
-
     if args.channels > 2:
         args.channels = 2
     if args.channels < 1:
