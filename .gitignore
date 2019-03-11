@@ -210,5 +210,6 @@ temp/
 
 # Vocal Classifier: training and classifier data
 vocal-classifier/used\ for\ classification/temp-spectrograms/
+model.h5
 vocal-classifier/used\ for\ training/data/
 **/*.simg
