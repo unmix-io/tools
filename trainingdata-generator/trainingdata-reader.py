@@ -11,14 +11,9 @@ import librosa
 import argparse
 import numpy as np
 
-def generate_audiofile(spectrogram_left, spectrogram_right, name, path, fft_window, sample_rate):
+def generate_audiofile(spectrograms, name, path, fft_window, sample_rate):
     file = os.path.join(path, name + ".wav")
-
-    stft_left = generate_stft(spectrogram_left)
-    stft_right = generate_stft(spectrogram_right)
-    audio_left = librosa.istft(stft_left)
-    audio_right = librosa.istft(stft_right)
-    audio = np.array([audio_left, audio_right])
+    audio = np.array(map(lambda spectrogram: librosa.istft((generate_stft(spectrogram))), spectrograms))
     print('Output audio file: %s' % file)
     librosa.output.write_wav(file, audio, sample_rate, norm=False)
 
@@ -42,12 +37,19 @@ if __name__ == '__main__':
 
 
     h5f = h5py.File(args.file,'r')
-    file = h5f['file'].value
+    file = h5f['source'].value
     fft_window = h5f['fft_window'].value
     sample_rate = h5f['sample_rate'].value
-    spectrogram_left = h5f['spectrogram_left'][:, :, :]
-    spectrogram_right = h5f['spectrogram_right'][:, :, :]
-    generate_audiofile(spectrogram_left, spectrogram_right, file, args.path, fft_window, sample_rate)
+    channels = h5f['channels'].value
+
+    spectrograms = []
+    if channels > 1:
+        spectrograms.append(h5f['spectrogram_stereo_left'][:, :, :])
+        spectrograms.append(h5f['spectrogram_stereo_right'][:, :, :])
+    else:
+        spectrograms.append(h5f['spectrogram_mono'][:, :, :])
+        
+    generate_audiofile(spectrograms, file, args.path, fft_window, sample_rate)
 
     h5f.close()
     print('Finished processing')

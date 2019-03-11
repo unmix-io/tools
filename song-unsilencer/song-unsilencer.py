@@ -17,20 +17,20 @@ audio_extensions = ['.wav']
 suffix = 'unsilenced'
 
 def remove_silence(file, length=5000):
-    sound = AudioSegment.from_file(file, format='wav')
+    sound = AudioSegment.from_file(file, format='wav', frame_rate=44100, channels=2, sample_width=2)
     chunks = split_on_silence(sound, min_silence_len=1000, silence_thresh=-30)
     combined = AudioSegment.empty()
-    print('Found %d chunks' % len(chunks))
     for chunk in chunks[:5]:
         combined += chunk
     result_file = '%s_%s.wav' % (file, suffix)
-    combined[:length].export(result_file, format='wav')
+    chopped = combined[:length]
+    chopped.export(result_file, format='wav')
     print('Removed silence from file: %s' % result_file)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Removes silent parts from songs.')
-    parser.add_argument('--path', default='C:\\temp\\unmix.io\\nickelback\\', type=str, help='Working path')
+    parser.add_argument('--path', default='C:\\temp\\unmix.io\\real-test\\', type=str, help='Working path')
     parser.add_argument('--job_count', default=int(multiprocessing.cpu_count() / 2), type=int, help='Maximum number of concurrently running jobs')
 
     args = parser.parse_args()
@@ -47,6 +47,6 @@ if __name__ == '__main__':
 
     print('Remove silence from files with maximum %d jobs...' % args.job_count)
 
-    Parallel(n_jobs=args.job_count)(delayed(remove_silence)(file)                                    for file in files)
+    Parallel(n_jobs=args.job_count)(delayed(remove_silence)(file) for file in files)
 
     print('Finished processing')
