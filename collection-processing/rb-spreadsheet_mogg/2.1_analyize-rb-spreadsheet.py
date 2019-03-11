@@ -8,6 +8,7 @@ import re
 import ntpath
 from pydub import AudioSegment
 import pathlib
+import is_vocal
 import csv
 import subprocess
 import shutil
@@ -22,8 +23,6 @@ paninfo_path = ""
 eligible_simple_filetypes = ['.wav', '.ogg', '.mp3']
 eligible_container_filetypes = ['.mogg']
 
-def is_vocal(sourcedir, file):
-    return True
 
 def is_hidden(filepath):
     name = basename(abspath(filepath))
@@ -77,6 +76,7 @@ def mixdown(sourcefolder, destination, tracks_vocs, tracks_instr, songname, pand
                 line_count += 1
     except Exception as inst:
         log_file.write(str(type(inst)) + ": Panningfile of song " + songname + "could not be found")
+        log_file.flush()
         return
 
     try:
@@ -112,6 +112,7 @@ def mixdown(sourcefolder, destination, tracks_vocs, tracks_instr, songname, pand
             track_count += 1
     except Exception as inst:
             log_file.write(str(type(inst)) + ": Pydub could not read " + track)
+            log_file.flush()
 
     cmd = "ffmpeg " + inp_args + " -filter_complex \"" + filter_complex_vocs_L + "amix=inputs=" + str(track_count_vocs_L) + "[vocsL];" + filter_complex_vocs_R + "amix=inputs=" + str(track_count_vocs_R) + "[vocsR];" + filter_complex_instr_L \
           + "amix=inputs=" + str(track_count_instr_L) + "[instrL];" + filter_complex_instr_R + "amix=inputs=" + str(track_count_instr_R) + "[instrR];[vocsL][vocsR]join=inputs=2:channel_layout=stereo[vocs];[instrL][instrR]join=inputs=2:channel_layout=stereo[instr]\" -map [vocs] -ac 2 -y -ar 44100 \"" + join(temp_path, "vocals_" + songname + ".wav") \
@@ -120,8 +121,10 @@ def mixdown(sourcefolder, destination, tracks_vocs, tracks_instr, songname, pand
     try:
         subprocess.check_call(cmd, shell=True)
         log_file.write("Message: " + songname + " was converted successfully\n")
+        log_file.flush()
     except Exception as inst:
         log_file.write(str(type(inst)) + ": " + songname + " conversion failed\n")
+        log_file.flush()
         return
 
     # Calculate ratio of volume of mixed vocals and volume of mixed instruments. Instruments will be normalized to
@@ -131,8 +134,10 @@ def mixdown(sourcefolder, destination, tracks_vocs, tracks_instr, songname, pand
         normalize(join(temp_path, "vocals_" + songname) + ".wav", join(destination, "vocals_" + songname) + ".wav", target_db_voc)
         normalize(join(temp_path, "instrumental_" + songname) + ".wav", join(destination, "instrumental" + songname) + ".wav", -20)
         log_file.write("Message: " + songname + " was normalized successfully\n")
+        log_file.flush()
     except Exception as inst:
         log_file.write(str(type(inst)) + ": " + songname + " normalization failed\n")
+        log_file.flush()
     finally:
         try:
             files = listdir(temp_path)
@@ -140,6 +145,7 @@ def mixdown(sourcefolder, destination, tracks_vocs, tracks_instr, songname, pand
                 remove(join(temp_path, f))
         except:
             log_file.write("Could not delete tempfile\n")
+            log_file.flush()
 
 
 def file_processing(sourcedir, destdir, maxCopy, override, pandir):
@@ -153,8 +159,8 @@ def file_processing(sourcedir, destdir, maxCopy, override, pandir):
         file_processing(directory_path, destdir, maxCopy, override, pandir)
 
     #Process Simple File Types
-    vocals = [f for f in eligible_simple_files if is_vocal(sourcedir, f)]
-    instrumentals = [f for f in eligible_simple_files if is_vocal(sourcedir, f)]
+    vocals = [f for f in eligible_simple_files if is_vocal.is_vocal(ntpath.basename(sourcedir), f)]
+    instrumentals = [f for f in eligible_simple_files if not is_vocal.is_vocal(ntpath.basename(sourcedir), f)]
 
     # Abort process if there are no vocals or no instrumentals in folder
     if len(vocals) == 0 or len(instrumentals) == 0:
