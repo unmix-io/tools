@@ -94,7 +94,7 @@ if __name__ == '__main__':
     parser.add_argument('--fft_window', default=1536, type=int, help='Size [Samples] of FFT windows')
     parser.add_argument('--sample_rate', default=-1, type=int, help='Optional target samplerate [Hz] for the audiofiles')
     parser.add_argument('--channels', default=2, type=int, help='1 (Mono) or 2 (Stereo)')
-    parser.add_argument('--generate_image', default=True, type=bool, help='If spectrogram image should be generated and saved')
+    parser.add_argument('--generate_image', default='true', type=str, help='If spectrogram image should be generated and saved')
     parser.add_argument('--job_count', default=int(multiprocessing.cpu_count()), type=int, help='Maximum number of concurrently running jobs')
 
     args = parser.parse_args()
@@ -107,6 +107,11 @@ if __name__ == '__main__':
         args.channels = 2
     if args.channels < 1:
         args.channels = 1
+
+    if args.generate_image.lower() in ('no', 'false', 'f', 'n', '0'):
+        args.generate_image = False
+    else:
+        args.generate_image = True
 
     print('Arguments:', str(args))
 
