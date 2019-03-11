@@ -123,7 +123,7 @@ if __name__ == '__main__':
     start = time.time()
     print('Generate spectrograms with maximum %d jobs...' % args.job_count)
     # generate_container(files[0], build_destination(files[0], args.path, args.destination), args.fft_window, args.sample_rate, args.channels, args.generate_image)
-    Parallel(n_jobs=args.job_count)(delayed(generate_container)(file, build_destination(files, args.path, args.destination), args.fft_window, args.sample_rate, args.channels, args.generate_image) for file in files)
+    Parallel(n_jobs=args.job_count)(delayed(generate_container)(file, build_destination(file, args.path, args.destination), args.fft_window, args.sample_rate, args.channels, args.generate_image) for file in files)
     end = time.time()
     
     print('Finished processing in %d [ms]', (end - start))
