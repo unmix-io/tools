@@ -37,7 +37,7 @@ def generate_container(file, destination, fft_window, target_sample_rate, channe
             spectrograms['spectrogram_stereo_left'] = stft_to_complex_spectrogram(generate_spectrogram(destination, audio[0], '0-stereo_left', fft_window, sample_rate, generate_image))
             spectrograms['spectrogram_stereo_right'] = stft_to_complex_spectrogram(generate_spectrogram(destination, audio[1], '1-stereo_right', fft_window, sample_rate, generate_image))
         else:
-            spectrograms['spectrogram_mono'] = stft_to_complex_spectrogram(generate_spectrogram(file, audio[0], '1-mono', fft_window, sample_rate, generate_image))
+            spectrograms['spectrogram_mono'] = stft_to_complex_spectrogram(generate_spectrogram(file, audio, '1-mono', fft_window, sample_rate, generate_image))
 
         file_name = '%s_spectrogram_fft-window[%d]_sample-rate[%d]_channels[%d-%s]' % (destination, fft_window, sample_rate, channels, "stereo" if stereo else "mono")
         save_spectrogram_data(spectrograms, file_name, fft_window, sample_rate, channels)
@@ -93,7 +93,7 @@ if __name__ == '__main__':
     parser.add_argument('--destination', default='U:\\3_training\\musdb18\\', type=str, help='Destination path')
     parser.add_argument('--fft_window', default=1536, type=int, help='Size [Samples] of FFT windows')
     parser.add_argument('--sample_rate', default=-1, type=int, help='Optional target samplerate [Hz] for the audiofiles')
-    parser.add_argument('--channels', default=2, type=int, help='1 (Mono) or 2 (Stereo)')
+    parser.add_argument('--channels', default=1, type=int, help='1 (Mono) or 2 (Stereo)')
     parser.add_argument('--generate_image', default=True, type=bool, help='If spectrogram image should be generated and saved')
     parser.add_argument('--job_count', default=int(multiprocessing.cpu_count()), type=int, help='Maximum number of concurrently running jobs')
 
@@ -120,8 +120,8 @@ if __name__ == '__main__':
 
     start = time.time()
     print('Generate spectrograms with maximum %d jobs...' % args.job_count)
-    generate_container(files[0], build_destination(files[0], args.path, args.destination), args.fft_window, args.sample_rate, args.channels, args.generate_image)
-    # Parallel(n_jobs=args.job_count)(delayed(generate_container)(file, args.fft_window, args.sample_rate, args.channels, args.generate_image) for file in files)
+    # generate_container(files[0], build_destination(files[0], args.path, args.destination), args.fft_window, args.sample_rate, args.channels, args.generate_image)
+    Parallel(n_jobs=args.job_count)(delayed(generate_container)(file, args.fft_window, args.sample_rate, args.channels, args.generate_image) for file in files)
     end = time.time()
     
     print('Finished processing in %d [ms]', (end - start))
