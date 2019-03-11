@@ -63,7 +63,9 @@ namespace AudioQualityAssuranceTool
 
             // Load existing ratings from log file
             if (!Directory.Exists("logs"))
+            {
                 Directory.CreateDirectory("logs");
+            }
 
             foreach (var collection in Files.GroupBy(f => f.Collection))
             {
@@ -81,7 +83,9 @@ namespace AudioQualityAssuranceTool
                         {
                             var matchingFile = Files.FirstOrDefault(f => f.FileName == tempFile.FileName);
                             if (matchingFile != null && !string.IsNullOrEmpty(tempFile.Pass))
+                            {
                                 matchingFile.Pass = bool.Parse(tempFile.Pass);
+                            }
                         }
                     }
                 }
@@ -103,7 +107,14 @@ namespace AudioQualityAssuranceTool
 
         private void ShuffleSongButtonOnClick(object sender, RoutedEventArgs e)
         {
-            PositionSlider.Maximum = Player.Duration;
+            try
+            {
+                PositionSlider.Maximum = Player.Duration;
+            }
+            catch (Exception)
+            {
+                // ignore
+            }
             var position = new Random().NextDouble() * Player.Duration;
             PositionSlider.Value = position;
         }
@@ -206,7 +217,14 @@ namespace AudioQualityAssuranceTool
 
         private void PositionSliderOnValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            PositionSlider.Maximum = Player.Duration;
+            try
+            {
+                PositionSlider.Maximum = Player.Duration;
+            }
+            catch (Exception)
+            {
+                // ignore
+            }
             Player.Seek(PositionSlider.Value);
         }
 
