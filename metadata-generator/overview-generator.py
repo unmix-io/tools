@@ -19,7 +19,7 @@ def generate_csv_template(destination):
     csv_file = os.path.join(destination, overview_filename) 
     with open(csv_file, 'w', newline='', encoding='utf8') as f:
         writer = csv.writer(f, delimiter=';')
-        writer.writerow(['Name', 'File', 'Normalized', 'Folder', 'Collection' 'Path', 'Extension', \
+        writer.writerow(['Name', 'File', 'Normalized', 'Folder', 'Collection', 'Path', 'Extension', \
             'Channels', 'Sample Rate', 'Duration',  \
             'Title', 'Artists', 'Album', 'Genres', \
             'Explicit Content', 'Popularity', \
@@ -46,7 +46,7 @@ def write_csv_row(file, csv_file):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Reads metadata files and generates an overview.')
-    parser.add_argument('--path', default='U:\\2_prepared\\', type=str, help='Working and default destination path')
+    parser.add_argument('--path', default='\\\\192.168.1.29\\unmix-server\\3_filter\\', type=str, help='Working and default destination path')
     parser.add_argument('--destination', default='', type=str, help='Optional destionation path')
 
     args = parser.parse_args()
