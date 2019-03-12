@@ -10,6 +10,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using AudioQualityAssuranceTool.Annotations;
+using AudioQualityAssuranceTool.Properties;
 using CsvHelper;
 using Plugin.SimpleAudioPlayer;
 
@@ -40,12 +41,12 @@ namespace AudioQualityAssuranceTool
             InitializeComponent();
             Player = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer(); ;
 
-            InputFolderTextBox.Text = @"\\192.168.1.29\unmix-server\2_prepared\musdb18";
+            InputFolderTextBox.Text = Settings.Default.LoadPath;
             LoadButton_Click(null, null);
         }
         private void MainWindowOnClosed(object sender, EventArgs e)
         {
-            Properties.Settings.Default.Save();
+            Settings.Default.Save();
         }
 
         private void LoadButton_Click(object sender, RoutedEventArgs e)
@@ -56,9 +57,10 @@ namespace AudioQualityAssuranceTool
                 return;
             }
 
+            Settings.Default.LoadPath = path;
             Player.Stop();
             Files = Directory.EnumerateFiles(path, $"{RatingFile.VocalsPrefix}*.wav", SearchOption.AllDirectories)
-                .Select(file => new RatingFile { File = new FileInfo(file) }).ToList();
+                .Select(file => new RatingFile { File = new FileInfo(file) }).OrderBy(f => f.FileName).ToList();
 
 
             // Load existing ratings from log file
@@ -92,7 +94,7 @@ namespace AudioQualityAssuranceTool
             }
             Songs = new ObservableCollection<RatingFile>(Files);
             OnPropertyChanged(nameof(Songs));
-            var prefixes = Files.Select(f => f.Prefix).Distinct().ToList();
+            var prefixes = Files.Select(f => f.Prefix).Distinct().OrderBy(p => p).ToList();
             FilterComboBox.ItemsSource = prefixes;
             FilterComboBox.SelectedValue = prefixes.FirstOrDefault();
         }

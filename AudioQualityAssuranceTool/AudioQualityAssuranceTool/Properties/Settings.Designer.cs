@@ -22,5 +22,17 @@ namespace AudioQualityAssuranceTool.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\Data\\unmix.io\\RockBand-GuitarHero_rb-spreadsheet")]
+        public string LoadPath {
+            get {
+                return ((string)(this["LoadPath"]));
+            }
+            set {
+                this["LoadPath"] = value;
+            }
+        }
     }
 }
