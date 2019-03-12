@@ -84,7 +84,7 @@ namespace AudioQualityAssuranceTool
                             var matchingFile = Files.FirstOrDefault(f => f.FileName == tempFile.FileName);
                             if (matchingFile != null && !string.IsNullOrEmpty(tempFile.Status))
                             {
-                                matchingFile.Status = Enum.Parse(typeof(RatingStatus), tempFile.Status.ToString());
+                                matchingFile.Status = Enum.Parse(typeof(RatingStatus), tempFile.Status.ToString().ToUpper());
                             }
                         }
                     }
@@ -131,19 +131,19 @@ namespace AudioQualityAssuranceTool
 
         private void BadSongButtonOnClick(object sender, RoutedEventArgs e)
         {
-            PassSelectedSong(RatingStatus.Bad);
+            PassSelectedSong(RatingStatus.BAD);
             SelectNextSong();
         }
 
         private void GoodSongButtonOnClick(object sender, RoutedEventArgs e)
         {
-            PassSelectedSong(RatingStatus.Good);
+            PassSelectedSong(RatingStatus.GOOD);
             SelectNextSong();
         }
 
         private void PerfectSongButtonOnClick(object sender, RoutedEventArgs e)
         {
-            PassSelectedSong(RatingStatus.Perfect);
+            PassSelectedSong(RatingStatus.PERFECT);
             SelectNextSong();
         }
 
