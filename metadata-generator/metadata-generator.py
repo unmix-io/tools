@@ -39,7 +39,7 @@ def generate_metadata(file):
     metadata['folder'] = os.path.basename(os.path.dirname(file))
     metadata['collection'] = os.path.basename(os.path.dirname(os.path.dirname(file)))
     normalized_name = reduce((lambda x, y: x.replace(y, '')), [file_name] + replace_tokens)
-    normalized_name = re.sub(r'[^a-zA-Z0-9]+', '', normalized_name).lower()
+    normalized_name = re.sub(r'[^a-zA-Z]+', '', normalized_name).lower()
     metadata['normalized_name'] = normalized_name
     
     try:
