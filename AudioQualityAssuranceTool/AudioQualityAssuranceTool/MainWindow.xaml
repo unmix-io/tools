@@ -51,6 +51,7 @@
                     <GridView>
                         <GridViewColumn Header="File" Width="120" DisplayMemberBinding="{Binding FileName}" />
                         <GridViewColumn Header="Collection" Width="120" DisplayMemberBinding="{Binding Collection}" />
+                        <GridViewColumn Header="Prefix" Width="120" DisplayMemberBinding="{Binding Prefix}" />
                         <GridViewColumn Header="Pass" Width="120" DisplayMemberBinding="{Binding Status, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
                     </GridView>
                 </ListView.View>

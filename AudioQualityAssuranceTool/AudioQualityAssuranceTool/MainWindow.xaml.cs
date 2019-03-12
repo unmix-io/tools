@@ -1,18 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
-using AudioQualityAssuranceTool.Annotations;
-using AudioQualityAssuranceTool.Properties;
+using System.ComponentModel;
+using System.Windows.Controls;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Runtime.CompilerServices;
+
 using CsvHelper;
 using Plugin.SimpleAudioPlayer;
+
+using AudioQualityAssuranceTool.Properties;
+using AudioQualityAssuranceTool.Annotations;
 
 namespace AudioQualityAssuranceTool
 {
@@ -75,7 +76,9 @@ namespace AudioQualityAssuranceTool
                 {
                     var logFile = $"logs/{collection.Key}-{grouping.Key}-log.txt";
                     if (!File.Exists(logFile))
+                    {
                         continue;
+                    }
 
                     using (var reader = new StreamReader(logFile))
                     using (var csv = new CsvReader(reader))
@@ -102,6 +105,10 @@ namespace AudioQualityAssuranceTool
 
         private void FilterComboBoxOnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (e.AddedItems.Count <= 0)
+            {
+                return;
+            }
             Player.Stop();
             var filter = e.AddedItems[0].ToString();
             Songs = new ObservableCollection<RatingFile>(Files.Where(f => string.IsNullOrEmpty(filter) || f.Prefix == filter));
@@ -165,7 +172,7 @@ namespace AudioQualityAssuranceTool
 
         private void SaveSongs()
         {
-            if (String.IsNullOrEmpty(FilterComboBox.Text))
+            if (string.IsNullOrEmpty(FilterComboBox.Text))
             {
                 throw new Exception("Choose Filter value.");
             }
