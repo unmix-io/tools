@@ -7,8 +7,11 @@ using CsvHelper.Configuration.Attributes;
 
 namespace AudioQualityAssuranceTool
 {
+    public enum RatingStatus { Bad, Good, Perfect }
+
     public class RatingFile : INotifyPropertyChanged
     {
+
         public event PropertyChangedEventHandler PropertyChanged;
         [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -23,26 +26,26 @@ namespace AudioQualityAssuranceTool
 
         public FileInfo File;
 
-        private bool? _pass;
+        public bool? Pass => Status > RatingStatus.Bad;
 
-        public bool? Pass
+
+        private RatingStatus? _status;
+
+        public RatingStatus? Status
         {
-            get => _pass;
+            get => _status;
             set
             {
-                _pass = value;
-                OnPropertyChanged();
-                OnPropertyChanged("Status");
+                _status = value;
+                OnPropertyChanged(nameof(Status));
             }
         }
-
-        public string Status => Pass == true ? "GOOD" : Pass == false ? "BAD" : "?";
 
         public string FileName => File?.Name ?? string.Empty;
 
         public string Collection => File?.Directory?.Parent?.Name ?? string.Empty;
 
-        public string Prefix => FileName.Replace(VocalsPrefix, string.Empty)?.Substring(0,1) ?? string.Empty;
+        public string Prefix => FileName.Replace(VocalsPrefix, string.Empty)?.Substring(0, 1) ?? string.Empty;
 
         public RatingFile()
         {

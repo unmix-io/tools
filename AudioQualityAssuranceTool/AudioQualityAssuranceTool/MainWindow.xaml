@@ -18,8 +18,8 @@
         <DockPanel Grid.Row="0" LastChildFill="False" Margin="0,0,50,10">
             <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
                 <Label>Folder:</Label>
-                <TextBox Name="InputFolderTextBox" Width="400" />
-                <Button Name="LoadButton" Padding="2" Click="LoadButton_Click">Load</Button>
+                <TextBox Name="InputFolderTextBox" Width="400" Margin="0,0,10,0" />
+                <Button Name="LoadButton" Padding="2" Width="50" Click="LoadButton_Click">Load</Button>
             </StackPanel>
             <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
                 <Label>Filter:</Label>
@@ -37,11 +37,13 @@
                     <Slider Name="PositionSlider" Minimum="0" ValueChanged="PositionSliderOnValueChanged" VerticalAlignment="Center" Margin="0,0,20,0"/>
                 </DockPanel>
                 <StackPanel Orientation="Horizontal">
+                    <Button Name="PreviousSongButton" Padding="4" Margin="0,0,10,0" Click="PreviousSongButtonOnClick">Previous [E]</Button>
                     <Button Name="ShuffleSongButton" Padding="4" Margin="0,0,10,0" Click="ShuffleSongButtonOnClick">? Shuffle [R]</Button>
-                    <Button Name="SkipSongButton" Padding="4" Margin="0,0,10,0" Click="SkipSongButtonOnClick">> Skip [N]</Button>
-                    <Button Name="GoodSongButton" Padding="4" Margin="0,0,10,0" Click="GoodSongButtonOnClick">Good [Y]</Button>
-                    <Button Name="BadSongButton" Padding="4" Margin="0,0,10,0" Click="BadSongButtonOnClick">Bad [X]</Button>
-                    <Button Name="PauseSongButton" Padding="4" Margin="0,0,10,0" Click="PauseSongButtonOnClick">Pause [P]</Button>
+                    <Button Name="SkipSongButton" Padding="4" Margin="0,0,10,0" Click="SkipSongButtonOnClick">Skip [T]</Button>
+                    <Button x:Name="PauseSongButton" Padding="4" Margin="0,0,80,0" Click="PauseSongButtonOnClick" Content="Pause [P]"/>
+                    <Button Name="BadSongButton" Padding="4" Margin="0,0,10,0" Click="BadSongButtonOnClick" Background="#FFFF7878">Bad [1]</Button>
+                    <Button Name="GoodSongButton" Padding="4" Margin="0,0,10,0" Click="GoodSongButtonOnClick" Background="#FF88FFF4">Good [2]</Button>
+                    <Button Name="PerfectSongButton" Padding="4" Margin="0,0,10,0" Click="PerfectSongButtonOnClick" Background="#FFACFF8E">Perfect [3]</Button>
                 </StackPanel>
             </StackPanel>
             <ListView Grid.Row="1" Name="SongsListView" ItemsSource="{Binding Songs}" SelectionChanged="SongsListViewOnSelectionChanged" VerticalAlignment="Stretch" Height="400" >

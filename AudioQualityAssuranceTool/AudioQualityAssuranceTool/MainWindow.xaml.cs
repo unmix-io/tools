@@ -82,9 +82,9 @@ namespace AudioQualityAssuranceTool
                         foreach (var tempFile in tempFiles)
                         {
                             var matchingFile = Files.FirstOrDefault(f => f.FileName == tempFile.FileName);
-                            if (matchingFile != null && !string.IsNullOrEmpty(tempFile.Pass))
+                            if (matchingFile != null && !string.IsNullOrEmpty(tempFile.Status))
                             {
-                                matchingFile.Pass = bool.Parse(tempFile.Pass);
+                                matchingFile.Status = Enum.Parse(typeof(RatingStatus), tempFile.Status.ToString());
                             }
                         }
                     }
@@ -110,41 +110,51 @@ namespace AudioQualityAssuranceTool
             try
             {
                 PositionSlider.Maximum = Player.Duration;
+                var position = new Random().NextDouble() * Player.Duration;
+                PositionSlider.Value = position;
             }
             catch (Exception)
             {
                 // ignore
             }
-            var position = new Random().NextDouble() * Player.Duration;
-            PositionSlider.Value = position;
         }
 
         private void SkipSongButtonOnClick(object sender, RoutedEventArgs e)
         {
+            SelectNextSong(1);
+        }
+
+        private void PreviousSongButtonOnClick(object sender, RoutedEventArgs e)
+        {
+            SelectNextSong(-1);
+        }
+
+        private void BadSongButtonOnClick(object sender, RoutedEventArgs e)
+        {
+            PassSelectedSong(RatingStatus.Bad);
             SelectNextSong();
         }
 
         private void GoodSongButtonOnClick(object sender, RoutedEventArgs e)
         {
-            PassSelectedSong(true);
+            PassSelectedSong(RatingStatus.Good);
             SelectNextSong();
         }
 
-        private void BadSongButtonOnClick(object sender, RoutedEventArgs e)
+        private void PerfectSongButtonOnClick(object sender, RoutedEventArgs e)
         {
-            PassSelectedSong(false);
+            PassSelectedSong(RatingStatus.Perfect);
             SelectNextSong();
         }
 
-        private void PassSelectedSong(bool pass)
+        private void PassSelectedSong(RatingStatus status)
         {
             if (!(SongsListView.SelectedItem is RatingFile selected))
             {
                 return;
             }
-
-            selected.Pass = pass;
-            Files.First(f => f.Id == selected.Id).Pass = pass;
+            selected.Status = status;
+            Files.First(f => f.Id == selected.Id).Status = status;
             OnPropertyChanged(nameof(Songs));
 
             SaveSongs();
@@ -168,11 +178,11 @@ namespace AudioQualityAssuranceTool
             }
         }
 
-        private void SelectNextSong()
+        private void SelectNextSong(int skipper = 1)
         {
             try
             {
-                SongsListView.SelectedIndex = SongsListView.SelectedIndex + 1;
+                SongsListView.SelectedIndex = SongsListView.SelectedIndex + skipper;
             }
             catch (Exception)
             {
@@ -232,17 +242,26 @@ namespace AudioQualityAssuranceTool
         {
             switch (e.Key)
             {
-                case Key.Y:
-                    GoodSongButtonOnClick(null, null);
-                    break;
-                case Key.X:
+                case Key.D1:
+                case Key.NumPad1:
                     BadSongButtonOnClick(null, null);
                     break;
-                case Key.N:
-                    SkipSongButtonOnClick(null, null);
+                case Key.D2:
+                case Key.NumPad2:
+                    GoodSongButtonOnClick(null, null);
+                    break;
+                case Key.D3:
+                case Key.NumPad3:
+                    PerfectSongButtonOnClick(null, null);
+                    break;
+                case Key.E:
+                    PreviousSongButtonOnClick(null, null);
                     break;
                 case Key.R:
                     ShuffleSongButtonOnClick(null, null);
+                    break;
+                case Key.T:
+                    SkipSongButtonOnClick(null, null);
                     break;
                 case Key.P:
                 case Key.Space:
