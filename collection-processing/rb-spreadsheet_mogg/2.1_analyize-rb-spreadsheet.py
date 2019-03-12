@@ -20,7 +20,7 @@ c_0_ogg = 0
 
 temp_path = "./temp"
 paninfo_path = ""
-eligible_simple_filetypes = ['.wav', '.ogg', '.mp3']
+eligible_simple_filetypes = ['.wav', '.ogg', '.mp3', '.flac']
 eligible_container_filetypes = ['.mogg']
 
 

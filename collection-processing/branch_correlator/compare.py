@@ -22,7 +22,7 @@ if __name__ == "__main__":
     #SOURCE_FILE, TARGET_FILE = initialize()
 
     maxCopy = -1
-    override = True
+    override = False
     unmix_server = '//192.168.1.29/unmix-server'
 
     print('Argument List:', str(sys.argv))
@@ -30,7 +30,7 @@ if __name__ == "__main__":
     if sys.argv.__len__() == 2:
         unmix_server = sys.argv[1]
 
-    song_dir = unmix_server + "/2_prepared/RockBand-GuitarHero"
+    song_dir = unmix_server + "/1_sources/RockBand-GuitarHero-moggs"
     csv_dir = unmix_server + "/1_sources/RockBand-GuitarHero/_panningInfo"
     if not exists(csv_dir): makedirs(csv_dir)
 
