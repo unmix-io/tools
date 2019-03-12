@@ -36,6 +36,11 @@ def generate_metadata(file):
     metadata['file'] = file
     metadata['path'] = os.path.dirname(file)
     metadata['extension'] = extension
+    metadata['folder'] = os.path.basename(os.path.dirname(file))
+    metadata['collection'] = os.path.basename(os.path.dirname(os.path.dirname(file)))
+    normalized_name = reduce((lambda x, y: x.replace(y, '')), [file_name] + replace_tokens)
+    normalized_name = re.sub(r'[^a-zA-Z0-9]+', '', normalized_name).lower()
+    metadata['normalized_name'] = normalized_name
     
     try:
         with audioread.audio_open(file) as f:
@@ -43,11 +48,6 @@ def generate_metadata(file):
             metadata['sample_rate'] = f.samplerate
             metadata['duration'] = f.duration
         metadata = spotify_metadata(file_name, metadata)
-        metadata['folder'] = os.path.basename(os.path.dirname(file))
-        metadata['collection'] = os.path.basename(os.path.dirname(os.path.dirname(file)))
-        normalized_name = reduce((lambda x, y: x.replace(y, '')), [file_name] + replace_tokens)
-        normalized_name = re.sub(r'[^a-zA-Z0-9]+', '', normalized_name).lower()
-        metadata['normalized_name'] = normalized_name
     except:
         pass
     metadata_file = os.path.join(os.path.dirname(file), '%s_metadata.json' % file_name) 
@@ -115,7 +115,7 @@ def set_spotify_token():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Generate and store meta data for audio files.')
-    parser.add_argument('--path', default='\\\\192.168.1.29\\unmix-server\\3_filter\\RockBand-GuitarHero-moggs\\', type=str, help='Working path')
+    parser.add_argument('--path', default='\\\\192.168.1.29\\unmix-server\\3_filter\\', type=str, help='Working path')
     parser.add_argument('--job_count', default=int(multiprocessing.cpu_count() / 2), type=int, help='Maximum number of concurrently running jobs')
 
     args = parser.parse_args()
