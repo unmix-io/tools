@@ -80,6 +80,7 @@ namespace AudioQualityAssuranceTool
                     using (var reader = new StreamReader(logFile))
                     using (var csv = new CsvReader(reader))
                     {
+                        csv.Configuration.Delimiter = ";";
                         var tempFiles = csv.GetRecords<dynamic>().ToList();
                         foreach (var tempFile in tempFiles)
                         {
@@ -175,6 +176,7 @@ namespace AudioQualityAssuranceTool
                 using (var writer = new StreamWriter(logFile))
                 using (var csv = new CsvWriter(writer))
                 {
+                    csv.Configuration.Delimiter = ";";
                     csv.WriteRecords(collection.Where(f => f.Pass.HasValue));
                 }
             }
