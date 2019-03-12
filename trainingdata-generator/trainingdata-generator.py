@@ -90,7 +90,7 @@ def build_destination(file, path, destination):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Creates hierarchical data format files including complexe frequency spectrograms for audio files in a given folder.')
     parser.add_argument('--path', default='U:\\2_prepared\\musdb18\\', type=str, help='Working path')
-    parser.add_argument('--destination', default='U:\\3_training\\musdb18\\', type=str, help='Destination path')
+    parser.add_argument('--destination', default='U:\\4_training\\musdb18\\', type=str, help='Destination path')
     parser.add_argument('--fft_window', default=1536, type=int, help='Size [Samples] of FFT windows')
     parser.add_argument('--sample_rate', default=-1, type=int, help='Optional target samplerate [Hz] for the audiofiles')
     parser.add_argument('--channels', default=2, type=int, help='1 (Mono) or 2 (Stereo)')

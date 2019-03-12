@@ -19,13 +19,13 @@ def generate_csv_template(destination):
     csv_file = os.path.join(destination, overview_filename) 
     with open(csv_file, 'w', newline='', encoding='utf8') as f:
         writer = csv.writer(f, delimiter=';')
-        writer.writerow(['Name', 'File', 'Path', 'Extension', \
+        writer.writerow(['Name', 'File', 'Normalized', 'Folder', 'Collection' 'Path', 'Extension', \
             'Channels', 'Sample Rate', 'Duration',  \
             'Title', 'Artists', 'Album', 'Genres', \
             'Explicit Content', 'Popularity', \
             'Danceability', 'Energy', 'Loudness', 'Speechiness', \
             'Acousticness', 'Instrumentalness', 'Liveness', \
-            'Valence', 'Tempo', 'Spotify ID'])        
+            'Valence', 'Tempo', 'Spotify ID'])
     return csv_file
 
 def write_csv_row(file, csv_file):
@@ -34,7 +34,8 @@ def write_csv_row(file, csv_file):
     features = data.get('features', {})
     with open(csv_file, 'a', newline='', encoding='utf8') as f:
         writer = csv.writer(f, delimiter=';')
-        writer.writerow([data.get('name'), data.get('file'), data.get('path'), data.get('extension'), \
+        writer.writerow([data.get('name'), data.get('file'), data.get('normalized_name'), data.get('folder'), data.get('collection'), \
+            data.get('path'), data.get('extension'), \
             data.get('channels'), data.get('sample_rate'), data.get('duration'), \
             data.get('title'), ', '.join(data.get('artists', [''])), data.get('album'), ', '.join(data.get('genres', [''])), \
             data.get('explicit_content'), data.get('spotify_popularity'), \
