@@ -38,6 +38,7 @@ def read_csv(metadata_csv):
                 for line in csvreader:
                     if line[2] == duplicate:
                         duplicates.append(line)
+                print(duplicates[0][9] + " - " + duplicates[1][9] + " = " + str(float(duplicates[0][9]) - float(duplicates[1][9])))
                 priority = -1
                 file_to_delete = ''
                 for dupl in duplicates:
