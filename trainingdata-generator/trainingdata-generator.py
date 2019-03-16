@@ -28,8 +28,10 @@ def generate_container(file, destination, fft_window, target_sample_rate, channe
     try:
         path = os.path.dirname(destination)
         if not os.path.exists(path):
-            os.makedirs(path)
-
+            try:
+                os.makedirs(path)
+            except:
+                pass
         stereo = channels > 1
         audio, sample_rate = librosa.load(file, mono=not stereo, sr=target_sample_rate if target_sample_rate > 0 else None)
         spectrograms = {}
@@ -42,7 +44,7 @@ def generate_container(file, destination, fft_window, target_sample_rate, channe
         file_name = '%s_spectrogram_fft-window[%d]_sample-rate[%d]_channels[%d-%s]' % (destination, fft_window, sample_rate, channels, "stereo" if stereo else "mono")
         save_spectrogram_data(spectrograms, file_name, fft_window, sample_rate, channels)
         print('Generated spectrogram %s' % file_name)
-    except (RuntimeError, TypeError, NameError, audioread.NoBackendError):
+    except:
         print('Error while generating spectrogram for %s' % file)
         pass
 
@@ -89,7 +91,7 @@ def build_destination(file, path, destination):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Creates hierarchical data format files including complexe frequency spectrograms for audio files in a given folder.')
-    parser.add_argument('--path', default='U:\\2_prepared\\musdb18\\', type=str, help='Working path')
+    parser.add_argument('--path', default='U:\\3_filter\\musdb18\\', type=str, help='Working path')
     parser.add_argument('--destination', default='U:\\4_training\\musdb18\\', type=str, help='Destination path')
     parser.add_argument('--fft_window', default=1536, type=int, help='Size [Samples] of FFT windows')
     parser.add_argument('--sample_rate', default=-1, type=int, help='Optional target samplerate [Hz] for the audiofiles')
