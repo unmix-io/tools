@@ -36,8 +36,8 @@ def generate_container(file, destination, fft_window, target_sample_rate, channe
         audio, sample_rate = librosa.load(file, mono=not stereo, sr=target_sample_rate if target_sample_rate > 0 else None)
         spectrograms = {}
         if stereo:
-            spectrograms['spectrogram_stereo_left'] = stft_to_complex_spectrogram(generate_spectrogram(destination, audio if isinstance(audio, (np.ndarray)) else audio[0], '0-stereo_left', fft_window, sample_rate, generate_image))
-            spectrograms['spectrogram_stereo_right'] = stft_to_complex_spectrogram(generate_spectrogram(destination, audio if isinstance(audio, (np.ndarray)) else audio[1], '1-stereo_right', fft_window, sample_rate, generate_image))
+            spectrograms['spectrogram_stereo_left'] = stft_to_complex_spectrogram(generate_spectrogram(destination, audio[0] if isinstance(audio[0], (np.ndarray)) else audio, '0-stereo_left', fft_window, sample_rate, generate_image))
+            spectrograms['spectrogram_stereo_right'] = stft_to_complex_spectrogram(generate_spectrogram(destination, audio[1] if isinstance(audio[1], (np.ndarray)) else audio, '1-stereo_right', fft_window, sample_rate, generate_image))
         else:
             spectrograms['spectrogram_mono'] = stft_to_complex_spectrogram(generate_spectrogram(file, audio, '1-mono', fft_window, sample_rate, generate_image))
 
@@ -91,11 +91,11 @@ def build_destination(file, path, destination):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Creates hierarchical data format files including complexe frequency spectrograms for audio files in a given folder.')
-    parser.add_argument('--path', default='U:\\3_filter\\musdb18\\', type=str, help='Working path')
-    parser.add_argument('--destination', default='U:\\4_training\\musdb18\\', type=str, help='Destination path')
+    parser.add_argument('--path', default='U:\\3_filter\\cambridge-mt\\PatrickTalbot_Blue_Full\\', type=str, help='Working path')
+    parser.add_argument('--destination', default='U:\\3_filter\\cambridge-mt\PatrickTalbot_Blue_Full\\', type=str, help='Destination path')
     parser.add_argument('--fft_window', default=1536, type=int, help='Size [Samples] of FFT windows')
     parser.add_argument('--sample_rate', default=11025, type=int, help='Optional target samplerate [Hz] for the audiofiles')
-    parser.add_argument('--channels', default=2, type=int, help='1 (Mono) or 2 (Stereo)')
+    parser.add_argument('--channels', default=1, type=int, help='1 (Mono) or 2 (Stereo)')
     parser.add_argument('--generate_image', default='true', type=str, help='If spectrogram image should be generated and saved')
     parser.add_argument('--job_count', default=int(multiprocessing.cpu_count()), type=int, help='Maximum number of concurrently running jobs')
 
@@ -124,8 +124,8 @@ if __name__ == '__main__':
 
     start = time.time()
     print('Generate spectrograms with maximum %d jobs...' % args.job_count)
-    # generate_container(files[0], build_destination(files[0], args.path, args.destination), args.fft_window, args.sample_rate, args.channels, args.generate_image)
-    Parallel(n_jobs=args.job_count)(delayed(generate_container)(file, build_destination(file, args.path, args.destination), args.fft_window, args.sample_rate, args.channels, args.generate_image) for file in files)
+    generate_container(files[0], build_destination(files[0], args.path, args.destination), args.fft_window, args.sample_rate, args.channels, args.generate_image)
+    #Parallel(n_jobs=args.job_count)(delayed(generate_container)(file, build_destination(file, args.path, args.destination), args.fft_window, args.sample_rate, args.channels, args.generate_image) for file in files)
     end = time.time()
     
     print('Finished processing in %d [ms]', (end - start))
