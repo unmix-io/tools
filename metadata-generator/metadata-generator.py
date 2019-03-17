@@ -6,6 +6,7 @@ __author__ = 'David Flury'
 __email__ = "david@flury.email"
 
 import os
+import re
 import glob
 import json
 import argparse
@@ -13,9 +14,13 @@ import requests
 import audioread
 import multiprocessing
 from joblib import Parallel, delayed
+from functools import reduce
+
 
 audio_extensions = ['.wav', '.mp3']
-file_prefix = 'instrumental_'
+file_prefix = 'vocals_'
+
+replace_tokens = ['mogg_fixed', 'mogg_extract', 'mogg']
 
 spotify_token = ''
 
@@ -31,13 +36,17 @@ def generate_metadata(file):
     metadata['file'] = file
     metadata['path'] = os.path.dirname(file)
     metadata['extension'] = extension
+    metadata['folder'] = os.path.basename(os.path.dirname(file))
+    metadata['collection'] = os.path.basename(os.path.dirname(os.path.dirname(file)))
+    normalized_name = reduce((lambda x, y: x.replace(y, '')), [file_name] + replace_tokens)
+    normalized_name = re.sub(r'[^a-zA-Z0-9]+', '', normalized_name).lower()
+    metadata['normalized_name'] = normalized_name
     
     try:
-
         with audioread.audio_open(file) as f:
             metadata['channels'] = f.channels
             metadata['sample_rate'] = f.samplerate
-            metadata['duration'] = f.duration    
+            metadata['duration'] = f.duration
         metadata = spotify_metadata(file_name, metadata)
     except:
         pass
@@ -106,7 +115,7 @@ def set_spotify_token():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Generate and store meta data for audio files.')
-    parser.add_argument('--path', default='U:\\2_prepared\\musdb18\\', type=str, help='Working path')
+    parser.add_argument('--path', default='\\\\192.168.1.29\\unmix-server\\3_filter\\', type=str, help='Working path')
     parser.add_argument('--job_count', default=int(multiprocessing.cpu_count() / 2), type=int, help='Maximum number of concurrently running jobs')
 
     args = parser.parse_args()

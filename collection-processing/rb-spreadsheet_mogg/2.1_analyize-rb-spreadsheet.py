@@ -20,7 +20,7 @@ c_0_ogg = 0
 
 temp_path = "./temp"
 paninfo_path = ""
-eligible_simple_filetypes = ['.wav', '.ogg', '.mp3']
+eligible_simple_filetypes = ['.wav', '.ogg', '.mp3', '.flac']
 eligible_container_filetypes = ['.mogg']
 
 
@@ -132,7 +132,7 @@ def mixdown(sourcefolder, destination, tracks_vocs, tracks_instr, songname, pand
     try:
         target_db_voc = -20 + ( -20 * ((sum_volumes_vocs / tracks_vocs.__len__()) / (sum_volumes_instr / tracks_instr.__len__()) - 1))
         normalize(join(temp_path, "vocals_" + songname) + ".wav", join(destination, "vocals_" + songname) + ".wav", target_db_voc)
-        normalize(join(temp_path, "instrumental_" + songname) + ".wav", join(destination, "instrumental" + songname) + ".wav", -20)
+        normalize(join(temp_path, "instrumental_" + songname) + ".wav", join(destination, "instrumental_" + songname) + ".wav", -20)
         log_file.write("Message: " + songname + " was normalized successfully\n")
         log_file.flush()
     except Exception as inst:
