@@ -1,0 +1,47 @@
+FileName;Collection;Prefix;Status;Pass
+vocals_J. Geils Band - Freeze Frame.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;GOOD;True
+vocals_Jack White & Alicia Keys - Another Way To Die.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_James Brown - Get Up (I Feel Like A) Sex Machine.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_Jane's Addiction - Chip Away.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Jane's Addiction - Irresistable Force.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Jane's Addiction - Stop!.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Jane's Addiction - Whores.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;GOOD;True
+vocals_Janet Jackson - Black Cat.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Jason Derulo - Don't Wanna Go Home.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Jeff Beck - Scatterbrain (Live).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_Jesse McCartney - Beautiful Soul.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Jimmy Buffet - Cheeseburger In Paradise.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Jimmy Buffet - Margaritaville.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Jimmy Buffet - Volcano.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Jimmy Eat World - Pain.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Jimmy Eat World - The Middle.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Joan Jett & The Blackhearts - Bad Reputation.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;GOOD;True
+vocals_Joan Jett and the Blackhearts - I Love Rock 'n Roll.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;GOOD;True
+vocals_Joe Bonamassa - Lonesome Road Blues.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_John Lennon - Gimme Some Truth.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_John Lennon - How Do You Sleep.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;GOOD;True
+vocals_John Lennon - How.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_John Lennon - I Don't Want To Be A Soldier.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_John Lennon - It's So Hard.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_John Lennon - Jealous Guy.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_John Lennon - Oh My Love.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;GOOD;True
+vocals_John Lennon - Oh Yoko.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_John Lennon And The Plastic Ono Band - Happy XMas (War Is Over).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_John Mellencamp - Hurts So Good.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_Johnny Cash - Ring Of Fire.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_Jonathan Coulton - Creepy Doll.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Jonathan Coulton - Shop Vac.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;GOOD;True
+vocals_Jonathan Coulton - Still Alive.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Jonathan Coulton - You Ruined Everything.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Journey - Any Way You Want It.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;GOOD;True
+vocals_Judas Priest - (Take These) Chains.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Judas Priest - Bloodstone.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;GOOD;True
+vocals_Judas Priest - Devil's Child.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_Judas Priest - Electric Eye.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_Judas Priest - Fever.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;GOOD;True
+vocals_Judas Priest - Hell Bent For Leather.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;GOOD;True
+vocals_Judas Priest - Pain And Pleasure.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_Judas Priest - Painkiller.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;BAD;False
+vocals_Judas Priest - Riding On The Wind.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;PERFECT;True
+vocals_Judas Priest - Screaming For Vengeance.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;GOOD;True
+vocals_Judas Priest - You Got Another Thing Comin'.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;J;GOOD;True

@@ -1,0 +1,19 @@
+FileName;Collection;Prefix;Status;Pass
+vocals_Eagles - Frail Grasp On The Big Picture.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;PERFECT;True
+vocals_Eagles - Hotel California.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;PERFECT;True
+vocals_Eagles - Life In The Fast Lane.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;PERFECT;True
+vocals_Eagles - One Of These Nights.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;GOOD;True
+vocals_Eagles - Take It Easy.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;PERFECT;True
+vocals_Eagles Of Death Metal - Anything 'Cept The Truth.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;PERFECT;True
+vocals_Edgar Winter - Free Ride.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;BAD;False
+vocals_Editors - Munich.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;GOOD;True
+vocals_Electric 6 - Gay Bar.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;PERFECT;True
+vocals_Elliott Smith - L.A..mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;BAD;False
+vocals_Elton John - Crocodile Rock.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;PERFECT;True
+vocals_Elton John - Saturday Night's Alright (For Fighting).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;PERFECT;True
+vocals_Elvis Costello - Pump It Up.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;BAD;False
+vocals_Europe - The Final Countdown.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;PERFECT;True
+vocals_Evancescene - Lithium.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;PERFECT;True
+vocals_Everclear - Santa Monica (Watch The World Die).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;GOOD;True
+vocals_Everlife - Real Wild Child.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;PERFECT;True
+vocals_Extreme - Play With Me.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;E;GOOD;True

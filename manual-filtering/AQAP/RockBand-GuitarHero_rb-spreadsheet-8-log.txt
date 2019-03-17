@@ -1,0 +1,13 @@
+FileName;RockBand-GuitarHero_rb-spreadsheet;Status;Pass;Prefix
+vocals_8. Jimi Hendrix - You Got Me Floatin'.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;8
+vocals_80 - Do You Feel Like We Do (Live).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;8
+vocals_80. Steely Dan - Bodhisattva.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;8
+vocals_81 - Lust for Life (Live).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;8
+vocals_81 - Pull Me Under.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;8
+vocals_81. Metallica - Battery.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;8
+vocals_82 - Superstition.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;8
+vocals_82. Dream Theater - Panic Attack.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;8
+vocals_83 - Purple Haze.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;8
+vocals_83. Abnormality - Visions.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;8
+vocals_84 - Hot for Teacher.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;8
+vocals_84. Judas Priest - Painkiller.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;8

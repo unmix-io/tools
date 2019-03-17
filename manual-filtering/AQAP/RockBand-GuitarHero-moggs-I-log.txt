@@ -1,0 +1,17 @@
+FileName;Collection;Prefix;Status;Pass
+vocals_I Fight Dragons - Money.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;GOOD;True
+vocals_I Fight Dragons - No One Likes Superman.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;GOOD;True
+vocals_I Mother Earth - Levitate.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;BAD;False
+vocals_Iggy Pop - The Passenger.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;BAD;False
+vocals_In Flames - Disconnected.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;PERFECT;True
+vocals_Incubus - Dig.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;PERFECT;True
+vocals_Incubus - Stellar.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;BAD;False
+vocals_Innerpartysystem - Die Tonight, Live Forever.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;BAD;False
+vocals_Innerpartysystem - Don't Stop.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;BAD;False
+vocals_Innerpartysystem - Heart Of Fire.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;GOOD;True
+vocals_Innerpartysystem - It's Not Getting Any Better.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;BAD;False
+vocals_Innerpartysystem - Last Night In Brooklyn.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;GOOD;True
+vocals_Innerpartysystem - Obsession.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;GOOD;True
+vocals_Interpol - Obstacle 1.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;GOOD;True
+vocals_Iron Maiden - Run to the Hills (cover).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;PERFECT;True
+vocals_Iron Maiden - The Number Of The Beast.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;I;GOOD;True

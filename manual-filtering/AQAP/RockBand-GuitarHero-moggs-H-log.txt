@@ -1,0 +1,11 @@
+FileName;Collection;Prefix;Status;Pass
+vocals_H Is Orange - Nothing All The Time.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;H;GOOD;True
+vocals_Helmet - Unsung (Live).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;H;BAD;False
+vocals_Hilary Duff - So Yesterday.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;H;GOOD;True
+vocals_Hinder - Lips Of An Angel.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;H;PERFECT;True
+vocals_Hives - Main Offender.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;H;BAD;False
+vocals_Hole - Celebrity Skin.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;H;GOOD;True
+vocals_Housse De Racket - Oh Yeah!.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;H;GOOD;True
+vocals_Human League - Don't You Want Me.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;H;GOOD;True
+vocals_Hundred Reasons - I'll Never Know.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;H;PERFECT;True
+vocals_Hushpuppies - You're Gonna Say Yeah.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;H;GOOD;True

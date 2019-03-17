@@ -1,0 +1,56 @@
+FileName;Collection;Prefix;Status;Pass
+vocals_L7 - Pretend We're Dead.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;;False
+vocals_Lacuna Coil - Our Truth.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;BAD;False
+vocals_Lacuna Coil - Survive.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;BAD;False
+vocals_Lady Gaga featuring Beyoncé - Telephone.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Again We Rise.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;GOOD;True
+vocals_Lamb Of God - Beating On Death's Door.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Blacken The Cursed Sun.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Broken Hands.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Choke Sermon.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Contractor.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Dead Seeds.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Descending.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Everything To Nothing.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Fake Messiah.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Foot To The Throat.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Forgotten (Lost Angels).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Grace.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - In Your Words.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Reclamation.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;GOOD;True
+vocals_Lamb Of God - Requiem.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Set To Fail.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;GOOD;True
+vocals_Lamb Of God - Shoulder Of Your God.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lamb Of God - Walk With Me In Hell.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;GOOD;True
+vocals_Lamb Of God - We Die Alone.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Len Price 3 - If I Ain't Got You.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;BAD;False
+vocals_Lenny Kravitz - Are You Gonna Go My Way.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;GOOD;True
+vocals_Lenny Kravitz - Fly Away.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;BAD;False
+vocals_Lenny Kravitz - Lady.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;BAD;False
+vocals_Les Rita Mitsouko - C'est Comme Ca.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;GOOD;True
+vocals_Libyans - Welcome To The Neighborhood.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;GOOD;True
+vocals_Lily Allen - 22.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;GOOD;True
+vocals_Lily Allen - Back To The Start.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;GOOD;True
+vocals_Lily Allen - Chinese.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lily Allen - Everyone's At It.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;GOOD;True
+vocals_Lily Allen - He Wasn't There.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lily Allen - Him.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lily Allen - I Could Say.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lily Allen - Never Gonna Happen.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lily Allen - Not Fair.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;GOOD;True
+vocals_Lily Allen - Take What You Take.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lily Allen - The Fear.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;GOOD;True
+vocals_Lily Allen - Who'd Have Known.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Linkin Park - Bleed It Out.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;BAD;False
+vocals_Linkin Park - Burning In The Skies.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;BAD;False
+vocals_Linkin Park - One Step Closer.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;BAD;False
+vocals_Linkin Park - The Messenger.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;BAD;False
+vocals_Linkin Park - What Ive Done.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Linkin Park - Wretches And Kings.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Lit - My Own Worst Enemy.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Living Colour - Cult of Personality (2007 Re-Recording).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;PERFECT;True
+vocals_Loquillo y Trogloditas - Cadillac Solitario (live).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;BAD;False
+vocals_Los Lobos - La Bamba.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;BAD;False
+vocals_Lostprophets - Rooftops (A Liberation Broadcast).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;GOOD;True
+vocals_Love and Rockets - Mirror People.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;BAD;False
+vocals_Lush - Deluxe.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;L;BAD;False

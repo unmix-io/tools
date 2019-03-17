@@ -1,0 +1,100 @@
+FileName;Collection;Prefix;Status;Pass
+vocals_T. Rex - Bang a Gong (Get It On).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_Talking Heads - Once In A Lifetime.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_Talking Heads - Psycho Killer.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_Taylor Swift - Love Story.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_Taylor Swift - You Belong With Me.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_Ted Nugent - Stranglehold.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_Tenacious D - Master Exploder.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_Tesla - Love Song.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_Tesla - Modern Day Cowboy.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_Testament - Souls Of Black.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Dandy Warhols - Bohemian Like You.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Devil Wears Prada - Dez Moines.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Dillinger Escape Plan - Setting Fire to Sleeping Giants.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Donnas - New Kid In School.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Donnas - Take It Off.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Doobie Brothers - China Grove.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Doors - Break On Through (To the Other Side).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Enemy - Aggro.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Exies - Hey You.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Expendables - Sacrifice.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Faint - The Geeks Were Right.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Fall Of Troy - A Classic Case Of Transference.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Fall Of Troy - Single.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Go-Gos - Our Lips Are Sealed.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Guess Who - American Woman.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Hives - Main Offender.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Jimi Hendrix Experience - Ain't No Tellin'.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Jimi Hendrix Experience - Castles Made Of Sand.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Jimi Hendrix Experience - Foxey Lady.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Jimi Hendrix Experience - Highway Chile.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Jimi Hendrix Experience - Manic Depression.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Jimi Hendrix Experience - May This Be Love.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Jimi Hendrix Experience - Purple Haze.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Jimi Hendrix Experience - She's So Fine.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Jimi Hendrix Experience - Spanish Castle Magic.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Jimi Hendrix Experience - Valleys Of Neptune.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Killers - Human.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Killers - Losing Touch.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Killers - Somebody Told Me.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Kooks - Naive.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Last Goodnight - Pictures Of You.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Living End - Prisoner Of Society.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Main Drag - A Jagged Gorgeous Winter.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Mars Volta - L'Via L'Viaquez.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Mighty Mighty Bosstones - The Impression That I Get.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Mighty Mighty Bosstones - Whered You Go.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Mother Hips - Time We Had.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Muffs - Kids In America.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Offspring - Come Out and Play.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Police - Can't Stand Losing You.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Police - Every Breath You Take.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Police - Every Little Thing She Does Is Magic.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Police - So Lonely.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Police - Synchronicity II.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Primitives - Crash.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Raconteurs - Consolers Of The Lonely.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Raconteurs - Hold Up.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Rasmus - In The Shadows.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Replacements - Alex Chilton.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Rolling Stones - Gimme Shelter.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Rolling Stones - Honky Tonk Women.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Rolling Stones - Sympathy For The Devil.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Sleeping - Bomb The World.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Smashing Pumpkins - Today.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Smiths - Stop Me If You Think You've Heard This One Before.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Sterns - Supreme Girl.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Sword - Black River.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Sword - Freya.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Sword - Maiden, Mother & Crone.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Turtles - Happy Together.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The Von Bondies - C'mon C'mon.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_The White Stripes - Blue Orchid.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The White Stripes - Fell In Love With A Girl.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Who - My Generation (Live).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_The Who - Pinball Wizard.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_The Who - Won't Get Fooled Again.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_Thin Lizzy - Jailbreak.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_Thin Lizzy - The Boys Are Back In Town.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_Third Eye Blind - Can You Take Me.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_Third Eye Blind - Graduate.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_Third Eye Blind - Jumper '09.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_Third Eye Blind - Losing A Whole Year.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_Third Eye Blind - Never Let You Go.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_Third Eye Blind - Semi-Charmed Life.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_Thrice - All The World Is Mad.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_Thrice - Artist In The Ambulance.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_Thrice - Deadbolt.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True
+vocals_Tom Petty - Free Fallin'.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_Tom Petty & The Heartbreakers - American Girl.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_Tom Petty & The Heartbreakers - I Need to Know.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_Tom Petty & The Heartbreakers - I Won't Back Down.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_Tom Petty & The Heartbreakers - Listen to Her Heart.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_Tom Petty & The Heartbreakers - Runnin' Down A Dream.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_Tonic - If You Could Only See.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_Tribe - Outside.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_Triumph - Lay It On The Line.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_TV On The Radio - Wolf Like Me.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;BAD;False
+vocals_Twisted Sister - I Wanna Rock.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;GOOD;True
+vocals_Tyler Bryant - Who I Am.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;T;PERFECT;True

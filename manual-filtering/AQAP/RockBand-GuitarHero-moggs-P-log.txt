@@ -1,0 +1,36 @@
+FileName;Collection;Prefix;Status;Pass
+vocals_Panic At The Disco - Nine in the Afternoon.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;PERFECT;True
+vocals_Pantera - Cowbells from Hell (Live).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Pantera - Walk.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;PERFECT;True
+vocals_Papa Roach - Lifeline.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;PERFECT;True
+vocals_Parachute - Back Again.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;PERFECT;True
+vocals_Pat Benatar - Heartbreaker.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;PERFECT;True
+vocals_Pat Benatar - Hit Me With Your Best Shot.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;GOOD;True
+vocals_Pat Benatar - Love Is A Battlefield.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;PERFECT;True
+vocals_Pavement - Cut Your Hair.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;PERFECT;True
+vocals_Pearl Jam - Alive.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;GOOD;True
+vocals_Pearl Jam - Black.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Pearl Jam - Oceans.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;PERFECT;True
+vocals_Pearl Jam - Once.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;GOOD;True
+vocals_Pearl Jam - Release.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;GOOD;True
+vocals_Pepper - Wake Up.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Pepper - Your Face.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Peter Frampton - Show Me The Way (live).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Phish - Chalk Dust Torture (live).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Phish - Down With Disease (live).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Phish - Sample In A Jar (live).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Pixies - Gouge Away.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;GOOD;True
+vocals_Pixies - Hey.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Pixies - Wave of Mutilation.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;PERFECT;True
+vocals_Placebo - Julien.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;PERFECT;True
+vocals_Placebo - The Bitter End.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Platero y Tu - Hay Poco Rock N Roll.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Plushgun - How We Roll.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Poison - Every Rose Has Its Thorn.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Poison - Nothin' but a Good Time.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;GOOD;True
+vocals_Police - Message in a Bottle.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Presidents Of The United States Of America - Dune Buggy.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;PERFECT;True
+vocals_Presidents Of The United States Of America - Lump.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;PERFECT;True
+vocals_Protest The Hero - Bloodmeat.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;PERFECT;True
+vocals_Public Enemy Featuring Zakk Wylde - Bring the Noise 20XX.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False
+vocals_Puddle Of Mudd - Psycho.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;P;BAD;False

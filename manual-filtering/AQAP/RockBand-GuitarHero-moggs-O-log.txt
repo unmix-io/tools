@@ -1,0 +1,18 @@
+FileName;Collection;Prefix;Status;Pass
+vocals_Oasis - Ain't Got Nothin'.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;PERFECT;True
+vocals_Oasis - Bag It Up.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;GOOD;True
+vocals_Oasis - Falling Down.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;GOOD;True
+vocals_Oasis - I'm Outta Time.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;PERFECT;True
+vocals_Oasis - Soldier On.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;GOOD;True
+vocals_Oasis - Some Might Say.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;GOOD;True
+vocals_Oasis - The Shock Of The Lightning.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;PERFECT;True
+vocals_Oasis - The Turning.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;PERFECT;True
+vocals_Oasis - To Be Where There's Life.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;PERFECT;True
+vocals_Oasis - Waiting For The Rapture.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;GOOD;True
+vocals_Oasis -The Nature Of Reality.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;BAD;False
+vocals_OK Go - Get Over It.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;PERFECT;True
+vocals_OneRepublic - All The Right Moves.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;PERFECT;True
+vocals_OneRepublic - Mercy.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;PERFECT;True
+vocals_Orgy - Blue Monday.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;PERFECT;True
+vocals_Orianthi - Suffocated.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;BAD;False
+vocals_Outlaws - Green Grass and High Tides (cover).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;O;PERFECT;True

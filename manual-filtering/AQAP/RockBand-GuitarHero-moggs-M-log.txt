@@ -1,0 +1,54 @@
+FileName;Collection;Prefix;Status;Pass
+vocals_Marvin Gaye - I Heard It Through The Grapevine.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;PERFECT;True
+vocals_Mastodon - Blood And Thunder.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;PERFECT;True
+vocals_Matchbox 20 - Real World.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_MC5's Wayne Kramer - Kick Out The Jams.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Megadeth - Bad Omen.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;GOOD;True
+vocals_Megadeth - Devil's Island.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;GOOD;True
+vocals_Megadeth - Good Mourning-Black Friday.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;GOOD;True
+vocals_Megadeth - I Ain't Superstitious.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;GOOD;True
+vocals_Megadeth - My Last Words.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;GOOD;True
+vocals_Metric - Help I'm Alive.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;PERFECT;True
+vocals_Metric - Satellite Mind.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Metric - Sick Muse.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;PERFECT;True
+vocals_Metric - Stadium Love.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;PERFECT;True
+vocals_Michael Jackson - Beat It.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Michael Schenker Group - Armed & Ready.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Mighty Mighty Bosstones - Where'd You Go.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Mile Marker Zero - Laceration.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Misfits - Astro Zombies.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;PERFECT;True
+vocals_Modest Mouse - Float On.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Molly Hatchet - Flirtin' With Disaster.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Mother Hips - Time We Had.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Mötley Crüe - Don't Go Away Mad (Just Go Away).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;GOOD;True
+vocals_Mötley Crüe - Down At The Whiskey.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Mötley Crüe - Dr Feelgood.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;PERFECT;True
+vocals_Mötley Crüe - Face Down In The Dirt.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Mötley Crüe - Girls Girls Girls.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;GOOD;True
+vocals_Mötley Crüe - Kickstart My Heart.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;PERFECT;True
+vocals_Mötley Crüe - Looks That Kill.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Mötley Crüe - Rattlesnake Shake.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Motley Crue - Saints of Los Angeles.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;GOOD;True
+vocals_Mötley Crüe - Same Ol' Situation (S.O.S.).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;GOOD;True
+vocals_Mötley Crüe - She Goes Down.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Mötley Crüe - Shout at the Devil.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Mötley Crüe - Slice Of Your Pie.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Mötley Crüe - Time For Change.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Mötley Crüe - Without You.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Motorhead - Ace of Spades.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Motörhead - Ace of Spades.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Motörhead - Iron Fist.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;GOOD;True
+vocals_Motörhead - Jailbait.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;GOOD;True
+vocals_Motörhead - Killed By Death '08.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;GOOD;True
+vocals_Motörhead - Love Me Like A Reptile.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Motörhead - Overkill.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Muffs - Kids in America.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;PERFECT;True
+vocals_Muse - Assassin.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Muse - Butterflies And Hurricanes.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;PERFECT;True
+vocals_Muse - Muscle Museum.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;PERFECT;True
+vocals_Muse - Starlight.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;PERFECT;True
+vocals_Muse - Supermassive Blackhole.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_Muse - Uprising.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_My Chemical Romance - Bulletproof Heart.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False
+vocals_My Chemical Romance - Planetary (Go!).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;PERFECT;True
+vocals_Myriad - A Clean Shot.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;M;BAD;False

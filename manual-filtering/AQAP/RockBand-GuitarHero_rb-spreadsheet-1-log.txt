@@ -1,0 +1,117 @@
+FileName;RockBand-GuitarHero_rb-spreadsheet;Status;Pass;Prefix
+vocals_1.2 Bryan Adams - Summer of 69.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_1.3 Boys like Girls - Thunder.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_1.4 All American Rejects - Swing, Swing.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_1.5 David Bowie - Let's Dance.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_1.6 The Coral - Dreaming of You.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_1.7 Queen - We Are the Champions.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_10 - Comedown.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_10 - Hit Me With Your Best Shot.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_10 - Lips Of An Angel.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_10 - Panama.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_10 Skullcrusher Mountain.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_10. ACDC - Moneytalks (Live).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_10. Blood Sugar Sex Magik.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_10. February Stars.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_10. Foxey Lady.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_10. Guns N' Roses - Sorry.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_10. John Lennon -  Oh Yoko.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_10. Judas Priest - Devil's Child.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_10. La La Love You.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_10. Lovely Rita.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_10. Paramore - That's What You Get.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_10. Pearl Jam - Deep.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_10. Spiderwebs.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_10. The Clash - The Guns of Brixton.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_10. Time for Change.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_10.11. Sun King - Mean Mr. Mustard.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_10.Jimi Hendrix -  She's So Fine (Noel Redding).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_11 - Ain't Talkin' 'Bout Love.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_11 - Beautiful Disaster.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_11. ACDC - Hells Bells (Live).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_11. Are You Experienced.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_11. Bikini Kill - Rebel Girl.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_11. Guns N' Roses - I.R.S.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_11. In My Life.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_11. No. 13 Baby.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_11. Pearl Jam - Release.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_11. Simple Kind of Life.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_11. The Clash - Wrong 'Em Boyo.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_11. Under the Bridge.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_11.Jimi Hendrix -  One Rainy Wish.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_12 - Eye of the Tiger.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_12 - Feel Good Inc.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_12 - Our Lips Are Sealed.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_12 - Sick, Sick, Sick.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_12. ACDC - High Voltage (Live).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_12. Beastie Boys - So What'cha Want.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_12. Don't Speak.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_12. Guns N' Roses - Madagascar.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_12. Naked in the Rain.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_12. Sgt. Pepper’s Lonely Hearts Club Band (Reprise).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_12. Stone Free.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_12. The Clash - Death or Glory.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_12. There Goes My Gun.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_12. Walking After You.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_12.13. Polythene Pam - She Came In Through The Bathroom  Window.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_12.Jimi Hendrix -  Little Miss Lover.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_13 - Woman.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_13. A Day In The Life.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_13. ACDC - Whole Lotta Rosie (Live).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_13. Apache Rose Peacock.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_13. Ex-Girlfriend.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_13. Guns N' Roses - This I Love.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_13. New Way Home.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_13. Nirvana - Drain You.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_13. Pearl Jam - Brother (Bonus).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_13. The Clash - Koka Kola.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_13.Jimi Hendrix -  Bold as Love.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_14 - Godzilla.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_14 - Livin' on a Prayer.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_14 - Master Exploder.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_14. ACDC - You Shook Me All Night Long (Live).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_14. Guns N' Roses - Prostitue.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_14. Highway Chile.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_14. Run For Your Life.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_14. Silver.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_14. The Clash - The Card Cheat.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_14. The Donnas - New Kid in School.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_14. The Greeting Song.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_14.15.16 Golden Slumbers - Carry That Weight - The End.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_15 - Bleed American.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_15 - Dirty Little Secret.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_15 - First Date.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_15 - Go Your Own Way.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_15 - Message in a Bottle.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_15 Creepy Doll.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_15. ACDC - T.N.T. (Live).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_15. Cheap Trick - Hello There.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_15. Gouge Away.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_15. My Lovely Man.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_15. The Clash - Lover's Rock.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_16 - Float On.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_16 - Them Bones.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_16. ACDC - Let There Be Rock (Live).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_16. Presidents of the United States of America - Lump.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_16. Sir Psycho Sexy.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_16. The Clash - Four Horsemen.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_17 - I Wanna Rock.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_17 - I Want It All.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_17 - Re-Education (Through Labor).wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_17 - Stacked Actors.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_17. ACDC - Highway to Hell (Live).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_17. Her Majesty.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_17. The Clash - Revolution Rock.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_17. The Guess Who - American Woman.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_17. They're Red Hot.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_18 - If You Could Only See.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_18 - Toxicity.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_18 - Trippin' on a Hole in a Paper Heart.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_18. Abbey Road Medley.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_18. ACDC - For Those About to Rock (We Salute You) (Live).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_18. Social Distortion - I Was Wrong.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_19 - Santa Monica.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;1
+vocals_19 - Unchained.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_19 Re Your Brains.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;1
+vocals_19. Panic! At the Disco - Nine in the Afternoon.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
+vocals_19. The Clash - I'm Not Down.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;1
