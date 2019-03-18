@@ -188,10 +188,12 @@ def file_processing(sourcedir, destdir, maxCopy, override, pandir):
 
     if not exists(join(destdir, new_foldername)):
         makedirs(join(destdir, new_foldername))
+    elif new_foldername == 'Grateful Dead - Casey Jones.mogg_fixed.mogg_extract':
+        print(new_foldername)
     elif not override:
         return
 
-    mixdown(sourcedir, join(destdir, ntpath.basename(sourcedir)), vocals, instrumentals, ntpath.basename(sourcedir), pandir)
+    mixdown(sourcedir, join(destdir, new_foldername), vocals, instrumentals, new_foldername, pandir)
 
 
 
@@ -214,7 +216,7 @@ def init():
 
 if __name__ == '__main__':
     maxCopy = 3
-    override = True
+    override = False
     unmix_server = "//192.168.1.29/unmix-server"
 
     print('Argument List:', str(sys.argv))

@@ -138,13 +138,14 @@ def file_processing(sourcedir, destdir, maxCopy, override):
                 new_foldername = folder + temp
             break
 
-
     if not exists(join(destdir, new_foldername)):
         makedirs(join(destdir, new_foldername))
+    elif new_foldername == '30 Seconds To Mars - Closer To The Edge_5 tracks':
+        print(new_foldername)
     elif not override:
         return
 
-    mixdown(sourcedir, join(destdir, ntpath.basename(sourcedir)), vocals, instrumentals, ntpath.basename(sourcedir))
+    mixdown(sourcedir, join(destdir, new_foldername), vocals, instrumentals, new_foldername)
 
     # TODO: Implement Container file type processing
 
@@ -168,7 +169,7 @@ def init():
 
 if __name__ == '__main__':
     maxCopy = 3
-    override = True
+    override = False
     unmix_server = "//192.168.1.29/unmix-server"
 
     print('Argument List:', str(sys.argv))
