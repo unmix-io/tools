@@ -22,8 +22,12 @@
                 <Button Name="LoadButton" Padding="2" Width="50" Click="LoadButton_Click">Load</Button>
             </StackPanel>
             <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
-                <Label>Filter:</Label>
-                <ComboBox Width="50" Name="FilterComboBox" SelectionChanged="FilterComboBoxOnSelectionChanged"/>
+                <Label>Type:</Label>
+                <ComboBox Width="50" Name="TypeComboBox" SelectionChanged="TypeComboBoxOnSelectionChanged"/>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                <Label>Prefix:</Label>
+                <ComboBox Width="50" Name="PrefixComboBox" SelectionChanged="PrefixComboBoxOnSelectionChanged"/>
             </StackPanel>
         </DockPanel>
         <Grid Grid.Row="1">

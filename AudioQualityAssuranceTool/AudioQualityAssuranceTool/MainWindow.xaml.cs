@@ -41,7 +41,11 @@ namespace AudioQualityAssuranceTool
         {
             InitializeComponent();
             Player = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer(); ;
-
+            TypeComboBox.ItemsSource = new List<string>()
+            {
+                Type.vocals_.ToString(),
+                Type.instrumental_.ToString()
+            };
             InputFolderTextBox.Text = Settings.Default.LoadPath;
             LoadButton_Click(null, null);
         }
@@ -60,7 +64,7 @@ namespace AudioQualityAssuranceTool
 
             Settings.Default.LoadPath = path;
             Player.Stop();
-            Files = Directory.EnumerateFiles(path, $"{RatingFile.VocalsPrefix}*.wav", SearchOption.AllDirectories)
+            Files = Directory.EnumerateFiles(path, $"*.wav", SearchOption.AllDirectories)
                 .Select(file => new RatingFile { File = new FileInfo(file) }).OrderBy(f => f.FileName).ToList();
 
 
@@ -99,11 +103,23 @@ namespace AudioQualityAssuranceTool
             Songs = new ObservableCollection<RatingFile>(Files);
             OnPropertyChanged(nameof(Songs));
             var prefixes = Files.Select(f => f.Prefix).Distinct().OrderBy(p => p).ToList();
-            FilterComboBox.ItemsSource = prefixes;
-            FilterComboBox.SelectedValue = prefixes.FirstOrDefault();
+            PrefixComboBox.ItemsSource = prefixes;
+            PrefixComboBox.SelectedValue = prefixes.FirstOrDefault();
         }
 
-        private void FilterComboBoxOnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void TypeComboBoxOnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (e.AddedItems.Count <= 0)
+            {
+                return;
+            }
+            Player.Stop();
+            var filter = e.AddedItems[0].ToString();
+            Songs = new ObservableCollection<RatingFile>(Files.Where(f => f.FileName.StartsWith(filter)));
+            OnPropertyChanged(nameof(Songs));
+        }
+
+        private void PrefixComboBoxOnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (e.AddedItems.Count <= 0)
             {
@@ -172,14 +188,14 @@ namespace AudioQualityAssuranceTool
 
         private void SaveSongs()
         {
-            if (string.IsNullOrEmpty(FilterComboBox.Text))
+            if (string.IsNullOrEmpty(PrefixComboBox.Text))
             {
                 throw new Exception("Choose Filter value.");
             }
 
             foreach (var collection in Songs.GroupBy(s => s.Collection))
             {
-                var logFile = $"logs/{collection.Key}-{FilterComboBox.Text}-log.txt";
+                var logFile = $"logs/{collection.Key}-{PrefixComboBox.Text}-log.txt";
                 using (var writer = new StreamWriter(logFile))
                 using (var csv = new CsvWriter(writer))
                 {

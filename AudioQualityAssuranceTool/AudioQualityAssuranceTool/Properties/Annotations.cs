@@ -315,12 +315,12 @@ namespace AudioQualityAssuranceTool.Annotations
     [BaseTypeRequired(typeof(Attribute))]
     public sealed class BaseTypeRequiredAttribute : Attribute
     {
-        public BaseTypeRequiredAttribute([NotNull] Type baseType)
+        public BaseTypeRequiredAttribute([NotNull] System.Type baseType)
         {
             BaseType = baseType;
         }
 
-        [NotNull] public Type BaseType { get; private set; }
+        [NotNull] public System.Type BaseType { get; private set; }
     }
 
     /// <summary>

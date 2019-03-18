@@ -9,6 +9,8 @@ namespace AudioQualityAssuranceTool
 {
     public enum RatingStatus { BAD, GOOD, PERFECT }
 
+    public enum Type { vocals_, instrumental_ }
+
     public class RatingFile : INotifyPropertyChanged
     {
 
@@ -21,13 +23,10 @@ namespace AudioQualityAssuranceTool
 
         [Ignore]
         public Guid Id { get; }
-
-        public static string VocalsPrefix => "vocals_";
-
+        
         public FileInfo File;
 
         public bool? Pass => Status > RatingStatus.BAD;
-
 
         private RatingStatus? _status;
 
@@ -45,7 +44,9 @@ namespace AudioQualityAssuranceTool
 
         public string Collection => File?.Directory?.Parent?.Name ?? string.Empty;
 
-        public string Prefix => FileName.Replace(VocalsPrefix, string.Empty).Substring(0, 1)?.ToUpper() ?? string.Empty;
+        public string Prefix => FileName.Replace(Type.instrumental_.ToString(), string.Empty)
+                                    .Replace(Type.vocals_.ToString(), string.Empty)
+                                    .Substring(0, 1)?.ToUpper() ?? string.Empty;
 
         public RatingFile()
         {
