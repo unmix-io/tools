@@ -114,9 +114,8 @@ namespace AudioQualityAssuranceTool
                 return;
             }
             Player.Stop();
-            var filter = e.AddedItems[0].ToString();
-            Songs = new ObservableCollection<RatingFile>(Files.Where(f => f.FileName.StartsWith(filter)));
-            OnPropertyChanged(nameof(Songs));
+            var type = e.AddedItems[0].ToString();
+            FilterSongs(PrefixComboBox.Text, type);
         }
 
         private void PrefixComboBoxOnSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -126,8 +125,13 @@ namespace AudioQualityAssuranceTool
                 return;
             }
             Player.Stop();
-            var filter = e.AddedItems[0].ToString();
-            Songs = new ObservableCollection<RatingFile>(Files.Where(f => string.IsNullOrEmpty(filter) || f.Prefix == filter));
+            var prefix = e.AddedItems[0].ToString();
+            FilterSongs(prefix, TypeComboBox.Text);
+        }
+
+        private void FilterSongs(string prefix, string type)
+        {
+            Songs = new ObservableCollection<RatingFile>(Files.Where(f => f.FileName.StartsWith(type) && (string.IsNullOrEmpty(prefix) || f.Prefix == prefix)));
             OnPropertyChanged(nameof(Songs));
         }
 
@@ -182,7 +186,6 @@ namespace AudioQualityAssuranceTool
             selected.Status = status;
             Files.First(f => f.Id == selected.Id).Status = status;
             OnPropertyChanged(nameof(Songs));
-
             SaveSongs();
         }
 
