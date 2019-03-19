@@ -35,14 +35,20 @@ def generate_container(file, destination, fft_window, target_sample_rate, channe
         stereo = channels > 1
         audio, sample_rate = librosa.load(file, mono=not stereo, sr=target_sample_rate if target_sample_rate > 0 else None)
         spectrograms = {}
+        real_stereo = None
         if stereo:
-            spectrograms['spectrogram_stereo_left'] = stft_to_complex_spectrogram(generate_spectrogram(destination, audio[0] if isinstance(audio[0], (np.ndarray)) else audio, '0-stereo_left', fft_window, sample_rate, generate_image))
-            spectrograms['spectrogram_stereo_right'] = stft_to_complex_spectrogram(generate_spectrogram(destination, audio[1] if isinstance(audio[1], (np.ndarray)) else audio, '1-stereo_right', fft_window, sample_rate, generate_image))
+            real_stereo = isinstance(audio[0], (np.ndarray))
+            spectrograms['spectrogram_stereo_left'] = stft_to_complex_spectrogram(generate_spectrogram(destination, audio[0] if real_stereo else audio, '0-stereo_left', fft_window, sample_rate, generate_image))
+            spectrograms['spectrogram_stereo_right'] = stft_to_complex_spectrogram(generate_spectrogram(destination, audio[1] if real_stereo else audio, '1-stereo_right', fft_window, sample_rate, generate_image))
         else:
             spectrograms['spectrogram_mono'] = stft_to_complex_spectrogram(generate_spectrogram(file, audio, '1-mono', fft_window, sample_rate, generate_image))
 
         file_name = '%s_spectrogram_fft-window[%d]_sample-rate[%d]_channels[%d-%s]' % (destination, fft_window, sample_rate, channels, "stereo" if stereo else "mono")
-        save_spectrogram_data(spectrograms, file_name, fft_window, sample_rate, channels)
+
+        song = os.path.basename(os.path.dirname(file))
+        collection = os.path.basename(os.path.dirname(os.path.dirname(file)))
+
+        save_spectrogram_data(spectrograms, file_name, fft_window, sample_rate, channels, real_stereo, song, collection)
         print('Generated spectrogram %s' % file_name)
     except Exception as e:
         print('Error while generating spectrogram for %s: %s' % (file, str(e)))
@@ -76,14 +82,17 @@ def save_spectrogram_image(spectrogram, file, part, fft_window, sample_rate):
         warnings.simplefilter('ignore')
         io.imsave(file_name, image)
 
-def save_spectrogram_data(spectrograms, file, fft_window, sample_rate, channels):
+def save_spectrogram_data(spectrograms, file, fft_window, sample_rate, channels, real_stereo, song, collection):
     h5f = h5py.File(file + '.h5', 'w')
     h5f.create_dataset('source', data=os.path.basename(file))
     for key, value in spectrograms.items():
         h5f.create_dataset(key, data=value)
     h5f.create_dataset('fft_window', data=fft_window)
     h5f.create_dataset('sample_rate', data=sample_rate)    
-    h5f.create_dataset('channels', data=channels)
+    h5f.create_dataset('channels', data=channels)    
+    h5f.create_dataset('real_stereo', data=real_stereo)
+    h5f.create_dataset('song', data=song)
+    h5f.create_dataset('collection', data=collection)
     h5f.close()
 
 def build_destination(file, path, destination):
