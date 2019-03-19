@@ -23,8 +23,10 @@ import audioread
 
 audio_extensions = ['.wav', '.mp3']
 
+error_count = 0
 
 def generate_container(file, destination, fft_window, target_sample_rate, channels, generate_image):
+    global error_count
     try:
         stereo = channels > 1
         audio, sample_rate = librosa.load(file, mono=not stereo, sr=target_sample_rate if target_sample_rate > 0 else None)
@@ -53,6 +55,7 @@ def generate_container(file, destination, fft_window, target_sample_rate, channe
         print('Generated spectrogram %s' % path)
     except Exception as e:
         print('Error while generating spectrogram for %s: %s' % (file, str(e)))
+        error_count += 1
         pass
 
 def generate_spectrogram(file, audio, part, fft_window, sample_rate, generate_image):
@@ -145,4 +148,4 @@ if __name__ == '__main__':
     Parallel(n_jobs=args.job_count)(delayed(generate_container)(file, args.destination, args.fft_window, args.sample_rate, args.channels, args.generate_image) for file in files)
     end = time.time()
     
-    print('Finished processing in %d [ms]', (end - start))
+    print('Finished processing in %d [ms] with %d errors' % ((end - start), error_count))
