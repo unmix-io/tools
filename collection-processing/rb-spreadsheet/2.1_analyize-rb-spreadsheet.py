@@ -49,48 +49,75 @@ def normalize(file, destination, db = -20.0):
     normalized_sound.export(destination, format="wav")
 
 
+def charCodeForNumber(i):
+    """ Returns a for 0, b for 1, etc. """
+    char = ""
+    while(i > 25):
+        char += chr(97 + (i % 25))
+        i = i - 25
+    char += chr(97 + i)
+    return char # 97 = a
+
+
 def mixdown(sourcefolder, destination, tracks_vocs, tracks_instr, songname):
     inp_args = ""
     filter_complex_vocs = ""
     filter_complex_instr = ""
-    sum_volumes_vocs = 0
-    sum_volumes_instr = 0
+    filter_complex_fullmix = ""
     track_count = 0
+    chain_vocs = ""
+    chain_instr = ""
 
     try:
         for tracknr, track in enumerate(tracks_vocs):
             inp_args += "-i \"" + join(sourcefolder, track )+ "\" "
-            filter_complex_vocs += "[" + str(track_count) + ":0]"
-            sum_volumes_vocs += AudioSegment.from_file(join(sourcefolder, track), pathlib.Path(track).suffix[1:]).dBFS
+            char = charCodeForNumber(track_count)
+            filter_complex_vocs += "[" + str(track_count) + ":0]volume=" + str(1/(len(tracks_vocs) + len(tracks_instr)) / (1/len(tracks_vocs))) + ",aformat=channel_layouts=stereo[" + char + "];"
+            filter_complex_fullmix += "[" + str(track_count) + ":0]"
+            chain_vocs += "[" + char + "]"
             track_count += 1
         for tracknr, track in enumerate(tracks_instr):
             inp_args += "-i \"" + join(sourcefolder, track) + "\" "
-            filter_complex_instr += "[" + str(track_count) + ":0]"
-            sum_volumes_instr += AudioSegment.from_file(join(sourcefolder, track), pathlib.Path(track).suffix[1:]).dBFS
+            char = charCodeForNumber(track_count)
+            filter_complex_instr += "[" + str(track_count) + ":0]volume=" + str(1/(len(tracks_vocs) + len(tracks_instr)) / (1/len(tracks_instr))) + ",aformat=channel_layouts=stereo[" + char + "];"
+            filter_complex_fullmix += "[" + str(track_count) + ":0]"
+            chain_instr += "[" + char + "]"
             track_count += 1
     except Exception as inst:
-            log_file.write(str(type(inst)) + ": Pydub could not read " + track)
+            log_file.write(str(type(inst)) + ": Pydub could not read " + track + "\n")
 
-    cmd = "ffmpeg " + inp_args + " -filter_complex \"" + filter_complex_vocs + "amix=inputs=" + str(tracks_vocs.__len__()) + "[vocs];" + filter_complex_instr \
-          + "amix=inputs=" + str(tracks_instr.__len__()) + "[instr]\" -map [vocs] -ac 2 -y -ar 44100 \"" + join(temp_path, "vocals_" + songname + ".wav") \
-          + "\" -map [instr] -ac 2 -y -ar 44100 \"" + join(temp_path, "instrumental_" + songname + ".wav") + "\""
-    print(cmd)
+    # Create a fulmix of all audio tracks
     try:
+        cmd_fullmix = "ffmpeg " + inp_args + " -filter_complex \"" + filter_complex_fullmix + "amix=inputs=" + str(track_count) + "[mix]\" -map [mix] -y -ar 44100 \"" + join(temp_path, "fullmix_" + songname + ".wav") + "\""
+        subprocess.check_call(cmd_fullmix, shell=True)
+    except Exception as inst:
+        log_file.write(str(type(inst)) + ": ffmpeg fullmix creation failed " + track + "\n")
+
+    # Calculate the average volume of the fullmix and suptract it from the reference normalization volume
+    try:
+        avg_db = AudioSegment.from_file(join(temp_path, "fullmix_" + songname + ".wav")).dBFS
+        differenz_db = -20 - avg_db
+    except Exception as inst:
+        log_file.write(str(type(inst)) + ": Audiosegment couldn't read audiofile " + track + "\n")
+        differenz_db = -20
+
+    # Finally mix vocals and instrumentals separately and apply volume difference to the traacks
+    try:
+        cmd = "ffmpeg " + inp_args + " -filter_complex \"" + filter_complex_vocs + chain_vocs + "amix=inputs=" + str(len(tracks_vocs)) \
+              + ",volume=" + str(differenz_db) + "dB[vocs];" + filter_complex_instr + chain_instr + "amix=inputs=" \
+              + str(len(tracks_instr)) + ",volume=" + str(differenz_db) + "dB[instr]\" -map [vocs] -y -ar 44100 \"" \
+              + join(destination,"vocals_" + songname + ".wav") + "\" -map [instr] -y -ar 44100 \"" + join(destination, "instrumental_"                                                                                             + songname + ".wav") + "\""
+        print(cmd)
         subprocess.check_call(cmd, shell=True)
         log_file.write("Message: " + songname + " was converted successfully\n")
+        # For testing purposes
+        # cmd_test = "ffmpeg -i \"" + join(temp_path,
+        #                                  "fullmix_" + songname + ".wav") + "\" -filter_complex \"[0:0]volume=" + str(
+        #     differenz_db) + "dB\" -y -ar 44100 \"" + join(temp_path, "fullmux_norm_" + songname + ".wav") + "\""
+        # subprocess.call(cmd_test, shell=True)
     except Exception as inst:
         log_file.write(str(type(inst)) + ": " + songname + " conversion failed\n")
         return
-
-    # Calculate ratio of volume of mixed vocals and volume of mixed instruments. Instruments will be normalized to
-    # -20 DB, Vocals to -20 DB * Ratio
-    try:
-        target_db_voc = -20 + ( -20 * ((sum_volumes_vocs / tracks_vocs.__len__()) / (sum_volumes_instr / tracks_instr.__len__()) - 1))
-        normalize(join(temp_path, "vocals_" + songname) + ".wav", join(destination, "vocals_" + songname) + ".wav", target_db_voc)
-        normalize(join(temp_path, "instrumental_" + songname) + ".wav", join(destination, "instrumental" + songname) + ".wav", -20)
-        log_file.write("Message: " + songname + " was normalized successfully\n")
-    except Exception as inst:
-        log_file.write(str(type(inst)) + ": " + songname + " normalization failed\n")
     finally:
         try:
             files = listdir(temp_path)
@@ -122,7 +149,7 @@ def file_processing(sourcedir, destdir, maxCopy, override):
     # Add new folder in target directory if not yet existing, if name to short parentfolder of source directory is added to name as well
     new_foldername = ""
     path = sourcedir
-    while new_foldername.__len__() < 10:
+    while len(new_foldername) < 10:
         path, folder = split(path)
 
         if folder != "":
@@ -140,8 +167,6 @@ def file_processing(sourcedir, destdir, maxCopy, override):
 
     if not exists(join(destdir, new_foldername)):
         makedirs(join(destdir, new_foldername))
-    elif new_foldername == '30 Seconds To Mars - Closer To The Edge_5 tracks':
-        print(new_foldername)
     elif not override:
         return
 
@@ -169,12 +194,12 @@ def init():
 
 if __name__ == '__main__':
     maxCopy = 3
-    override = False
+    override = True
     unmix_server = "//192.168.1.29/unmix-server"
 
     print('Argument List:', str(sys.argv))
 
-    if sys.argv.__len__() == 2:
+    if len(sys.argv) == 2:
         unmix_server = sys.argv[1]
 
     sourcedir = unmix_server + "/1_sources/RockBand-GuitarHero"
