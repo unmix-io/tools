@@ -38,7 +38,7 @@ def generate_container(file, destination, fft_window, target_sample_rate, channe
         else:
             spectrograms.append(stft_to_complex_spectrogram(generate_spectrogram(file, audio, '0-mono', fft_window, sample_rate, generate_image)))
 
-        configuration = 'fft-window[%d]_sample-rate[%d]_channels[%d-%s]' % (fft_window, sample_rate, channels, "stereo" if stereo else "mono")
+        configuration = 'fft-window=%d_sample-rate=%d_channels=%d-%s' % (fft_window, sample_rate, channels, "stereo" if stereo else "mono")
 
         song = os.path.basename(os.path.dirname(file))
         collection = os.path.basename(os.path.dirname(os.path.dirname(file)))
