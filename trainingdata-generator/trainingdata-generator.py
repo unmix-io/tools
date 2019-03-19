@@ -34,14 +34,13 @@ def generate_container(file, destination, fft_window, target_sample_rate, channe
                 pass
         stereo = channels > 1
         audio, sample_rate = librosa.load(file, mono=not stereo, sr=target_sample_rate if target_sample_rate > 0 else None)
-        spectrograms = {}
-        real_stereo = None
-        if stereo:
-            real_stereo = isinstance(audio[0], (np.ndarray))
-            spectrograms['spectrogram_stereo_left'] = stft_to_complex_spectrogram(generate_spectrogram(destination, audio[0] if real_stereo else audio, '0-stereo_left', fft_window, sample_rate, generate_image))
-            spectrograms['spectrogram_stereo_right'] = stft_to_complex_spectrogram(generate_spectrogram(destination, audio[1] if real_stereo else audio, '1-stereo_right', fft_window, sample_rate, generate_image))
+        spectrograms = []
+        real_stereo = isinstance(audio[0], (np.ndarray))
+        if stereo and real_stereo:
+            spectrograms.append(stft_to_complex_spectrogram(generate_spectrogram(destination, audio[0], '0-stereo_left', fft_window, sample_rate, generate_image)))
+            spectrograms.append(stft_to_complex_spectrogram(generate_spectrogram(destination, audio[1], '1-stereo_right', fft_window, sample_rate, generate_image)))
         else:
-            spectrograms['spectrogram_mono'] = stft_to_complex_spectrogram(generate_spectrogram(file, audio, '1-mono', fft_window, sample_rate, generate_image))
+            spectrograms.append(stft_to_complex_spectrogram(generate_spectrogram(file, audio, '0-mono', fft_window, sample_rate, generate_image)))
 
         file_name = '%s_spectrogram_fft-window[%d]_sample-rate[%d]_channels[%d-%s]' % (destination, fft_window, sample_rate, channels, "stereo" if stereo else "mono")
 
@@ -85,8 +84,11 @@ def save_spectrogram_image(spectrogram, file, part, fft_window, sample_rate):
 def save_spectrogram_data(spectrograms, file, fft_window, sample_rate, channels, real_stereo, song, collection):
     h5f = h5py.File(file + '.h5', 'w')
     h5f.create_dataset('source', data=os.path.basename(file))
-    for key, value in spectrograms.items():
-        h5f.create_dataset(key, data=value)
+    if len(spectrograms) > 1:
+        h5f.create_dataset('spectrogram_left', data=spectrograms[0])
+        h5f.create_dataset('spectrogram_right', data=spectrograms[1])
+    else:
+        h5f.create_dataset('spectrogram_mono', data=spectrograms[0])        
     h5f.create_dataset('fft_window', data=fft_window)
     h5f.create_dataset('sample_rate', data=sample_rate)    
     h5f.create_dataset('channels', data=channels)    
@@ -100,8 +102,8 @@ def build_destination(file, path, destination):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Creates hierarchical data format files including complexe frequency spectrograms for audio files in a given folder.')
-    parser.add_argument('--path', default='U:\\3_filter\\cambridge-mt\\PatrickTalbot_Blue_Full\\', type=str, help='Working path')
-    parser.add_argument('--destination', default='U:\\3_filter\\cambridge-mt\PatrickTalbot_Blue_Full\\', type=str, help='Destination path')
+    parser.add_argument('--path', default='U:\\3_filter\\musdb18\\', type=str, help='Working path')
+    parser.add_argument('--destination', default='D:\\Data\\unmix.io\\4_training\\musdb18\\', type=str, help='Destination path')
     parser.add_argument('--fft_window', default=1536, type=int, help='Size [Samples] of FFT windows')
     parser.add_argument('--sample_rate', default=11025, type=int, help='Optional target samplerate [Hz] for the audiofiles')
     parser.add_argument('--channels', default=1, type=int, help='1 (Mono) or 2 (Stereo)')
