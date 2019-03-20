@@ -1,0 +1,55 @@
+FileName;Collection;Prefix;Status;Pass
+instrumental_01 - Pretty Fly (For a White Guy).wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_01 - What I've Done.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;GOOD;True
+instrumental_01. Debaser.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_01. Green Day - Know Your Enemy.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;BAD;False
+instrumental_01. Guns N' Roses - Chinese Democracy.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;GOOD;True
+instrumental_01. Just a Girl.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_01. More Than A Feeling.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_01. Survivor - Eye of the Tiger.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;BAD;False
+instrumental_01. The Clash - London Calling.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_01. Wake Up Dead.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_02- Your Troubles Will Cease and Fortune Will Smile Upon You.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_02. It's My Life.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_02. Peace of Mind.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;GOOD;True
+instrumental_02. Slice of Your Pie.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_03- Pendulum.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_03. Guns N' Roses - Better.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_03. Judas Priest - Riding on the Wind.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_03. Smashing Pumpkins - Today.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;BAD;False
+instrumental_03. Take No Prisoners.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_04 - Band on the Run.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;GOOD;True
+instrumental_04 - Du Hast.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_04 Mandelbrot Set.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_04. Bathwater.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_04. Five Magics.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_04. Green Day - East Jesus Nowhere.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;BAD;False
+instrumental_04. I Bleed.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;BAD;False
+instrumental_05 - Bring Me To Life.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_05 - Dance the Night Away.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;GOOD;True
+instrumental_05 - Monsoon.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_05. Camera Eye.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;BAD;False
+instrumental_05. Don't Cha Stop.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_05. Green Day - Last of the American Girls.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_05. Guns N' Roses - If The World.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_05. Poison Was The Cure.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_05. Smokin'.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_05. Squeeze - Cool for Cats.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_06. Guns N' Roses - There Was A Time.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;GOOD;True
+instrumental_06. Hella Good.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;BAD;False
+instrumental_06. Lucretia.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_06. You're All I've Got Tonight.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;BAD;False
+instrumental_07 - Dope Nose.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;BAD;False
+instrumental_07. Bye Bye Love.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;BAD;False
+instrumental_07. Pearl Jam - Oceans.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_07. Sticky Sweet.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;BAD;False
+instrumental_07. Tornado Of Souls.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_07. Underneath It All.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_08. Excuse Me Mr.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;GOOD;True
+instrumental_08. Linkin Park - One Step Closer.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;GOOD;True
+instrumental_08. Moving In Stereo.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_08. Mr. Grieves.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_09 - The End of Heartache.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_09. All Mixed Up.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_09. John Lennon -  How.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True
+instrumental_09. Running.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;0;PERFECT;True

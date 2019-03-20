@@ -1,0 +1,20 @@
+FileName;Collection;Prefix;Status;Pass
+instrumental_3.6 KoRn - Word Up.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;BAD;False
+instrumental_30 - Laid to Rest.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;PERFECT;True
+instrumental_30 - The Middle.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;GOOD;True
+instrumental_30 Seconds to Mars - Attack.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;PERFECT;True
+instrumental_30 Seconds to Mars - Closer to the Edge.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;GOOD;True
+instrumental_30. Speck - Conventional Lover.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;PERFECT;True
+instrumental_31 - Hungry Like the Wolf.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;PERFECT;True
+instrumental_31 - Our Truth.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;PERFECT;True
+instrumental_33 - Cult of Personality.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;BAD;False
+instrumental_33 - Sex On Fire.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;PERFECT;True
+instrumental_33 - The Kill.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;GOOD;True
+instrumental_34. Alanis Morissette - You Outta Know.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;PERFECT;True
+instrumental_35 - Dammit.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;BAD;False
+instrumental_35 - Ex-Girlfriend.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;PERFECT;True
+instrumental_35. Fleetwood Mac - Go Your Own Way.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;GOOD;True
+instrumental_38 - In A Big Country.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;PERFECT;True
+instrumental_38 - Painkiller.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;PERFECT;True
+instrumental_39 - Paralyzer.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;PERFECT;True
+instrumental_39. Bon Jovi - Livin' on a Prayer.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;3;PERFECT;True

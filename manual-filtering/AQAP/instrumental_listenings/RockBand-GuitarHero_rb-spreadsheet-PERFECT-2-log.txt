@@ -1,0 +1,15 @@
+FileName;Collection;Prefix;Status;Pass
+instrumental_2.4 Kaiser Chiefs - Ruby.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;2;GOOD;True
+instrumental_2.5 P!NK - So What.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;2;BAD;False
+instrumental_20 - Weapon of Choice.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;2;PERFECT;True
+instrumental_20 The Future Soon.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;2;PERFECT;True
+instrumental_20. Jane's Addiction - Mountain Song.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;2;PERFECT;True
+instrumental_22 - Best of You.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;2;PERFECT;True
+instrumental_22. Lacuna Coil - Our Truth.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;2;PERFECT;True
+instrumental_23 - Killer Queen.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;2;PERFECT;True
+instrumental_25 - A-Punk.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;2;PERFECT;True
+instrumental_25 - Thunder Kiss '65.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;2;PERFECT;True
+instrumental_26 - The Joker.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;2;GOOD;True
+instrumental_27 - Miss Murder.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;2;PERFECT;True
+instrumental_28 - Carry On Wayward Son.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;2;BAD;False
+instrumental_28 - Mountain Song.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;2;PERFECT;True

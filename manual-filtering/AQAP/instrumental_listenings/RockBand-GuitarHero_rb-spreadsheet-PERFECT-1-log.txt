@@ -1,0 +1,33 @@
+FileName;Collection;Prefix;Status;Pass
+instrumental_1.3 Boys like Girls - Thunder.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_1.4 All American Rejects - Swing, Swing.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_1.7 Queen - We Are the Champions.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_10 - Lips Of An Angel.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_10 Skullcrusher Mountain.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_10. Guns N' Roses - Sorry.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_10. Judas Priest - Devil's Child.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_10. La La Love You.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_10. Lovely Rita.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_10. Paramore - That's What You Get.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;BAD;False
+instrumental_12 - Eye of the Tiger.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;BAD;False
+instrumental_12 - Feel Good Inc.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_12. Beastie Boys - So What'cha Want.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_12. Don't Speak.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;BAD;False
+instrumental_12. There Goes My Gun.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;BAD;False
+instrumental_13. Ex-Girlfriend.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_13. Guns N' Roses - This I Love.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_13. New Way Home.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_13. The Clash - Koka Kola.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_14 - Godzilla.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_14 - Master Exploder.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_14. Guns N' Roses - Prostitue.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_14. The Clash - The Card Cheat.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_14. The Greeting Song.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_15 - Dirty Little Secret.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;GOOD;True
+instrumental_15 - Message in a Bottle.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_15 Creepy Doll.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_15. Cheap Trick - Hello There.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_16. Presidents of the United States of America - Lump.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;BAD;False
+instrumental_17 - Re-Education (Through Labor).wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
+instrumental_17. The Guess Who - American Woman.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;BAD;False
+instrumental_19 Re Your Brains.wav;RockBand-GuitarHero_rb-spreadsheet-PERFECT;1;PERFECT;True
