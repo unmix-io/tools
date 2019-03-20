@@ -12,27 +12,15 @@ import subprocess
 __author__ = "kaufmann-a@hotmail.ch"
 temp_path = "./temp"
 
-def normalize(file, destination, db = -20.0):
-    def match_target_amplitude(sound, target_dBFS):
-        change_in_dBFS = target_dBFS - sound.dBFS
-        return sound.apply_gain(change_in_dBFS)
-
-    sound = AudioSegment.from_file(file, "wav")
-    normalized_sound = match_target_amplitude(sound, db)
-    normalized_sound.export(destination, format="wav")
-
-def calculate_ratio_instr_vocs(bass, drums_track, restinst_track, vocals_track):
-    level1 = AudioSegment.from_file(bass, "wav").dBFS
-    level2 = AudioSegment.from_file(drums_track, "wav").dBFS
-    level3 = AudioSegment.from_file(restinst_track, "wav").dBFS
-    level4 = AudioSegment.from_file(vocals_track, "wav").dBFS
-    targetDB_VOC = -20 + (-20 * (level4 / ((level1+level2+level3)/3)-1))
-    return targetDB_VOC
 
 def copy_files(sourcedir, outputdir, maxCopy, override):
     src_files = listdir(sourcedir)
     for folder in src_files:
+
         if maxCopy == 0: break
+
+        if exists(join(outputdir, folder)) and not override:
+            continue
 
         songfolder = join(sourcedir, folder)
 
@@ -41,8 +29,23 @@ def copy_files(sourcedir, outputdir, maxCopy, override):
         drums_track = join(songfolder, 'drums.wav')
         restinst_track = join(songfolder, 'other.wav')
         vocals_track = join(songfolder, 'vocals.wav')
-        #Calculate ratio instrumentals/vocals and return nromalizationlevel for vocals
-        targetVoc_level = calculate_ratio_instr_vocs(bass_track, drums_track, restinst_track, vocals_track)
+
+        # Create a fullmix of all audio tracks
+        try:
+            cmd = "ffmpeg" + ' -i "' + bass_track + '" -i "' + drums_track + '" -i "' + restinst_track + '" -i "' \
+                  + vocals_track + "\" -filter_complex \"[0:0][1:0][2:0][3:0]amix=inputs=4[mix]\" -map [mix] -ac 2 \"" \
+                  + join(temp_path, "fullmix_" + folder + ".wav")
+            subprocess.check_call(cmd, shell=True)
+        except Exception as stats:
+            print(type(stats))
+
+        # Calculate the average volume of the fullmix and suptract it from the reference normalization volume
+        try:
+            avg_db = AudioSegment.from_file(join(temp_path, "fullmix_" + folder + ".wav")).dBFS
+            differenz_db = -20 - avg_db
+        except Exception as inst:
+            print(str(type(inst)) + ": Audiosegment couldn't read audiofile " + folder + "\n")
+            differenz_db = -20
 
         new_folder = join(outputdir, folder)
         new_songname_instr = 'instrumental_' + folder + '.wav'
@@ -50,25 +53,28 @@ def copy_files(sourcedir, outputdir, maxCopy, override):
         new_songfile_instr = join(new_folder, new_songname_instr)
         new_songfile_vocals = join(new_folder, new_songname_vocals)
 
-        cmd = "ffmpeg" + ' -i "' + bass_track + '" -i "' + drums_track + '" -i "' + restinst_track + '" -i "' + vocals_track + \
-              "\" -filter_complex \"[0:0][1:0][2:0]amix=inputs=3[instr]\" -map [instr] -ac 2 \"" + join(temp_path, new_songname_instr) + \
-              "\" -map 3:0 -ac 2 \"" + join(temp_path, new_songname_vocals) + "\""
-        subprocess.check_call(cmd, shell=True)
+        # Finally mix vocals and instrumentals separately and apply volume difference to the traacks
+        try:
+            cmd = "ffmpeg" + ' -i "' + bass_track + '" -i "' + drums_track + '" -i "' + restinst_track + '" -i "' + vocals_track + \
+                  "\" -filter_complex \"[0:0]volume=0.75[bass];[1:0]volume=0.75[drums];[2:0]volume=0.75[restinst];[3:0]volume=0.25[vocals];" \
+                  "[bass][drums][restinst]amix=inputs=3,volume=" + str(differenz_db) + "dB[instr];[vocals]volume=" + str(differenz_db) + "dB[vocs]\" " \
+                  "-map [instr] -ac 2 \"" + new_songfile_instr + "\" -map [vocs] -ac 2 \"" + new_songfile_vocals + "\""
+            subprocess.check_call(cmd, shell=True)
 
-        if exists(bass_track) and exists(drums_track) and exists(restinst_track) and exists(vocals_track):
-            if not exists(new_folder): makedirs(new_folder)
+            # For testing purposes
+            # cmd_test = "ffmpeg -i \"" + join(temp_path, "fullmix_" + folder + ".wav") + "\" -filter_complex \"[0:0]volume=" + str(
+            #     differenz_db) + "dB\" -y -ar 44100 \"" + join(temp_path, "fullmix_norm_" + folder + ".wav") + "\""
+            # subprocess.call(cmd_test, shell=True)
+        except Exception as inst:
+            print(type(inst))
+        try:
+            files = listdir(temp_path)
+            for f in files:
+                remove(join(temp_path, f))
+        except:
+            print("tempfolder could not be emptied")
 
-            if exists(new_songfile_instr) and override:
-                remove(new_songfile_instr)
-            if exists(new_songfile_vocals) and override:
-                remove(new_songfile_vocals)
-            if (not exists(new_songfile_vocals) and not exists(new_songfile_instr)) or override:
-                normalize(join(temp_path, new_songname_instr), new_songfile_instr, -20)
-                normalize(join(temp_path, new_songname_vocals), new_songfile_vocals, targetVoc_level)
-                print("\n" + new_songname_vocals + " and " + new_songname_instr + " converted" + "\n")
-                remove(join(temp_path, new_songname_vocals))
-                remove(join(temp_path, new_songname_instr))
-            maxCopy -= 1
+        maxCopy -= 1
 
 
 if __name__ == '__main__':

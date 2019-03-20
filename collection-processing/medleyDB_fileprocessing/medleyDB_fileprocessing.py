@@ -108,20 +108,23 @@ def file_processing(sourcedir, destdir, override):
 
         mixdown(folders_with_stems, dest_path, vocal_stems, instr_stems, dir)
 
-def normalize(file, destination, db = -20.0):
-    def match_target_amplitude(sound, target_dBFS):
-        change_in_dBFS = target_dBFS - sound.dBFS
-        return sound.apply_gain(change_in_dBFS)
 
-    sound = AudioSegment.from_file(file, "wav")
-    normalized_sound = match_target_amplitude(sound, db)
-    normalized_sound.export(destination, format="wav")
-
+def char_code_for_number(i):
+    """ Returns a for 0, b for 1, etc. """
+    char = ""
+    while(i > 25):
+        char += chr(97 + (i % 25))
+        i = i - 25
+    char += chr(97 + i)
+    return char # 97 = a
 
 def mixdown(folders_with_stems, destination, vocal_stems, instr_stems, songname):
     inpArgs = ""
     filter_complex_voc = ""
     filter_complex_instr = ""
+    filter_complex_fullmix = ""
+    chain_vocs = ""
+    chain_instr = ""
     count_voc_tracks = 0
     count_instr_tracks = 0
     track_count = 0
@@ -133,44 +136,63 @@ def mixdown(folders_with_stems, destination, vocal_stems, instr_stems, songname)
             for file in listdir(folder_with_stems):
                 if any(map(lambda x: x in file, vocal_stems)):
                     inpArgs += "-i \"" + join(folder_with_stems, file) + "\" "
-                    filter_complex_voc += "[" + str(track_count) + ":0]"
-                    sum_volumes_voc += AudioSegment.from_file(join(folder_with_stems, file), "wav").dBFS
+                    char = char_code_for_number(track_count)
+                    filter_complex_voc += "[" + str(track_count) + ":0]volume=" + str(1/(len(vocal_stems) + len(instr_stems)) / (1/len(vocal_stems))) + "[" + char + "];"
+                    filter_complex_fullmix += "[" + str(track_count) + ":0]"
+                    chain_vocs += "[" + char + "]"
                     count_voc_tracks += 1
                     track_count += 1
                 elif any(map(lambda x: x in file, instr_stems)):
                     inpArgs += "-i \"" + join(folder_with_stems, file) + "\" "
-                    filter_complex_instr += "[" + str(track_count) + ":0]"
-                    sum_volumes_instr += AudioSegment.from_file(join(folder_with_stems, file), "wav").dBFS
+                    char = char_code_for_number(track_count)
+                    filter_complex_instr += "[" + str(track_count) + ":0]volume=" + str(1/(len(vocal_stems) + len(instr_stems)) / (1/len(instr_stems))) + "[" + char + "];"
+                    filter_complex_fullmix += "[" + str(track_count) + ":0]"
+                    chain_instr += "[" + char + "]"
                     count_instr_tracks += 1
                     track_count += 1
     except Exception as inst:
         log_file.write("Message: Pydub could not read " + folder_with_stems)
 
-    cmd = "ffmpeg " + inpArgs + " -filter_complex \"" + filter_complex_voc + "amix=inputs=" + str(count_voc_tracks) + "[vocs];" + filter_complex_instr + "amerge=inputs=" + str(count_instr_tracks) + "[instr]\" -map [vocs] -ac 2 " + join(temp_path, "vocals_" + songname) + ".wav -map [instr] -ac 2 " + join(temp_path, "instrumental_" + songname) + ".wav"
-    print(cmd)
+
+    # Create a fullmix of all audio tracks
     try:
+        cmd_fullmix = "ffmpeg " + inpArgs + " -filter_complex \"" + filter_complex_fullmix + "amix=inputs=" + str(track_count) + "[mix]\" -map [mix] -y -ar 44100 \"" + join(temp_path, "fullmix_" + songname + ".wav") + "\""
+        subprocess.check_call(cmd_fullmix, shell=True)
+    except Exception as inst:
+        log_file.write(str(type(inst)) + ": ffmpeg fullmix creation failed " + songname + "\n")
+
+    # Calculate the average volume of the fullmix and suptract it from the reference normalization volume
+    try:
+        avg_db = AudioSegment.from_file(join(temp_path, "fullmix_" + songname + ".wav")).dBFS
+        differenz_db = -20 - avg_db
+    except Exception as inst:
+        log_file.write(str(type(inst)) + ": Audiosegment couldn't read audiofile " + songname + "\n")
+        differenz_db = -20
+
+    # Finally mix vocals and instrumentals separately and apply volume difference to the traacks
+    try:
+        cmd = "ffmpeg " + inpArgs + " -filter_complex \"" + filter_complex_voc + chain_vocs + "amix=inputs=" \
+              + str(len(vocal_stems)) + ",volume=" + str(differenz_db) + "dB[vocs];" + filter_complex_instr + chain_instr + "amix=inputs=" \
+              + str(len(instr_stems)) + ",volume=" + str(differenz_db) + "dB[instr]\" -map [vocs] -y -ar 44100 \"" \
+              + join(destination, "vocals_" + songname + ".wav") + "\" -map [instr] -y -ar 44100 \"" + join(destination, "instrumental_" + songname + ".wav") + "\""
+        print(cmd)
         subprocess.check_call(cmd, shell=True)
         log_file.write("Message: " + songname + " was converted successfully\n")
+        # For testing purposes
+        cmd_test = "ffmpeg -i \"" + join(temp_path,
+                                         "fullmix_" + songname + ".wav") + "\" -filter_complex \"[0:0]volume=" + str(
+            differenz_db) + "dB\" -y -ar 44100 \"" + join(temp_path, "fullmux_norm_" + songname + ".wav") + "\""
+        subprocess.call(cmd_test, shell=True)
     except Exception as inst:
         log_file.write(str(type(inst)) + ": " + songname + " conversion failed\n")
         return
-
-    # Calculate ratio of volume of original vocals and volume of original instruments. Instruments will be normalized to
-    # -20 DB, Vocals to -20 DB * Ratio
-    try:
-        targetDB_voc = -20 + (-20 * ((sum_volumes_voc/count_voc_tracks) / (sum_volumes_instr/count_instr_tracks) - 1))
-
-        normalize(join(temp_path, "vocals_" + songname) + ".wav", join(destination, "vocals_" + songname) + ".wav", targetDB_voc)
-        normalize(join(temp_path, "instrumental_" + songname) + ".wav", join(destination, "instrumental" + songname) + ".wav", -20)
-        log_file.write("Message: " + songname + " was normalized successfully\n")
-    except Exception as inst:
-        log_file.write(str(type(inst)) + ": " + songname + " normalization failed\n")
-
-    try:
-        remove(join(temp_path, "vocals_" + songname) + ".wav")
-        remove(join(temp_path, "instrumental_" + songname) + ".wav")
-    except:
-        log_file.write("Could not delete tempfile\n")
+    finally:
+        try:
+            files = listdir(temp_path)
+            for f in files:
+                remove(join(temp_path, f))
+        except:
+            log_file.write("Could not delete tempfile\n")
 
 if __name__ == '__main__':
     # Call script with scriptname maxfiles override
