@@ -194,7 +194,7 @@ def init():
 
 if __name__ == '__main__':
     maxCopy = 3
-    override = True
+    override = False
     unmix_server = "//192.168.1.29/unmix-server"
 
     print('Argument List:', str(sys.argv))

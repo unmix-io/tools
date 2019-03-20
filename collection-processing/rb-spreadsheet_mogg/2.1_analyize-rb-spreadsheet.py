@@ -104,9 +104,8 @@ def mixdown(sourcefolder, destination, tracks_vocs, tracks_instr, songname, pand
                 filter_complex_fullmix_L += "[" + str(track_count) + ":0]"
                 chain_vocs_L += "[" + char_L + "]"
                 char_R = char_code_for_number(track_count)
-                filter_complex_vocs_R += "[" + str(track_count) + ":0]"
-                filter_complex_fullmix_R += "[" + str(track_count) + ":0]"
                 filter_complex_vocs_R += "[" + str(track_count) + ":0]volume=" + str(1 / (track_count_vocs_R + track_count_instr_R) / (1 / track_count_vocs_R)) + "[" + char_R + "];"
+                filter_complex_fullmix_R += "[" + str(track_count) + ":0]"
                 chain_vocs_R += "[" + char_R + "]"
             inp_args += "-i \"" + join(sourcefolder, track )+ "\" "
             track_count += 1
@@ -133,7 +132,7 @@ def mixdown(sourcefolder, destination, tracks_vocs, tracks_instr, songname, pand
             inp_args += "-i \"" + join(sourcefolder, track) + "\" "
             track_count += 1
     except Exception as inst:
-            log_file.write(str(type(inst)) + ": Pydub could not read " + track)
+            log_file.write(str(type(inst)) + ": Error in Panningfileprocessing of song" + songname + "\n")
             log_file.flush()
 
     # Create a fullmix of all audio tracks
@@ -252,7 +251,7 @@ def init():
 
 if __name__ == '__main__':
     maxCopy = 3
-    override = True
+    override = False
     unmix_server = "//192.168.1.29/unmix-server"
 
     print('Argument List:', str(sys.argv))
