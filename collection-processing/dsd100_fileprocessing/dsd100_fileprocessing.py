@@ -36,7 +36,7 @@ def copy_files(sourcedir, outputdir, maxCopy, override):
         try:
             cmd = "ffmpeg" + ' -i "' + bass_track + '" -i "' + drums_track + '" -i "' + restinst_track + '" -i "' \
                   + vocals_track + "\" -filter_complex \"[0:0][1:0][2:0][3:0]amix=inputs=4[mix]\" -map [mix] -ac 2 \"" \
-                  + join(temp_path, "fullmix_" + folder + ".wav")
+                  + join(temp_path, "fullmix_" + folder + ".wav") + "\""
             subprocess.check_call(cmd, shell=True)
         except Exception as stats:
             print(type(stats))
