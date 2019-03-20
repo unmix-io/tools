@@ -21,6 +21,8 @@ def copy_files(sourcedir, outputdir, maxCopy, override):
 
         if exists(join(outputdir, folder)) and not override:
             continue
+        elif not exists(join(outputdir, folder)):
+            makedirs(join(outputdir, folder))
 
         songfolder = join(sourcedir, folder)
 
@@ -48,6 +50,7 @@ def copy_files(sourcedir, outputdir, maxCopy, override):
             differenz_db = -20
 
         new_folder = join(outputdir, folder)
+
         new_songname_instr = 'instrumental_' + folder + '.wav'
         new_songname_vocals = 'vocals_' + folder + '.wav'
         new_songfile_instr = join(new_folder, new_songname_instr)
