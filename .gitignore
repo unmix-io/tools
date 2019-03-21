@@ -553,3 +553,9 @@ healthchecksdb
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
+
+# Vocal Classifier: training and classifier data    
+vocal-classifier/used\ for\ classification/temp-spectrograms/
+model.h5
+vocal-classifier/used\ for\ training/data/
+**/*.simg
