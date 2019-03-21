@@ -1,0 +1,36 @@
+FileName;Collection;Status;Pass;Prefix
+vocals_Queen - Bicycle Race.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - Bohemian Rhapsody.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - Crazy Little Thing Called Love.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - Death on Two Legs (Dedicated to...).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - Don't Stop Me Now.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - Fat Bottomed Girls.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;Q
+vocals_Queen - Hammer to Fall.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;Q
+vocals_Queen - I Want It All (RB3 Version).wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;Q
+vocals_Queen - I Want To Break Free (RB3 Version).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - I'm in Love With My Car.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - Keep Yourself Alive.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;Q
+vocals_Queen - Killer Queen (RB3 Version).wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;Q
+vocals_Queen - Killer Queen.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;Q
+vocals_Queen - Long Away.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - Now I'm Here.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - One Vision (RB3 Version).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;Q
+vocals_Queen - Play the Game.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;Q
+vocals_Queen - Radio GaGa.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;Q
+vocals_Queen - Seven Seas of Rhye.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - Somebody To Love.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - Stone Cold Crazy.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - Tenement Funster.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - The Show Must Go On.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - Under Pressure (RB3 Version).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - We Are the Champions (RB3 Version).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - We Are The Champions.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;Q
+vocals_Queen - We Will Rock You (LEGO Version).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - We Will Rock You (RB3 Version).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queen - You're My Best Friend.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queens of the Stone Age - Little Sister.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q
+vocals_Queens of the Stone Age - No One Knows (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;Q
+vocals_Queens of the Stone Age - No One Knows.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;Q
+vocals_Queens of the Stone Age - Sick, Sick, Sick (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;Q
+vocals_Queensrÿche - Silent Lucidity (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;Q
+vocals_Quiet Riot - Bang Your Head (Metal Health).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;Q

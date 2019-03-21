@@ -1,0 +1,166 @@
+FileName;Collection;Status;Pass;Prefix
+vocals_T-Rex - 20th Century Boy.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_T. Rex - Children of the Revolution.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_T. Rex - Cosmic Dancer.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_T. Rex - Jeepster.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Talking Heads - Burning Down The House.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Tears for Fears - Everybody Wants to Rule the World.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Tears for Fears - Shout.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_Tegan and Sara - The Con.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_Tenacious D - Rize Of The Fenix.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_Tenacious D - Rock Your Socks.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_Tenacious D - The Metal.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_Tenacious D - Tribute.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_Testament - Electric Crown.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The 88 - Sons and Daughters.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The All American Rejects - Gives You Hell.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The All-American Rejects - Gives You Hell.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The All-American Rejects - Kids in the Street.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The All-American Rejects - Swing Swing.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Allman Brothers Band - Blue Sky (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The B-52's - Love Shack.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The B-52's - Roam.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Bangles - Walk Like An Egyptian.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Bee Gees - Jive Talkin.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Bee Gees - Night Fever.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Bee Gees - Nights on Broadway.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Bee Gees - Stayin' Alive.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Bee Gees - Tragedy.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Bee Gees - You Should Be Dancing.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Black Keys - I Got Mine.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Black Keys - Strange Times.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Black Keys - Your Touch.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Bronx - False Alarm.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Cab - Bounce.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Cab - One of THOSE Nights.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Chevelles - Get It On.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Clash - Clampdown.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Clash - Complete Control.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Clash - Rock the Casbah.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Clash - Train in Vain (Stand by Me).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Complete Multitrack - Lisztomania.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Cult - She Sells Sanctuary.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Cure - Just Like Heaven.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Darkest of the Hillside Thickets - Shhh.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Dillinger Escape Plan - Farewell, Mona Lisa.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Dillinger Escape Plan - Gold Teeth on a Bum.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Dillinger Escape Plan - Parasitic Twins.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Dillinger Escape Plan - Widower.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Doobie Brothers - China Grove (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Doobie Brothers - Listen to the Music.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Doobie Brothers - Long Train Runnin' (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Doors - Break On Through.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Doors - Hello I Love You.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Doors - LA Woman.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Doors - Light My Fire.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Doors - Love Her Madly.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Doors - Love Me Two Times.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Doors - Peace Frog.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Doors - People are Strange.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Doors - Riders on the Storm.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Doors - Roadhouse Blues.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Doors - Soul Kitchen.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Doors - The Crystal Ship.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Doors - Touch Me.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Flaming Lips - Yoshimi Battles the Pink Robots Pt. 1.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Fratellis - Creepin' Up the Backstairs.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Fratellis - Flathead.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Fratellis - Henrietta.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Go-Go's - We Got The Beat.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Haunted - D.O.A.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Hives - Die, All Right.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Hives - Tick Tick Boom.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Human League - Don't You Want Me.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The J. Geils Band - Freeze Frame.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Jackson 5 - ABC (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Jackson 5 - I Want You Back (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Janitors - Get Your Rock On.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Jimi Hendrix Experience - All Along the Watchtower.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Jimi Hendrix Experience - Crosstown Traffic.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Jimi Hendrix Experience - Gypsy Eyes.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Jimi Hendrix Experience - Long Hot Summer Night.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Killers - Mr. Brightside.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Killers - Smile Like You Mean It.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Killers - Spaceman.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Len Price 3 - If I Ain't Got You.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Material - Moving to Seatle.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Middle (MULTIS).wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Monkees - Last Train to Clarksville (Cover).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Mother Hips - Red Tandy.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Mother Hips - Time-Sick Son of a Grizzly Bear.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Muffs - Outer Space.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Myriad - A Clean Shot.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Naked Brothers Band - Body I Occupy.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Naked Brothers Band - I Don't Want To Go To School.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Offspring - All I Want.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Offspring - Gone Away.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Offspring - Hammerhead.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Offspring - Pretty Fly (For a White Guy).wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Offspring - Self Esteem.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Offspring - The Kids Aren't Alright.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Police - Don't Stand So Close to Me.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Police - Message in a Bottle.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Police - Truth Hits Everybody.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Presidents of the United States of America - Dune Buggy.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Presidents of the United States of America - Feather Pluckn'.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Presidents of the United States of America - Ladybug.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Pretenders - Blue Christmas.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Psychedelic Furs - Pretty in Pink.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Raconteurs - Salute Your Solution.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Ramones - I Wanna Be Sedated (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Runaways - Cherry Bomb.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Shins - New Slang.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Slip - Even Rats.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Smiths - Stop Me If You've Heard This One Before.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Smiths - This Charming Man.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Sounds - Living in America.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Stone Roses - Love Spreads.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Used - The Taste Of Ink.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Vapors - Turning Japanese.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Vines - Get Free.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Vines - Get Free (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Vines - Outtathaway!.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The White Stripes - Seven Nation Army.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The White Stripes - The Hardest Button to Button.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Who - Amazing Journey.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Who - Baba O'Riley.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Who - Behind Blue Eyes.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Who - Eminence Front.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Who - Going Mobile.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Who - I Can See For Miles.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Who - Leaving Here.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Who - My Generation (Live at Leeds).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Who - Real Good Looking Boy.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Who - Sea and Sand.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Who - Summertime Blues (Live at Leeds).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Who - The Who Super Bowl S-mashup.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_The Who - Who Are You.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_The Who - Young Man Blues (Live at Leeds).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Zombies - She's Not There.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_The Zombies - Tell Her No.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Them Crooked Vultures - Dead End Friends.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_Them Terribles - Bullets & Guns.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Thenewno2 - Crazy Tuesday.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Thenewno2 - Yomp.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_Thin Lizzy - Cowboy Song (Live).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Thin Lizzy - Jailbreak (Live).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Thin Lizzy - The Boys Are Back In Town (Live).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Third Eye Blind - Semi Charmed Life (GHVH).wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_Three Days Grace - The Good Life (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Ticket to Ride.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Tickle Me Pink - The Time Is Wrong.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_Tokio Hotel - Humanoid.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_Tokio Hotel - Monsoon.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_Tokio Hotel - Ready Set Go.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_Tom Petty - I Won't Back Down.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Tom Petty and the Heartbreakers - I Need To Know.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Toto - Rosanna.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_Toto - Rosanna (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Trace Adkins - Swing.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_Train - Drops of Jupiter.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_Trapt - Who's Going Home with You Tonight.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T
+vocals_Trivium - In Waves.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_Turrigenous - A Slight Amplification.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;T
+vocals_twenty one pilots - Heathens stems.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Twist and Shout.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;T
+vocals_Twisted Sister - We're Not Gonna Take It.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;T

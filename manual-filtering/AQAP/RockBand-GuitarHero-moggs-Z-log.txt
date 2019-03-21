@@ -1,2 +1,0 @@
-FileName;Collection;Prefix;Status;Pass
-vocals_ZZ Top - Gimme All Your Lovin.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;Z;PERFECT;True

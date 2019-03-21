@@ -1,9 +1,0 @@
-FileName;Collection;Prefix;Status;Pass
-vocals_Queen - I Want It All.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;Q;PERFECT;True
-vocals_Queen - One Vision.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;Q;PERFECT;True
-vocals_Queen - We Will Rock You.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;Q;PERFECT;True
-vocals_Queen & David Bowie - Under Pressure.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;Q;GOOD;True
-vocals_Queens Of The Stone Age - 3's & 7's.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;Q;PERFECT;True
-vocals_Queens Of The Stone Age - Mexicola.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;Q;BAD;False
-vocals_Queens Of the Stone Age - Sick, Sick, Sick.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;Q;PERFECT;True
-vocals_Queensrÿche - Jet City Woman.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;Q;BAD;False

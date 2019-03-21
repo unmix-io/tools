@@ -1,0 +1,113 @@
+FileName;Collection;Status;Pass;Prefix
+vocals_Santana (ft. Rob Thomas) - Smooth.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Sara Evans - Suds in the Bucket.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Scars on Broadway - They Say.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Screaming Trees - Nearly Lost You.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Semi Precious Weapons - Magnetic Baby.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Seppuku With A Straw - Death By Cancer.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Serj Tankian - Beethoven's Cunt.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_sex-and-candy_263.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Sgt Pepper's Lonely Hearts Club Band - With A Little Help From My Friends.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Shaimus - Like a Fool.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Shania Twain - Any Man of Mine.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Shinedown - Bully (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Shinedown - Devour.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Shinedown - Diamond Eyes (Boom-Lay Boom-Lay Boom).wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Shinedown - Junkies for Fame.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Shinedown - Second Chance.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Shinedown - Second Chance (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Sia - Cheap Thrills.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Sia - The Greatest.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Silverchair - Tomorrow.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Silversun Pickups - Melatonin.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Silversun Pickups - Panic Switch.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Silversun Pickups - Well Thought Out Twinkles.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Siouxsie and The Banshees - Hong Kong Garden.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Siouxsie and The Banshees - Kiss Them for Me.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Siouxsie and The Banshees - The Killing Jar.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_SixxA.M. - Life Is Beautiful.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Slayer - Raining Blood.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Slayer - Raining Blood (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Slayer - Seasons in the Abyss.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Slayer - South of Heaven.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Sleater Kinney - You're No Rock N' Roll Fun.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Sleeping With Sirens - Cant Hang.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Slipknot - Before I Forget.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Slipknot - Left Behind.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Slipknot - Psychosocial.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Slipknot - Pulse of the Maggots.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Slipknot - Snuff.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Slipknot - Wait and Bleed.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Smash Mouth - All Star.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Smash Mouth - Walkin on the Sun.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Smashing Pumpkins - Siva.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Smashing Pumpkins - Zero.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Snow Patrol - Take Back the City.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Social Distortion - Bad Luck.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Social Distortion - Ring of Fire.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Social Distortion - Story of My Life.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Soft Cell - Tainted Love.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Sonata Arctica - Flag in the Ground.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Sonic Youth - Kool Thing.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_SoulEye - Pacing Energy.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_SoulEye - Pressure Cooker.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Soundgarden - Black Hole Sun.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Soundgarden - Blow Up The Outside World.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Soundgarden - Burden In My Hand.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Soundgarden - Fell on Black Days.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Soundgarden - Jesus Christ Pose.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Soundgarden - My Wave.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Soundgarden - Outshined.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Soundgarden - Outshined (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Soundgarden - Pretty Noose.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Soundgarden - Rusty Cage (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Soundgarden - Spoonman.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Spacehog - In the Meantime.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Squeeze - Tempted.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Staind - It's Been Awhile.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Staind - This is It.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Stan Bush - The Touch.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Static-X - Push It.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Steely Dan - Bodhisattva.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Stephen and the Colberts - Charlene (I'm Right Behind You).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Steve Earle - Satellite Radio.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Steve Miller Band - Fly Like an Eagle.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Steve Miller Band - Rockn' Me (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Steve Miller Band - Take the Money and Run.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Stevie Nicks - Edge of Seventeen (Just Like the White Winged Dove).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Stevie Nicks - Stand Back.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Stevie Nicks - Stop Draggin' My Heart Around.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Stevie Ray Vaughan - Dirty Pool.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Stevie Ray Vaughan - I'm Crying.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Stevie Ray Vaughan - Love Struck Baby.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Stevie Ray Vaughan - Mary Had A Little Lamb.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Stevie Ray Vaughan - Pride and Joy.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Stevie Ray Vaughan - Tell Me.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Stevie Ray Vaughan - Texas Flood.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Stevie Wonder - Higher Ground.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Stevie Wonder - I Wish.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Stevie Wonder - Living for the City.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Stevie Wonder - Sir Duke.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Stevie Wonder - Superstition.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Stone Sour - Made of Scars.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Stone Sour - Say You'll Haunt Me.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Stone Sour - Through the Glass.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Stone Temple Pilots - Interstate Love Song.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Stone Temple Pilots - Plush.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Stone Temple Pilots - Sex Type Thing.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Stone Temple Pilots - Trippin' on a Hole in a Paper Heart.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Styx - Renegade.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Sublime - What I Got (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Sublime with Rome - Panic.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Suicide Silence - Disengage (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Suicide Silence - Wake Up (Jammit).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Sum 41 - Fat Lip.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Sum 41 - In Too Deep.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Sum 41 - Still Waiting.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_Sweet - Action.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_Swingin' Utters - This Bastar's Life.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;S
+vocals_Switchfoot - Meant To Live.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_System of a Down - Aerials.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_System of a Down - B.Y.O.B.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S
+vocals_System of a Down - Hypnotize.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;S
+vocals_System of a Down - Toxicity.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;S

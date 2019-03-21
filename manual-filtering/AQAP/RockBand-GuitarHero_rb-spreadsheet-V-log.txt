@@ -1,4 +1,0 @@
-FileName;Collection;Status;Pass;Prefix
-vocals_Vanilla Ice - Ice Ice Baby Multitrack.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;V
-vocals_Vesuvius - Promised Land.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;V
-vocals_Volbeat - A Warrior's Call.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;V

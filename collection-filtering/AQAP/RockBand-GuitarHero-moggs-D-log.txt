@@ -1,0 +1,37 @@
+FileName;Collection;Prefix;Status;Pass
+vocals_Danzig - Mother.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;PERFECT;True
+vocals_Darkest Hour - Demon.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;BAD;False
+vocals_Darkest Of The Hillside Thickets - Shhh.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;BAD;False
+vocals_David Bowie - Golden Years.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;PERFECT;True
+vocals_David Bowie - Let's Dance.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;GOOD;True
+vocals_David Bowie - Suffragette City.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;PERFECT;True
+vocals_Davidicus - You Really Like Me.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;PERFECT;True
+vocals_Death Of The Cool - Can't Let Go.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;PERFECT;True
+vocals_Deep Purple - Highway Star.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;GOOD;True
+vocals_Def Leppard - Bringin' On The Heartbreak.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;BAD;False
+vocals_Deftones - Hole In The Earth.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;GOOD;True
+vocals_Demi Lovato - Here We Go Again.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;PERFECT;True
+vocals_Dethklok - Bloodlines.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;BAD;False
+vocals_Dethklok - Laser Cannon Deth Sentence.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;PERFECT;True
+vocals_DevilDriver.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;BAD;False
+vocals_Devo - Uncontrollable Urge.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;BAD;False
+vocals_Diamond Head - Am I Evil.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;GOOD;True
+vocals_Dinosaur Jr. - Feel the Pain.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;BAD;False
+vocals_Dire Straits - Money for Nothing.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;BAD;False
+vocals_Dire Straits - Sultans Of Swing.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;BAD;False
+vocals_Di-Rect - Johnny.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;GOOD;True
+vocals_Disturbed - Indestructable.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;PERFECT;True
+vocals_Don Liberati - Love Holds It Down.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;PERFECT;True
+vocals_Don McLean - American Pie.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;GOOD;True
+vocals_Donnas - New Kid In School.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;BAD;False
+vocals_Dream Theater - A Rite Of Passage.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;PERFECT;True
+vocals_Dream Theater - Nightmare To Remember.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;PERFECT;True
+vocals_Dream Theater - Panic Attack.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;PERFECT;True
+vocals_Dream Theater - Pull Me Under.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;GOOD;True
+vocals_Dream Theater - The Best Of Times.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;BAD;False
+vocals_Dream Theater - The Count Of Tuscany.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;BAD;False
+vocals_Dream Theater - The Shattered Fortress.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;BAD;False
+vocals_Dream Theater - Wither.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;PERFECT;True
+vocals_dredg - Gathering Pebbles.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;GOOD;True
+vocals_Duffy - Warwick Avenue.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;PERFECT;True
+vocals_Duran Duran - Hungry Like The Wolf.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;D;GOOD;True

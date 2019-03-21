@@ -1,0 +1,19 @@
+FileName;Collection;Prefix;Status;Pass
+vocals_Kaiser Chiefs - Ruby.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;PERFECT;True
+vocals_Kansas - Carry On Wayward Son.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;PERFECT;True
+vocals_Katrina And The Waves - Walking On Sunshine.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;GOOD;True
+vocals_Kent - Vinternoll2.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;BAD;False
+vocals_KFMDM - A Drug Against War.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;BAD;False
+vocals_KFMDM - Juke Joint Jezebel.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;BAD;False
+vocals_Killswitch Engage - The End of Heartache.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;PERFECT;True
+vocals_Kings Of Leon - Sex On Fire.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;BAD;False
+vocals_KISS - I Was Made For Lovin' You.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;PERFECT;True
+vocals_KISS - Lick It Up.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;PERFECT;True
+vocals_KISS - Love Gun.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;BAD;False
+vocals_KISS - Modern Day Delilah.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;GOOD;True
+vocals_Knack - My Sharona (cover).mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;BAD;False
+vocals_KoRn - Freak On A Leash.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;BAD;False
+vocals_KoRn - Word Up.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;GOOD;True
+vocals_KT Tunstall - Black Horse And The Cherry Tree.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;BAD;False
+vocals_Kylie Minogue - All The Lovers.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;BAD;False
+vocals_Kyuss - Demon Cleaner.mogg_fixed.mogg_extract.wav;RockBand-GuitarHero-moggs;K;GOOD;True

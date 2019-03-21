@@ -1,0 +1,115 @@
+FileName;Collection;Status;Pass;Prefix
+vocals_B.B. King - The Thrill is Gone.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_B.o.B. (featuring Hayley Williams) - Airplanes.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_B-182 - The Party Song.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_B-182 - Up All Night.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_B-52s - Rock Lobster.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Back In The U.S.S.R.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Bad Religion - 21st Century (Digital Boy).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Bad Religion - Sorrow.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bad Wolves - Remember When.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Band of Horses - The Funeral.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Band Of Skulls - I Know What I Am.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bang Camaro - Push Push (Lady Lightning).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Bang Camaro - Rock Rebellion.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bang Camaro - Swallow the Razor.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Barenaked Ladies - Hanukkah Blessings.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Barenaked Ladies - One Week.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_BB Brunes - Dis-Moi.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Beach Boys - Good Vibrations (LIVE).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Bee Gees - Night Fever.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Ben Harper and Relentless7 - Shimmer & Shine.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Between the Buried and Me - Obfuscation.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Between the Buried and Me - Prequel to the Sequel.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Big Country - In a Big Country.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Billy Idol - Rebel Yell.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - Big Shot.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Billy Joel - Captain Jack.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - I Go to Extremes.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Billy Joel - Its Still Rock N Roll To Me.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - Miami 2017.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - Movin Out (Anthonys Song).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - My Life.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - Only The Good Die Young.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - Piano Man.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - Prelude-Angry Young Man.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - Pressure.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - Say GoodBye To HollyWood.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - Scenes From an Italian Restaurant.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - She's Always a Woman.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - The Entertainer.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - The Stranger.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Billy Joel - We Didnt Start The Fire.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Billy Joel - You May Be Right.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Billy Squier  - Christmas Is the Time to Say I Love You.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Billy Squier - Everybody Wants You.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Billy Squier - The Stroke.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_BI-MM (MT).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Black Sabbath - Sweet Leaf.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Black Tide - Shockwave.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Blind Melon - No Rain.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Blink-182 - Adam's Song.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Blink-182 - All the Small Things.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Blink-182 - Always.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Blink-182 - Dammit.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Blink-182 - Feeling This.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Blink-182 - First Date.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Blink-182 - Stay Together For The Kids.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Blink-182 - What's My Age Again.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Blondie - Atomic.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Blondie - Call Me.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Blondie - Hanging on the Telephone.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Blondie - Heart of Glass.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Blondie - Rapture.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Blue Öyster Cult - Burnin' for You.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Blur - Beetlebum (Cover).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Blur - Theres No Other Way.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_BMTH-DOOMED_48k_147bpm.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Bob Marley & The Wailers - Get Up, Stand Up.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Bob Marley and the Wailers - Bend Down Low.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Bob Marley and the Wailers - Burnin' And Lootin'.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Bob Marley and the Wailers - Coming In From The Cold.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Bob Marley and the Wailers - Kaya.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Bob Marley and the Wailers - Lively Up Yourself.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Bob Marley and the Wailers - No More Trouble.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Bob Marley and the Wailers - Small Axe.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Bob Marley and the Wailers - Them Belly Full (But We Hungry).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Bon Jovi - Bad Medicine.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Bon Jovi - Blaze of Glory.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bon Jovi - Have a Nice Day.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bon Jovi - I'll Be There For You.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Bon Jovi - It's My Life.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bon Jovi - Lay Your Hands On Me.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Bon Jovi - Livin' on a Prayer (RB3 Version).wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bon Jovi - Runaway.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Bon Jovi - Wanted Dead or Alive (RB3 Version).wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bon Jovi - We Weren't Born to Follow.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bon Jovi - Who Says You Can't Go Home.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bon Jovi - You Give Love a Bad Name (RB3 Version).wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bonnie Tyler - Total Eclipse of the Heart.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Boogie Wonderland Stems.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Boston - Hitch A Ride.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Boston - More Than a Feeling.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Boston - Peace of Mind.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Boston - Rock and Roll Band.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bounced Files.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Brad Paisley - Mud on the Tires.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Breaking Benjamin - Diary of Jane.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Breaking Benjamin - So Cold.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;B
+vocals_Breaking Benjamin - Sooner or Later.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Breaking Benjamin - Until The End.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Brooks & Dunn - Hillbilly Deluxe.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bruno Mars - 24K Magic.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bruno Mars - Grenade.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bruno Mars - Just The Way You Are.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bruno Mars - Locked Out of Heaven.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bruno Mars - Marry You.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Buckcherry - Out of Line.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Buckcherry - Rescue Me.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Buffalo Springfield - For What It's Worth.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bullet For My Valentine - Over It.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bullet For My Valentine - Scream Aim Fire.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bullet For My Valentine - Tears Don't Fall.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bullet For My Valentine - Waking the Demon.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B
+vocals_Bullet For My Valentine - Your Betrayal.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;B
+vocals_Bush - Machinehead.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;B

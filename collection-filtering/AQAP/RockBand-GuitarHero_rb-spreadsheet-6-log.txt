@@ -1,0 +1,30 @@
+FileName;RockBand-GuitarHero_rb-spreadsheet;Status;Pass;Prefix
+vocals_6. Jimi Hendrix - Little Wing.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;6
+vocals_6.1 Ray Parker Jr - Ghostbusters.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_6.2 Spin Doctors - Two Princes.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;6
+vocals_6.4 The Jackson 5 - I Want You Back.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_6.5 KT Tunstall - Suddenly I See.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_6.6 Bon Jovi - You Give Love a Bad Name.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;6
+vocals_6.7 The Kooks - Naïve.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;6
+vocals_60 - Lifeline.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;6
+vocals_60 - Love Spreads.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_60 - You Give Love a Bad Name.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_60. Bang Camaro - Night Lies.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;6
+vocals_61. ACDC - Let There Be Rock.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;6
+vocals_62 - Jailbreak.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_62 - Naive.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_62. The Grateful Dead - Alabama Getaway.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_63 - So Lonely.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_63. Silversun Pickups - Lazy Eye.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;6
+vocals_64 - The Impression That I Get.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_64. Sonic Youth - Teen Age Riot.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;6
+vocals_65 - American Pie.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_65. Rush - The Trees (Vault Edition).wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;6
+vocals_66 - Mr. Crowley.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_66 - The Rock Show.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_66. Kansas - Carry On Wayard Son.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;6
+vocals_67. Steve Miller Band - Rock'n Me.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_68 - Wolf Like Me.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;6
+vocals_68. Motorhead - Ace of Spades '08.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6
+vocals_69 - Saturday Night's Alright (For Fighting).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;6
+vocals_69. Soundgarden - Spoonman.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;6

@@ -1,0 +1,77 @@
+FileName;Collection;Status;Pass;Prefix
+vocals_Garbage - Why Do You Love Me.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Genesis Syndrome - Anonymous.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_George Thorogood - Bad to the Bone.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_George Thorogood & the Destroyers - Bad to the Bone.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_Getting Better.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Ghost Hounds - Ashes to Fire.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Gigakoops - Death In General.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_GLaDOS - Still Alive.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Godsmack - I Stand Alone.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_Gojira - Toxic Garbage Island.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_Golden Earring - Radar Love.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Good Morning Good Morning.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Gorillaz - Feel Good Inc.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_Gorillaz - Re-Hash.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Grateful Dead - Casey Jones.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Grateful Dead - China Cat Sunflower.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Grateful Dead - Franklin's Tower.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Grateful Dead - I Need a Miracle.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Grateful Dead - Sugar Magnolia.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Grateful Dead - Truckin'.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_Graveyard BBQ - Cheat on the Church.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_Great White - Once Bitten Twice Shy.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - 21 Guns.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - 21st Century Breakdown.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - American Eulogy.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - American Idiot.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Are We the Waiting St. Jimmy.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Are We The Waiting.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Basket Case.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Before the Lobotomy.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Boulevard of Broken Dreams.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Brain Stew Jaded.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Brain Stew.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Burnout.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_Green Day - Chump.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_Green Day - Coming Clean.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - East Jesus Nowhere.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Emenius Sleepus.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_Green Day - Extraordinary Girl.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - F.O.D.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Geek Stink Breath.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Give Me Novacaine, She's A Rebel.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+"vocals_Green Day - Give Me Novacaine; She's A Rebel.wav";RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Good Riddance (Time of Your Life).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Having a Blast.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Hitchin' a Ride.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Holiday.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Homecoming.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Horseshoes and Handgrenades.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_Green Day - In the End.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - In the End.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Jesus of Suburbia.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Know Your Enemy.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_Green Day - Last Night on Earth.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Last of the American Girls.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Letterbomb.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Longview.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_Green Day - Minority.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Murder City.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Nice Guys Finish Last.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_Green Day - Peacemaker.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Pulling Teeth.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Restless Heart Syndrome.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Sassafrass Roots.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - See the Light.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - She.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Song of the Century.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;G
+vocals_Green Day - The Static Age.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Viva la Gloria (Little Girl).wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Viva la Gloria!.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G
+vocals_Green Day - Wake Me Up When September Ends.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Warning.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Welcome to Paradise.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - Whatsername.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Green Day - When I Come Around.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;G
+vocals_Gym Class Heroes (ft. Adam Levine) - Stereo Hearts.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;G

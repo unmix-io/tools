@@ -1,0 +1,44 @@
+FileName;Collection;Status;Pass;Prefix
+vocals_J Geils Band - Centerfold.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;J
+vocals_James Brown - I Got You (I Feel Good).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_James Gang - Funk #49.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;J
+vocals_James Gang - Funk 49.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Jane's Addiction - Been Caught Stealing.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Jane's Addiction - Jane Says.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Jane's Addiction - Mountain Song.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_janis-joplin-the-pearl-sessions-remix-contest_343.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Jason Aldean - She's Country.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;J
+vocals_JDiv-LWTUA.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;J
+vocals_Jefferson Airplane - White Rabbit.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;J
+vocals_Jerry Lee Lewis - Great Balls of Fire.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Jet - She's A Genius.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;J
+vocals_Jethro Tull - Aqualung.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;J
+vocals_Jethro Tull - Hymn 43.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;J
+vocals_Jimi Hendrix - Angel.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Jimi Hendrix - Dolly Dagger.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Jimi Hendrix - Fire (Live at Woodstock).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Jimi Hendrix - Fire (Live).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Jimi Hendrix - Freedom.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Jimi Hendrix - If 6 Was 9.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Jimi Hendrix - Little Wing.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Jimi Hendrix - Voodoo Child (Slight Return) (Live).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Jimmy Buffett - Cheeseburger In Paradise.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;J
+vocals_Jimmy Buffett - Margaritaville.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;J
+vocals_Jimmy Buffett - Volcano.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;J
+vocals_Jimmy Eat World - The Middle (RB Stems).wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;J
+vocals_Joan Jett - I Love Rock and Roll.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_John Lennon - Happy Xmas (War Is Over).wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_John Lennon - Imagine.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Johnny Cash - Cry, Cry, Cry.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Johnny Cash - Dont Take Your Guns to Town.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Johnny Cash - Five Feet High and Rising.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Johnny Cash - Folsom Prison Blues.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Johnny Cash - I Got Stripes.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Johnny Cash - I Walk the Line.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Johnny Cash - Tennessee Flat Top Box.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Johnny Cash - The Ballad of Ira Hayes.wav;RockBand-GuitarHero_rb-spreadsheet;BAD;False;J
+vocals_Jonathan Coulton - Skullcrusher Mountain.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;J
+vocals_Journey - Don't Stop Believing.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;J
+vocals_Juanes - Me Enamora.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;J
+vocals_Juli - Perfekte Welle.wav;RockBand-GuitarHero_rb-spreadsheet;PERFECT;True;J
+vocals_Justin Bieber - What Do You Mean.wav;RockBand-GuitarHero_rb-spreadsheet;GOOD;True;J
