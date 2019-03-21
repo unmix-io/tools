@@ -20,7 +20,7 @@ def read_csv(metadata_csv):
 
     entries = []
     duplicate_entries = []
-    with open(metadata_csv, 'r') as my_file:
+    with open(metadata_csv, 'r', encoding='utf-8', newline='') as my_file:
         csvreader = csv.reader(my_file, delimiter=';')
         next(csvreader)
         for line in csvreader:
@@ -31,7 +31,7 @@ def read_csv(metadata_csv):
     removed_files = 0
     if len(duplicate_entries) > 0:
         for duplicate in duplicate_entries:
-            with open(metadata_csv, 'r') as my_file:
+            with open(metadata_csv, 'r', encoding='utf-8', newline='') as my_file:
                 csvreader = csv.reader(my_file, delimiter=';')
                 next(csvreader)
                 duplicates = []
