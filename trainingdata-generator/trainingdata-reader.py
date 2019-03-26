@@ -13,9 +13,10 @@ import numpy as np
 
 def generate_audiofile(spectrograms, name, path, fft_window, sample_rate):
     file = os.path.join(path, name + ".wav")
-    audio = np.array(map(lambda spectrogram: librosa.istft((generate_stft(spectrogram))), spectrograms))
+    data = [librosa.istft((generate_stft(spectrogram))) for spectrogram in spectrograms]
+    audio = np.array(data)
     print('Output audio file: %s' % file)
-    librosa.output.write_wav(file, audio, sample_rate, norm=False)
+    librosa.output.write_wav(file, audio[0] if len(data) == 1 else audio, sample_rate, norm=False)
 
 
 def generate_stft(spectrogram):
@@ -26,7 +27,8 @@ def generate_stft(spectrogram):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Reads h5 a file containing a complexe frequency spectrogram and generates the audio file.')
-    parser.add_argument('--file', default='C:\\temp\\unmix.io\\test.h5', type=str, help='Hierarhical data format container file')
+    parser.add_argument('--file', default='D:\\Data\\test_abs-angle-instrumental.h5', 
+        type=str, help='Hierarhical data format container file')
     parser.add_argument('--path', default='', type=str, help='Optional output folder')
 
     args = parser.parse_args()
@@ -37,17 +39,17 @@ if __name__ == '__main__':
 
 
     h5f = h5py.File(args.file,'r')
-    file = h5f['source'].value
+    file = h5f['file'].value
     fft_window = h5f['fft_window'].value
     sample_rate = h5f['sample_rate'].value
     channels = h5f['channels'].value
 
     spectrograms = []
     if channels > 1:
-        spectrograms.append(h5f['spectrogram_stereo_left'][:, :, :])
-        spectrograms.append(h5f['spectrogram_stereo_right'][:, :, :])
+        spectrograms.append(h5f['spectrogram_left'][:, :, :])
+        spectrograms.append(h5f['spectrogram_right'][:, :, :])
     else:
-        spectrograms.append(h5f['spectrogram_mono'][:, :, :])
+        spectrograms.append(h5f['spectrogram'][:, :, :])
         
     generate_audiofile(spectrograms, file, args.path, fft_window, sample_rate)
 
