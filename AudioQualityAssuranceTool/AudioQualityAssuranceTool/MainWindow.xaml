@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AudioQualityAssuranceTool"
         mc:Ignorable="d"
-        Title="AQAP - Audio Quality Assurance Tool" Height="590" Width="800"
+        Title="AQAT - Audio Quality Assurance Tool" Height="590" Width="800"
         DataContext="{Binding RelativeSource={RelativeSource Self}}"
         Closed="MainWindowOnClosed"
         KeyDown="MainWindowOnKeyDown">
