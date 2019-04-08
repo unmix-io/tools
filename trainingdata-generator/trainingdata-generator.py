@@ -148,4 +148,4 @@ if __name__ == '__main__':
     Parallel(n_jobs=args.job_count)(delayed(generate_container)(file, args.destination, args.fft_window, args.sample_rate, args.channels, args.generate_image) for file in files)
     end = time.time()
     
-    print('Finished processing in %d [ms] with %d errors' % ((end - start), error_count))
+    print('Finished processing in %d [s] with %d errors.' % ((end - start), error_count))
