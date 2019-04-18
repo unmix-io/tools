@@ -51,16 +51,21 @@ if __name__ == '__main__':
          type=str, help='Working path.')
     parser.add_argument('--prefix', default='',
          type=str, help='Prefix for file names to pick only vocal or instrumental songs.')
+    parser.add_argument('--fft_window', default=1536,
+         type=int, help='FFT-Window size.')
 
     args = parser.parse_args()
     print('Arguments:', str(args))
 
     start = time.time()
 
+    height = int(args.fft_window / 2) + 1
+
     print('Start calculating mean...')
-    total_sum = np.zeros((769))
+    
+    total_sum = np.zeros((height))
     total_elements = 0
-    total_derivation = np.zeros((769))
+    total_derivation = np.zeros((height))
     files = []
 
     with progressbar.ProgressBar(max_value=progressbar.UnknownLength) as bar:
@@ -88,9 +93,11 @@ if __name__ == '__main__':
         "bin_mean": total_variance.tolist(),
         "bin_variance": total_variance.tolist(),
         "files": len(files),
+        "fft_window": args.fft_window,
+        "prefix": args.prefix,
         "path": args.path
     }
-    path = os.path.join(args.path, '%s_mean-derivation.json' % args.prefix)
+    path = os.path.join(args.path, '%s%smean-derivation.json' % (args.prefix, '_' if args.prefix else ''))
     with open(path, 'w') as file:
         json.dump(result, file, indent=4)
     
