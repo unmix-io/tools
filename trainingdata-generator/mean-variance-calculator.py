@@ -48,7 +48,9 @@ def to_complex(realimag):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Calculates the mean and variance over h5 audio trainings files.')
     parser.add_argument('--path', default='D:\\Data\\unmix.io\\4_training\\fft-window=1536_sample-rate=11025_channels=1-mono\\mini',
-         type=str, help='Working path')
+         type=str, help='Working path.')
+    parser.add_argument('--prefix', default='',
+         type=str, help='Prefix for file names to pick only vocal or instrumental songs.')
 
     args = parser.parse_args()
     print('Arguments:', str(args))
@@ -62,7 +64,7 @@ if __name__ == '__main__':
     files = []
 
     with progressbar.ProgressBar(max_value=progressbar.UnknownLength) as bar:
-        for file in glob.iglob(os.path.join(args.path, '**', 'vocals*.h5'), recursive=True):
+        for file in glob.iglob(os.path.join(args.path, '**', '%s*.h5' % args.prefix), recursive=True):
             s, e = calculate_sum (file)
             total_sum += s
             total_elements +=  e
@@ -88,7 +90,7 @@ if __name__ == '__main__':
         "files": len(files),
         "path": args.path
     }
-    path = os.path.join(args.path, 'vocals_mean-derivation.json')
+    path = os.path.join(args.path, '%s_mean-derivation.json' % args.prefix)
     with open(path, 'w') as file:
         json.dump(result, file, indent=4)
     
