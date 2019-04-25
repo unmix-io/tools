@@ -59,7 +59,7 @@ if __name__ == '__main__':
 
     start = time.time()
 
-    height = int(args.fft_window / 2) + 1
+    height = args.fft_window // 2 + 1
 
     print('Start calculating mean...')
     
@@ -88,8 +88,8 @@ if __name__ == '__main__':
     total_variance = total_derivation / (total_elements - 1)
 
     result = {
-        "mean": np.sum(total_mean),
-        "variance": np.sum(total_variance),
+        "mean": np.average(total_mean),
+        "variance": np.average(total_variance),
         "bin_mean": total_variance.tolist(),
         "bin_variance": total_variance.tolist(),
         "files": len(files),
