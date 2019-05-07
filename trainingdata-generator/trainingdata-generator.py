@@ -136,7 +136,7 @@ if __name__ == '__main__':
 
     files = [] # Load all files into list
     print('Load all music files...')
-    for file in glob.iglob(args.path + '**/*', recursive=True):
+    for file in glob.iglob(os.path.join(args.path, '**/*'), recursive=True):
         extension = os.path.splitext(file)[1].lower()
         if extension in audio_extensions:
             files.append(file)
